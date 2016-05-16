@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,8 +17,39 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="40G-ag-LXA">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ether logo" translatesAutoresizingMaskIntoConstraints="NO" id="PEP-im-waE">
+                                <rect key="frame" x="231" y="125" width="139" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="139" id="dtC-KP-2Lz"/>
+                                    <constraint firstAttribute="height" constant="150" id="eZj-Bp-Etd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ether Trader" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abC-p0-n9r">
+                                <rect key="frame" x="194" y="354" width="212" height="118"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="118" id="e1M-3R-CHZ"/>
+                                    <constraint firstAttribute="width" constant="212" id="wzG-f7-Rwn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="48"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="40G-ag-LXA" secondAttribute="bottom" id="5jM-vT-gpf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="40G-ag-LXA" secondAttribute="trailing" constant="-20" id="Bx3-lf-sXQ"/>
+                            <constraint firstItem="abC-p0-n9r" firstAttribute="top" secondItem="PEP-im-waE" secondAttribute="bottom" constant="79" id="QXp-7b-OEX"/>
+                            <constraint firstItem="40G-ag-LXA" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="Spc-jc-zVR"/>
+                            <constraint firstItem="abC-p0-n9r" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Umt-YY-JLO"/>
+                            <constraint firstItem="PEP-im-waE" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Yrc-Gu-Aq5"/>
+                            <constraint firstItem="PEP-im-waE" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-100" id="n8q-ao-NMu"/>
+                            <constraint firstItem="40G-ag-LXA" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="oTq-Mk-nqs"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +57,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Ether logo" width="139" height="223"/>
+        <image name="background" width="375" height="667"/>
+    </resources>
 </document>

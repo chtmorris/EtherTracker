@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="40G-ag-LXA">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="605"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ether logo" translatesAutoresizingMaskIntoConstraints="NO" id="PEP-im-waE">
                                 <rect key="frame" x="231" y="125" width="139" height="150"/>
@@ -41,7 +41,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="40G-ag-LXA" secondAttribute="bottom" id="5jM-vT-gpf"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="40G-ag-LXA" secondAttribute="bottom" constant="-5" id="5jM-vT-gpf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="40G-ag-LXA" secondAttribute="trailing" constant="-20" id="Bx3-lf-sXQ"/>
                             <constraint firstItem="abC-p0-n9r" firstAttribute="top" secondItem="PEP-im-waE" secondAttribute="bottom" constant="79" id="QXp-7b-OEX"/>
                             <constraint firstItem="40G-ag-LXA" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="Spc-jc-zVR"/>

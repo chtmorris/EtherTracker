@@ -1,0 +1,6 @@
+framework module Pods_Ether_Tracker {
+  umbrella header "Pods-Ether Tracker-umbrella.h"
+
+  export *
+  module * { export * }
+}

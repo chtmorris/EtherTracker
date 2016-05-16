@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Charts
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ChartViewDelegate {
     
     
     // ==================
@@ -21,6 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var dailyButton: UIButton!
     @IBOutlet weak var weeklyButton: UIButton!
     @IBOutlet weak var monthlyButton: UIButton!
+    @IBOutlet weak var lineChart: LineChartView!
     
     
     // =================
@@ -36,6 +38,15 @@ class ViewController: UIViewController {
         dailyButton.alpha = 0
         weeklyButton.alpha = 0
         monthlyButton.alpha = 0
+        lineChart.alpha = 0
+        lineChart.backgroundColor = UIColor.clearColor()
+        
+        let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
+        let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0]
+        
+        setChart(months, values: unitsSold)
+        
+        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -51,15 +62,45 @@ class ViewController: UIViewController {
                     self.dailyButton.alpha = 1
                     self.weeklyButton.alpha = 1
                     self.monthlyButton.alpha = 1
+                    self.lineChart.alpha = 1
                 })
         })
         
     
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func setChart(dataPoints: [String], values: [Double]) {
+        
+        var dataEntries: [ChartDataEntry] = []
+        
+        for i in 0..<dataPoints.count {
+            let dataEntry = ChartDataEntry(value: values[i], xIndex: i)
+            dataEntries.append(dataEntry)
+        }
+        
+//        let pieChartDataSet = PieChartDataSet(yVals: dataEntries, label: "Units Sold")
+//        let pieChartData = PieChartData(xVals: dataPoints, dataSet: pieChartDataSet)
+//        pieChartView.data = pieChartData
+        
+        var colors: [UIColor] = []
+        
+        for i in 0..<dataPoints.count {
+            let red = Double(arc4random_uniform(256))
+            let green = Double(arc4random_uniform(256))
+            let blue = Double(arc4random_uniform(256))
+            
+            let color = UIColor(red: CGFloat(red/255), green: CGFloat(green/255), blue: CGFloat(blue/255), alpha: 1)
+            colors.append(color)
+        }
+        
+//        pieChartDataSet.colors = colors
+        
+        
+        let lineChartDataSet = LineChartDataSet(yVals: dataEntries, label: "Units Sold")
+        let lineChartData = LineChartData(xVals: dataPoints, dataSet: lineChartDataSet)
+        lineChart.data = lineChartData
+        
     }
 
 

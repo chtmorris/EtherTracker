@@ -50,7 +50,8 @@ class ViewController: UIViewController, ChartViewDelegate {
     }
     
     override func viewDidAppear(animated: Bool) {
-       let destinationY:CGFloat = view.bounds.height - 60
+        let destinationY:CGFloat = view.bounds.height - 60
+        getEtherPrice()
         
         UIView.animateWithDuration(3, delay: 0.3, options: .CurveEaseInOut, animations: {
             self.etherLogo.center.y = destinationY
@@ -68,7 +69,48 @@ class ViewController: UIViewController, ChartViewDelegate {
         
     
     }
-
+    
+    
+    // ======================
+    // MARK: - HELPER METHODS
+    // ======================
+    
+    func getEtherPrice() {
+        DataManager.getEtherPriceFromUrlWithSuccess { (data) -> Void in
+            var json: [String: AnyObject]!
+            
+            // 1
+            do {
+                json = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions()) as? [String: AnyObject]
+            } catch {
+                print(error)
+            }
+            
+            // 2
+            guard let etherData = EtherInfo(json: json) else {
+                print("Error initializing object")
+                return
+            }
+            
+            // 3
+            guard let etherPrice = etherData.price else {
+                print("No such item")
+                return
+            }
+            
+            // 4
+            let priceToBeDisplayed = String(format: "%.3f", etherPrice.btc!)
+            print(etherPrice.btc)
+            self.etherPriceLabel.text = "1 eth = \(priceToBeDisplayed) BTC"
+            
+//            dispatch_async(dispatch_get_main_queue(), ^(void){
+//                self.etherPriceLabel.text = "1 eth = \(priceToBeDisplayed) BTC"
+//            });
+            
+            
+        }
+    }
+    
     
     func setChart(dataPoints: [String], values: [Double]) {
         

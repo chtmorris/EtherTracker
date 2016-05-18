@@ -23,6 +23,7 @@ class ViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var weeklyButton: UIButton!
     @IBOutlet weak var monthlyButton: UIButton!
     @IBOutlet weak var lineChart: LineChartView!
+    @IBOutlet weak var etherLogoYCoordinates: NSLayoutConstraint!
     
     
     // =================
@@ -51,14 +52,17 @@ class ViewController: UIViewController, ChartViewDelegate {
     }
     
     override func viewDidAppear(animated: Bool) {
-        let destinationY:CGFloat = view.bounds.height - 60
         getEtherPrice()
         
+        let destinationY:CGFloat = (view.bounds.height)/2 - 60
+        self.etherLogoYCoordinates.constant = destinationY
+        
         UIView.animateWithDuration(3, delay: 0.3, options: .CurveEaseInOut, animations: {
-            self.etherLogo.center.y = destinationY
+            self.view.layoutIfNeeded()
             self.etherLogo.transform = CGAffineTransformMakeScale(0.3, 0.3)
             }, completion: { (finished: Bool) -> Void in
                 UIView.animateWithDuration(1, animations: {
+                    
                     self.etherPriceLabel.alpha = 1
                     self.topButtons.alpha = 1
                     self.dailyButton.alpha = 1

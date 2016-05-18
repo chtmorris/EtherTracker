@@ -104,6 +104,7 @@
                     <connections>
                         <outlet property="dailyButton" destination="Z66-pr-xWp" id="1no-YC-kAh"/>
                         <outlet property="etherLogo" destination="CTt-GY-ANu" id="zAE-Si-dya"/>
+                        <outlet property="etherLogoYCoordinates" destination="nM3-vh-7Nn" id="JpD-NZ-ZJT"/>
                         <outlet property="etherPriceLabel" destination="c1D-fc-0fa" id="PJL-3p-Dxu"/>
                         <outlet property="lineChart" destination="OJ7-WW-gwC" id="yBM-cU-PnR"/>
                         <outlet property="monthlyButton" destination="AQF-8T-7ne" id="ebr-Ca-vXa"/>

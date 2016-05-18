@@ -34,6 +34,7 @@ class ViewController: UIViewController, ChartViewDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         
         etherPriceLabel.alpha = 0
+        etherPriceLabel.text = ""
         topButtons.alpha = 0
         dailyButton.alpha = 0
         weeklyButton.alpha = 0
@@ -71,46 +72,49 @@ class ViewController: UIViewController, ChartViewDelegate {
     }
     
     
-    // ======================
-    // MARK: - HELPER METHODS
-    // ======================
+    // =======================
+    // MARK: - GET ETHER PRICE
+    // =======================
     
     func getEtherPrice() {
         DataManager.getEtherPriceFromUrlWithSuccess { (data) -> Void in
             var json: [String: AnyObject]!
             
-            // 1
             do {
                 json = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions()) as? [String: AnyObject]
             } catch {
                 print(error)
             }
             
-            // 2
             guard let etherData = EtherInfo(json: json) else {
                 print("Error initializing object")
                 return
             }
             
-            // 3
             guard let etherPrice = etherData.price else {
                 print("No such item")
                 return
             }
             
-            // 4
-            let priceToBeDisplayed = String(format: "%.3f", etherPrice.btc!)
-            print(etherPrice.btc)
-            self.etherPriceLabel.text = "1 eth = \(priceToBeDisplayed) BTC"
-            
-//            dispatch_async(dispatch_get_main_queue(), ^(void){
-//                self.etherPriceLabel.text = "1 eth = \(priceToBeDisplayed) BTC"
-//            });
-            
+            let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
+            dispatch_async(dispatch_get_global_queue(priority, 0)) {
+                // do some task
+                let priceToBeDisplayed = String(format: "%.3f", etherPrice.btc!)
+                
+                dispatch_async(dispatch_get_main_queue()) {
+                    // update some UI
+                    self.etherPriceLabel.text = "1 eth = \(priceToBeDisplayed) BTC"
+
+                }
+            }
             
         }
     }
     
+    
+    // ====================
+    // MARK: - CREATE CHART
+    // ====================
     
     func setChart(dataPoints: [String], values: [Double]) {
         
@@ -120,10 +124,6 @@ class ViewController: UIViewController, ChartViewDelegate {
             let dataEntry = ChartDataEntry(value: values[i], xIndex: i)
             dataEntries.append(dataEntry)
         }
-        
-//        let pieChartDataSet = PieChartDataSet(yVals: dataEntries, label: "Units Sold")
-//        let pieChartData = PieChartData(xVals: dataPoints, dataSet: pieChartDataSet)
-//        pieChartView.data = pieChartData
         
         var colors: [UIColor] = []
         
@@ -135,9 +135,6 @@ class ViewController: UIViewController, ChartViewDelegate {
             let color = UIColor(red: CGFloat(red/255), green: CGFloat(green/255), blue: CGFloat(blue/255), alpha: 1)
             colors.append(color)
         }
-        
-//        pieChartDataSet.colors = colors
-        
         
         let lineChartDataSet = LineChartDataSet(yVals: dataEntries, label: "Units Sold")
         let lineChartData = LineChartData(xVals: dataPoints, dataSet: lineChartDataSet)

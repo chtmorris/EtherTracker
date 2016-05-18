@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="cZp-Vw-mGB">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="605"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-dark" translatesAutoresizingMaskIntoConstraints="NO" id="cZp-Vw-mGB">
+                                <rect key="frame" x="0.0" y="-5" width="600" height="610"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ether logo" translatesAutoresizingMaskIntoConstraints="NO" id="CTt-GY-ANu">
                                 <rect key="frame" x="231" y="125" width="139" height="150"/>
@@ -35,14 +35,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topButtons" translatesAutoresizingMaskIntoConstraints="NO" id="dKe-1p-18h">
-                                <rect key="frame" x="150" y="50" width="300" height="32"/>
+                                <rect key="frame" x="150" y="45" width="300" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="Ow9-Tc-WT0"/>
                                     <constraint firstAttribute="height" constant="32" id="WWz-CF-JuC"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z66-pr-xWp">
-                                <rect key="frame" x="150" y="51" width="100" height="31"/>
+                                <rect key="frame" x="150" y="46" width="100" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="3qx-CQ-2JA"/>
                                 </constraints>
@@ -52,7 +52,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aux-xf-40m">
-                                <rect key="frame" x="250" y="50" width="100" height="31"/>
+                                <rect key="frame" x="250" y="45" width="100" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="ktB-Zq-Ld2"/>
                                 </constraints>
@@ -62,7 +62,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQF-8T-7ne">
-                                <rect key="frame" x="350" y="50" width="100" height="31"/>
+                                <rect key="frame" x="350" y="45" width="100" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="JFq-Oo-EYg"/>
                                 </constraints>
@@ -72,17 +72,28 @@
                                 </state>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJ7-WW-gwC" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="20" y="112" width="560" height="337"/>
+                                <rect key="frame" x="20" y="107" width="560" height="342"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRX-vW-g03">
+                                <rect key="frame" x="270" y="505" width="60" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="KsQ-BI-Kzp"/>
+                                    <constraint firstAttribute="height" constant="80" id="ng9-03-3Os"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="etherLogoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bvk-w0-ihS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="OJ7-WW-gwC" secondAttribute="leading" id="0lZ-lQ-xdr"/>
-                            <constraint firstItem="cZp-Vw-mGB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="88C-O3-wfm"/>
+                            <constraint firstItem="cZp-Vw-mGB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-5" id="88C-O3-wfm"/>
                             <constraint firstItem="OJ7-WW-gwC" firstAttribute="top" secondItem="dKe-1p-18h" secondAttribute="bottom" constant="30" id="ACs-IX-ePd"/>
                             <constraint firstItem="dKe-1p-18h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C24-W9-pWk"/>
                             <constraint firstItem="AQF-8T-7ne" firstAttribute="leading" secondItem="dKe-1p-18h" secondAttribute="trailing" constant="-100" id="Cjx-Ob-jnk"/>
+                            <constraint firstItem="fRX-vW-g03" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DvM-lJ-NBb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OJ7-WW-gwC" secondAttribute="trailing" id="EK6-HS-XZC"/>
                             <constraint firstItem="c1D-fc-0fa" firstAttribute="top" secondItem="cZp-Vw-mGB" secondAttribute="bottom" constant="-140" id="FVR-9p-kmx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cZp-Vw-mGB" secondAttribute="trailing" constant="-20" id="JSQ-wr-BgA"/>
@@ -99,6 +110,7 @@
                             <constraint firstItem="aux-xf-40m" firstAttribute="leading" secondItem="dKe-1p-18h" secondAttribute="trailing" constant="-200" id="rQV-sB-2hX"/>
                             <constraint firstItem="OJ7-WW-gwC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tyc-p9-abR"/>
                             <constraint firstItem="CTt-GY-ANu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uJe-WS-I5u"/>
+                            <constraint firstItem="fRX-vW-g03" firstAttribute="top" secondItem="cZp-Vw-mGB" secondAttribute="bottom" constant="-100" id="vx3-6k-g92"/>
                         </constraints>
                     </view>
                     <connections>
@@ -119,7 +131,7 @@
     </scenes>
     <resources>
         <image name="Ether logo" width="139" height="223"/>
-        <image name="background" width="375" height="667"/>
+        <image name="background-dark" width="375" height="667"/>
         <image name="topButtons" width="300" height="34"/>
     </resources>
 </document>

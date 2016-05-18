@@ -25,6 +25,9 @@ class ViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var lineChart: LineChartView!
     @IBOutlet weak var etherLogoYCoordinates: NSLayoutConstraint!
     
+    var etherPrices: EtherInfo!
+    var etherConversionShowing = 0
+    
     
     // =================
     // MARK: - LIFECYCLE
@@ -100,6 +103,8 @@ class ViewController: UIViewController, ChartViewDelegate {
                 return
             }
             
+            self.etherPrices = etherData
+            
             let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
             dispatch_async(dispatch_get_global_queue(priority, 0)) {
                 // do some task
@@ -114,6 +119,28 @@ class ViewController: UIViewController, ChartViewDelegate {
             
         }
     }
+    
+    @IBAction func etherLogoTapped(sender: UIButton) {
+        
+        let usdPrice = String(format: "%.3f", etherPrices.price!.usd!)
+        let eurPrice = String(format: "%.3f", etherPrices.price!.eur!)
+        let btcPrice = String(format: "%.3f", etherPrices.price!.btc!)
+        
+        if etherConversionShowing == 0 {
+            self.etherPriceLabel.text = "1 eth = \(usdPrice) USD"
+            self.etherConversionShowing = 1
+        } else if etherConversionShowing == 1 {
+            self.etherPriceLabel.text = "1 eth = \(eurPrice) EUR"
+            self.etherConversionShowing = 2
+        } else {
+            self.etherPriceLabel.text = "1 eth = \(btcPrice) BTC"
+            self.etherConversionShowing = 0
+        }
+        
+        print("tapped")
+        
+    }
+    
     
     
     // ====================

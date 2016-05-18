@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="40G-ag-LXA">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-dark" translatesAutoresizingMaskIntoConstraints="NO" id="40G-ag-LXA">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="605"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ether logo" translatesAutoresizingMaskIntoConstraints="NO" id="PEP-im-waE">
@@ -59,6 +59,6 @@
     </scenes>
     <resources>
         <image name="Ether logo" width="139" height="223"/>
-        <image name="background" width="375" height="667"/>
+        <image name="background-dark" width="375" height="667"/>
     </resources>
 </document>

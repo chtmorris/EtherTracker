@@ -26,7 +26,7 @@ class ViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var etherLogoYCoordinates: NSLayoutConstraint!
     
     var etherPrices: EtherInfo!
-    var etherConversionShowing = 0
+    var setCurrencyTo = Currency.USD
     
     
     // =================
@@ -46,10 +46,10 @@ class ViewController: UIViewController, ChartViewDelegate {
         lineChart.alpha = 0
         lineChart.backgroundColor = UIColor.clearColor()
         
-        let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
-        let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0]
+        let days = ["Mon", "Tues", "Weds", "Thurs", "Fri", "Sat", "Sun"]
+        let price = [0.011, 0.010, 0.012, 0.015, 0.013, 0.015, 0.019]
         
-        setChart(months, values: unitsSold)
+        setChart(days, values: price)
         
         
     }
@@ -74,8 +74,11 @@ class ViewController: UIViewController, ChartViewDelegate {
                     self.lineChart.alpha = 1
                 })
         })
-        
     
+    }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
     }
     
     
@@ -122,22 +125,30 @@ class ViewController: UIViewController, ChartViewDelegate {
     
     @IBAction func etherLogoTapped(sender: UIButton) {
         
-        let usdPrice = String(format: "%.3f", etherPrices.price!.usd!)
-        let eurPrice = String(format: "%.3f", etherPrices.price!.eur!)
-        let btcPrice = String(format: "%.3f", etherPrices.price!.btc!)
-        
-        if etherConversionShowing == 0 {
-            self.etherPriceLabel.text = "1 eth = \(usdPrice) USD"
-            self.etherConversionShowing = 1
-        } else if etherConversionShowing == 1 {
-            self.etherPriceLabel.text = "1 eth = \(eurPrice) EUR"
-            self.etherConversionShowing = 2
-        } else {
-            self.etherPriceLabel.text = "1 eth = \(btcPrice) BTC"
-            self.etherConversionShowing = 0
+        if etherPrices != nil {
+            
+            let currencyPrice: String
+            let currencyName: String
+            
+            switch setCurrencyTo {
+            case Currency.USD:
+                currencyPrice = String(format: "%.3f", etherPrices.price!.usd!)
+                currencyName = Currency.USD.title
+                setCurrencyTo = Currency.EUR
+                
+            case Currency.EUR:
+                currencyPrice = String(format: "%.3f", etherPrices.price!.eur!)
+                currencyName = Currency.EUR.title
+                setCurrencyTo = Currency.BTC
+                
+            case Currency.BTC:
+                currencyPrice = String(format: "%.3f", etherPrices.price!.btc!)
+                currencyName = Currency.BTC.title
+                setCurrencyTo = Currency.USD
+            }
+            
+            self.etherPriceLabel.text = "1 eth = \(currencyPrice) \(currencyName)"
         }
-        
-        print("tapped")
         
     }
     
@@ -169,6 +180,7 @@ class ViewController: UIViewController, ChartViewDelegate {
         
         let lineChartDataSet = LineChartDataSet(yVals: dataEntries, label: "Units Sold")
         let lineChartData = LineChartData(xVals: dataPoints, dataSet: lineChartDataSet)
+        lineChartData.setValueTextColor(UIColor.whiteColor())
         lineChart.data = lineChartData
         
     }

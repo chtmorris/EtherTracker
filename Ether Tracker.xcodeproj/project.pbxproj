@@ -17,6 +17,7 @@
 		EC97A4681CEA0BDC00FC0495 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = EC97A4671CEA0BDC00FC0495 /* Podfile */; };
 		EC97A46A1CEB109A00FC0495 /* EtherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC97A4691CEB109A00FC0495 /* EtherAPI.swift */; };
 		EC97A46C1CEB171C00FC0495 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC97A46B1CEB171C00FC0495 /* DataManager.swift */; };
+		ECAF661A1CED6AF9001D75B3 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAF66191CED6AF9001D75B3 /* Currency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		EC97A4671CEA0BDC00FC0495 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EC97A4691CEB109A00FC0495 /* EtherAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtherAPI.swift; sourceTree = "<group>"; };
 		EC97A46B1CEB171C00FC0495 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		ECAF66191CED6AF9001D75B3 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		EEBD699052BDBAB115FF8FF0 /* Pods-Ether Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ether Tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ether Tracker/Pods-Ether Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,7 @@
 				EC97A4531CE9DC9800FC0495 /* AppDelegate.swift */,
 				EC97A4651CE9E2CD00FC0495 /* Helpers.swift */,
 				EC97A4691CEB109A00FC0495 /* EtherAPI.swift */,
+				ECAF66191CED6AF9001D75B3 /* Currency.swift */,
 				EC97A46B1CEB171C00FC0495 /* DataManager.swift */,
 				EC97A4551CE9DC9800FC0495 /* ViewController.swift */,
 				EC97A4571CE9DC9800FC0495 /* Main.storyboard */,
@@ -227,6 +230,7 @@
 				EC97A46C1CEB171C00FC0495 /* DataManager.swift in Sources */,
 				EC97A4661CE9E2CD00FC0495 /* Helpers.swift in Sources */,
 				EC97A46A1CEB109A00FC0495 /* EtherAPI.swift in Sources */,
+				ECAF661A1CED6AF9001D75B3 /* Currency.swift in Sources */,
 				EC97A4541CE9DC9800FC0495 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

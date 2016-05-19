@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class DataManager {
+public class ETDataManager {
     
     public class func getEtherPriceFromUrlWithSuccess(success: ((EtherData: NSData!) -> Void)) {
         loadDataFromURL(NSURL(string: "https://coinmarketcap-nexuist.rhcloud.com/api/eth")!, completion:{(data, error) -> Void in

@@ -9,15 +9,15 @@
 /* Begin PBXBuildFile section */
 		7CD99292F7AE1D239D2CD249 /* Pods_Ether_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D83FB37294A500A66D6AB27 /* Pods_Ether_Tracker.framework */; };
 		EC97A4541CE9DC9800FC0495 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC97A4531CE9DC9800FC0495 /* AppDelegate.swift */; };
-		EC97A4561CE9DC9800FC0495 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC97A4551CE9DC9800FC0495 /* ViewController.swift */; };
+		EC97A4561CE9DC9800FC0495 /* ETMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC97A4551CE9DC9800FC0495 /* ETMainViewController.swift */; };
 		EC97A4591CE9DC9800FC0495 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC97A4571CE9DC9800FC0495 /* Main.storyboard */; };
 		EC97A45B1CE9DC9900FC0495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC97A45A1CE9DC9900FC0495 /* Assets.xcassets */; };
 		EC97A45E1CE9DC9900FC0495 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC97A45C1CE9DC9900FC0495 /* LaunchScreen.storyboard */; };
 		EC97A4661CE9E2CD00FC0495 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC97A4651CE9E2CD00FC0495 /* Helpers.swift */; };
 		EC97A4681CEA0BDC00FC0495 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = EC97A4671CEA0BDC00FC0495 /* Podfile */; };
-		EC97A46A1CEB109A00FC0495 /* EtherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC97A4691CEB109A00FC0495 /* EtherAPI.swift */; };
-		EC97A46C1CEB171C00FC0495 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC97A46B1CEB171C00FC0495 /* DataManager.swift */; };
-		ECAF661A1CED6AF9001D75B3 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAF66191CED6AF9001D75B3 /* Currency.swift */; };
+		EC97A46A1CEB109A00FC0495 /* ETEtherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC97A4691CEB109A00FC0495 /* ETEtherAPI.swift */; };
+		EC97A46C1CEB171C00FC0495 /* ETDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC97A46B1CEB171C00FC0495 /* ETDataManager.swift */; };
+		ECAF661A1CED6AF9001D75B3 /* ETCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAF66191CED6AF9001D75B3 /* ETCurrency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,16 +25,16 @@
 		94F48EF88F7BC07DBE7CD9B6 /* Pods-Ether Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ether Tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ether Tracker/Pods-Ether Tracker.release.xcconfig"; sourceTree = "<group>"; };
 		EC97A4501CE9DC9800FC0495 /* Ether Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ether Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC97A4531CE9DC9800FC0495 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC97A4551CE9DC9800FC0495 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC97A4551CE9DC9800FC0495 /* ETMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETMainViewController.swift; sourceTree = "<group>"; };
 		EC97A4581CE9DC9800FC0495 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC97A45A1CE9DC9900FC0495 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC97A45D1CE9DC9900FC0495 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC97A45F1CE9DC9900FC0495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC97A4651CE9E2CD00FC0495 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		EC97A4671CEA0BDC00FC0495 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		EC97A4691CEB109A00FC0495 /* EtherAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtherAPI.swift; sourceTree = "<group>"; };
-		EC97A46B1CEB171C00FC0495 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		ECAF66191CED6AF9001D75B3 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		EC97A4691CEB109A00FC0495 /* ETEtherAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETEtherAPI.swift; sourceTree = "<group>"; };
+		EC97A46B1CEB171C00FC0495 /* ETDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETDataManager.swift; sourceTree = "<group>"; };
+		ECAF66191CED6AF9001D75B3 /* ETCurrency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETCurrency.swift; sourceTree = "<group>"; };
 		EEBD699052BDBAB115FF8FF0 /* Pods-Ether Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ether Tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ether Tracker/Pods-Ether Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,16 +91,32 @@
 			children = (
 				EC97A4531CE9DC9800FC0495 /* AppDelegate.swift */,
 				EC97A4651CE9E2CD00FC0495 /* Helpers.swift */,
-				EC97A4691CEB109A00FC0495 /* EtherAPI.swift */,
-				ECAF66191CED6AF9001D75B3 /* Currency.swift */,
-				EC97A46B1CEB171C00FC0495 /* DataManager.swift */,
-				EC97A4551CE9DC9800FC0495 /* ViewController.swift */,
+				ECAF661C1CED801C001D75B3 /* Models */,
+				ECAF661B1CED7FF8001D75B3 /* ViewControllers */,
 				EC97A4571CE9DC9800FC0495 /* Main.storyboard */,
 				EC97A45A1CE9DC9900FC0495 /* Assets.xcassets */,
 				EC97A45C1CE9DC9900FC0495 /* LaunchScreen.storyboard */,
 				EC97A45F1CE9DC9900FC0495 /* Info.plist */,
 			);
 			path = "Ether Tracker";
+			sourceTree = "<group>";
+		};
+		ECAF661B1CED7FF8001D75B3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC97A4551CE9DC9800FC0495 /* ETMainViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ECAF661C1CED801C001D75B3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC97A46B1CEB171C00FC0495 /* ETDataManager.swift */,
+				ECAF66191CED6AF9001D75B3 /* ETCurrency.swift */,
+				EC97A4691CEB109A00FC0495 /* ETEtherAPI.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,11 +242,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC97A4561CE9DC9800FC0495 /* ViewController.swift in Sources */,
-				EC97A46C1CEB171C00FC0495 /* DataManager.swift in Sources */,
+				EC97A4561CE9DC9800FC0495 /* ETMainViewController.swift in Sources */,
+				EC97A46C1CEB171C00FC0495 /* ETDataManager.swift in Sources */,
 				EC97A4661CE9E2CD00FC0495 /* Helpers.swift in Sources */,
-				EC97A46A1CEB109A00FC0495 /* EtherAPI.swift in Sources */,
-				ECAF661A1CED6AF9001D75B3 /* Currency.swift in Sources */,
+				EC97A46A1CEB109A00FC0495 /* ETEtherAPI.swift in Sources */,
+				ECAF661A1CED6AF9001D75B3 /* ETCurrency.swift in Sources */,
 				EC97A4541CE9DC9800FC0495 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

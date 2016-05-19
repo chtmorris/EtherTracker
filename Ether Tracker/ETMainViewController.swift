@@ -9,7 +9,7 @@
 import UIKit
 import Charts
 
-class ViewController: UIViewController, ChartViewDelegate {
+class ETMainViewController: UIViewController, ChartViewDelegate {
     
     
     // ==================
@@ -87,7 +87,7 @@ class ViewController: UIViewController, ChartViewDelegate {
     // =======================
     
     func getEtherPrice() {
-        DataManager.getEtherPriceFromUrlWithSuccess { (data) -> Void in
+        ETDataManager.getEtherPriceFromUrlWithSuccess { (data) -> Void in
             var json: [String: AnyObject]!
             
             do {

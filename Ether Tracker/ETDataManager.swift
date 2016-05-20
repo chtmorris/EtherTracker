@@ -18,6 +18,14 @@ public class ETDataManager {
         })
     }
     
+    public class func getEtherHistoricalPriceFromUrlWithSuccess(success: ((EtherData: NSData!) -> Void)) {
+        loadDataFromURL(NSURL(string: "https://etherchain.org/api/statistics/price")!, completion:{(data, error) -> Void in
+            if let data = data {
+                success(EtherData: data)
+            }
+        })
+    }
+    
     public class func loadDataFromURL(url: NSURL, completion:(data: NSData?, error: NSError?) -> Void) {
         let session = NSURLSession.sharedSession()
         

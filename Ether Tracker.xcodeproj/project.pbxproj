@@ -15,9 +15,10 @@
 		EC97A45E1CE9DC9900FC0495 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC97A45C1CE9DC9900FC0495 /* LaunchScreen.storyboard */; };
 		EC97A4661CE9E2CD00FC0495 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC97A4651CE9E2CD00FC0495 /* Helpers.swift */; };
 		EC97A4681CEA0BDC00FC0495 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = EC97A4671CEA0BDC00FC0495 /* Podfile */; };
-		EC97A46A1CEB109A00FC0495 /* ETEtherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC97A4691CEB109A00FC0495 /* ETEtherAPI.swift */; };
+		EC97A46A1CEB109A00FC0495 /* ETEtherCurrentPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC97A4691CEB109A00FC0495 /* ETEtherCurrentPrice.swift */; };
 		EC97A46C1CEB171C00FC0495 /* ETDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC97A46B1CEB171C00FC0495 /* ETDataManager.swift */; };
 		ECAF661A1CED6AF9001D75B3 /* ETCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAF66191CED6AF9001D75B3 /* ETCurrency.swift */; };
+		ECAF661E1CED964C001D75B3 /* ETEtherHistoricalPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAF661D1CED964C001D75B3 /* ETEtherHistoricalPrice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,9 +33,10 @@
 		EC97A45F1CE9DC9900FC0495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC97A4651CE9E2CD00FC0495 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		EC97A4671CEA0BDC00FC0495 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		EC97A4691CEB109A00FC0495 /* ETEtherAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETEtherAPI.swift; sourceTree = "<group>"; };
+		EC97A4691CEB109A00FC0495 /* ETEtherCurrentPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETEtherCurrentPrice.swift; sourceTree = "<group>"; };
 		EC97A46B1CEB171C00FC0495 /* ETDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETDataManager.swift; sourceTree = "<group>"; };
 		ECAF66191CED6AF9001D75B3 /* ETCurrency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETCurrency.swift; sourceTree = "<group>"; };
+		ECAF661D1CED964C001D75B3 /* ETEtherHistoricalPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETEtherHistoricalPrice.swift; sourceTree = "<group>"; };
 		EEBD699052BDBAB115FF8FF0 /* Pods-Ether Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ether Tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ether Tracker/Pods-Ether Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,7 +116,8 @@
 			children = (
 				EC97A46B1CEB171C00FC0495 /* ETDataManager.swift */,
 				ECAF66191CED6AF9001D75B3 /* ETCurrency.swift */,
-				EC97A4691CEB109A00FC0495 /* ETEtherAPI.swift */,
+				EC97A4691CEB109A00FC0495 /* ETEtherCurrentPrice.swift */,
+				ECAF661D1CED964C001D75B3 /* ETEtherHistoricalPrice.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -245,7 +248,8 @@
 				EC97A4561CE9DC9800FC0495 /* ETMainViewController.swift in Sources */,
 				EC97A46C1CEB171C00FC0495 /* ETDataManager.swift in Sources */,
 				EC97A4661CE9E2CD00FC0495 /* Helpers.swift in Sources */,
-				EC97A46A1CEB109A00FC0495 /* ETEtherAPI.swift in Sources */,
+				EC97A46A1CEB109A00FC0495 /* ETEtherCurrentPrice.swift in Sources */,
+				ECAF661E1CED964C001D75B3 /* ETEtherHistoricalPrice.swift in Sources */,
 				ECAF661A1CED6AF9001D75B3 /* ETCurrency.swift in Sources */,
 				EC97A4541CE9DC9800FC0495 /* AppDelegate.swift in Sources */,
 			);

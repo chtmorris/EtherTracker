@@ -26,6 +26,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var etherLogoYCoordinates: NSLayoutConstraint!
     
     var etherPrices: EtherInfo!
+    var etherHistorialPrices: EtherHistoricalData!
     var setCurrencyTo = Currency.USD
     
     
@@ -56,6 +57,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     
     override func viewDidAppear(animated: Bool) {
         getEtherPrice()
+        getHistoricalEtherPrice()
         
         let destinationY:CGFloat = (view.bounds.height)/2 - 60
         self.etherLogoYCoordinates.constant = destinationY
@@ -119,6 +121,48 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
 
                 }
             }
+            
+        }
+    }
+    
+    func getHistoricalEtherPrice() {
+        ETDataManager.getEtherHistoricalPriceFromUrlWithSuccess { (data) -> Void in
+            var json: [String: AnyObject]!
+            
+            do {
+                json = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions()) as? [String: AnyObject]
+            } catch {
+                print(error)
+            }
+            
+            print(json)
+            
+            guard let etherHistoricalData = EtherHistoricalData(json: json) else {
+                print("Error initializing object")
+                return
+            }
+            
+            print("this happens at the end")
+            
+            guard let etherHistoricalPrice = etherHistoricalData.historialData else {
+                print("No such item")
+                return
+            }
+            
+            self.etherHistorialPrices = etherHistoricalData
+            print(self.etherHistorialPrices)
+            
+//            let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
+//            dispatch_async(dispatch_get_global_queue(priority, 0)) {
+//                // do some task
+//                print(self.etherHistorialPrices)
+//                
+//                dispatch_async(dispatch_get_main_queue()) {
+//                    // update some UI
+//                    
+//                    
+//                }
+//            }
             
         }
     }

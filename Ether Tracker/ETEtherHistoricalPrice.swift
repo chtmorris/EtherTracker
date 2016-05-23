@@ -11,11 +11,11 @@ import Gloss
 
 struct EtherHistoricalData: Decodable {
     
-    let historialData: EtherHistoricalPrice?
+    let historicalData: [EtherHistoricalPrice]?
     
     // MARK: - Deserialization
     init?(json: JSON) {
-        self.historialData = "data" <~~ json
+        self.historicalData = "data" <~~ json
     }
     
 }
@@ -25,6 +25,7 @@ struct EtherHistoricalPrice: Decodable {
     let time: String?
     let usd: Float?
     
+    // MARK: - Deserialization
     init?(json: JSON) {
         self.time = "time" <~~ json
         self.usd = "usd" <~~ json

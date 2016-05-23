@@ -26,7 +26,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var etherLogoYCoordinates: NSLayoutConstraint!
     
     var etherPrices: EtherInfo!
-    var etherHistorialPrices: EtherHistoricalData!
+    var etherHistorialPrices: [EtherHistoricalPrice]!
     var setCurrencyTo = Currency.USD
     
     
@@ -47,10 +47,10 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
         lineChart.alpha = 0
         lineChart.backgroundColor = UIColor.clearColor()
         
-        let days = ["Mon", "Tues", "Weds", "Thurs", "Fri", "Sat", "Sun"]
-        let price = [0.011, 0.010, 0.012, 0.015, 0.013, 0.015, 0.019]
-        
-        setChart(days, values: price)
+//        let days = ["Mon", "Tues", "Weds", "Thurs", "Fri", "Sat", "Sun"]
+//        let price = [0.011, 0.010, 0.012, 0.015, 0.013, 0.015, 0.019]
+//        
+//        setChart(days, values: price)
         
         
     }
@@ -135,66 +135,56 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
                 print(error)
             }
             
-            print(json)
-            
             guard let etherHistoricalData = EtherHistoricalData(json: json) else {
                 print("Error initializing object")
                 return
             }
             
-            print("this happens at the end")
-            
-            guard let etherHistoricalPrice = etherHistoricalData.historialData else {
+            guard let etherHistoricalPrice = etherHistoricalData.historicalData else {
                 print("No such item")
                 return
             }
             
-            self.etherHistorialPrices = etherHistoricalData
-            print(self.etherHistorialPrices)
             
-//            let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
-//            dispatch_async(dispatch_get_global_queue(priority, 0)) {
-//                // do some task
-//                print(self.etherHistorialPrices)
-//                
-//                dispatch_async(dispatch_get_main_queue()) {
-//                    // update some UI
-//                    
-//                    
-//                }
-//            }
+            self.etherHistorialPrices = etherHistoricalPrice
+            print(self.etherHistorialPrices[0].time!)
+            
+            let dateFormatter = NSDateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd'T'hh:mm:ss.000Z"
+            let date = dateFormatter.dateFromString(self.etherHistorialPrices[0].time!)
+            
+            
+            // 1. Get last 7 hours
+            self.getLastSevenHoursPrice()
+
+            //2. Get today's date
+            
+            
+            //3. Compare data set to today's date and pull last 7 days
+            
             
         }
     }
     
-    @IBAction func etherLogoTapped(sender: UIButton) {
+    
+    // =========================
+    // MARK: - PARSE ETHER PRICE
+    // =========================
+    
+    func getLastSevenHoursPrice() {
+        let lastSevenHours = Array(self.etherHistorialPrices.suffix(7))
         
-        if etherPrices != nil {
-            
-            let currencyPrice: String
-            let currencyName: String
-            
-            switch setCurrencyTo {
-            case Currency.USD:
-                currencyPrice = String(format: "%.3f", etherPrices.price!.usd!)
-                currencyName = Currency.USD.title
-                setCurrencyTo = Currency.EUR
-                
-            case Currency.EUR:
-                currencyPrice = String(format: "%.3f", etherPrices.price!.eur!)
-                currencyName = Currency.EUR.title
-                setCurrencyTo = Currency.BTC
-                
-            case Currency.BTC:
-                currencyPrice = String(format: "%.3f", etherPrices.price!.btc!)
-                currencyName = Currency.BTC.title
-                setCurrencyTo = Currency.USD
-            }
-            
-            self.etherPriceLabel.text = "1 eth = \(currencyPrice) \(currencyName)"
+        let time = ["Mon", "Tues", "Weds", "Thurs", "Fri", "Sat", "Sun"]
+        var price = [Double]()
+        
+        for index in 0...(lastSevenHours.count - 1){
+            price.append(Double(lastSevenHours[index].usd!))
         }
         
+        setChart(time, values: price)
+        
     }
+    
     
     
     
@@ -226,6 +216,40 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
         let lineChartData = LineChartData(xVals: dataPoints, dataSet: lineChartDataSet)
         lineChartData.setValueTextColor(UIColor.whiteColor())
         lineChart.data = lineChartData
+        
+    }
+    
+    
+    // ====================
+    // MARK: - INTERACTIONS
+    // ====================
+    
+    @IBAction func etherLogoTapped(sender: UIButton) {
+        
+        if etherPrices != nil {
+            
+            let currencyPrice: String
+            let currencyName: String
+            
+            switch setCurrencyTo {
+            case Currency.USD:
+                currencyPrice = String(format: "%.3f", etherPrices.price!.usd!)
+                currencyName = Currency.USD.title
+                setCurrencyTo = Currency.EUR
+                
+            case Currency.EUR:
+                currencyPrice = String(format: "%.3f", etherPrices.price!.eur!)
+                currencyName = Currency.EUR.title
+                setCurrencyTo = Currency.BTC
+                
+            case Currency.BTC:
+                currencyPrice = String(format: "%.3f", etherPrices.price!.btc!)
+                currencyName = Currency.BTC.title
+                setCurrencyTo = Currency.USD
+            }
+            
+            self.etherPriceLabel.text = "1 eth = \(currencyPrice) \(currencyName)"
+        }
         
     }
 

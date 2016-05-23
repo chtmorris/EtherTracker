@@ -46,11 +46,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
         monthlyButton.alpha = 0
         lineChart.alpha = 0
         lineChart.backgroundColor = UIColor.clearColor()
-        
-//        let days = ["Mon", "Tues", "Weds", "Thurs", "Fri", "Sat", "Sun"]
-//        let price = [0.011, 0.010, 0.012, 0.015, 0.013, 0.015, 0.019]
-//        
-//        setChart(days, values: price)
+        lineChart.noDataText = "Loading..."
         
         
     }
@@ -145,23 +141,14 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
                 return
             }
             
-            
             self.etherHistorialPrices = etherHistoricalPrice
-            print(self.etherHistorialPrices[0].time!)
-            
-            let dateFormatter = NSDateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd'T'hh:mm:ss.000Z"
-            let date = dateFormatter.dateFromString(self.etherHistorialPrices[0].time!)
-            
-            
+
             // 1. Get last 7 hours
-            self.getLastSevenHoursPrice()
+            self.getLastxHoursPrice(12)
 
             //2. Get today's date
             
-            
             //3. Compare data set to today's date and pull last 7 days
-            
             
         }
     }
@@ -171,21 +158,32 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     // MARK: - PARSE ETHER PRICE
     // =========================
     
-    func getLastSevenHoursPrice() {
-        let lastSevenHours = Array(self.etherHistorialPrices.suffix(7))
+    func getLastxHoursPrice(numberOfHours: Int) {
+        let lastSevenHours = Array(self.etherHistorialPrices.suffix(numberOfHours))
         
-        let time = ["Mon", "Tues", "Weds", "Thurs", "Fri", "Sat", "Sun"]
+        var time = [String]()
         var price = [Double]()
         
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.000Z"
+        
         for index in 0...(lastSevenHours.count - 1){
+            let timeString = lastSevenHours[index].time!
+            
+            //Append time data
+            let date = dateFormatter.dateFromString(timeString)
+            let calendar = NSCalendar.currentCalendar()
+            let comp = calendar.components([.Hour, .Minute], fromDate: date!)
+            let hour = comp.hour
+            time.append("\(hour):00")
+            
+            //Append price data
             price.append(Double(lastSevenHours[index].usd!))
         }
         
         setChart(time, values: price)
         
     }
-    
-    
     
     
     // ====================
@@ -216,6 +214,12 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
         let lineChartData = LineChartData(xVals: dataPoints, dataSet: lineChartDataSet)
         lineChartData.setValueTextColor(UIColor.whiteColor())
         lineChart.data = lineChartData
+        
+        lineChart.descriptionText = ""
+        lineChart.xAxis.labelTextColor = UIColor.whiteColor()
+        lineChart.legend.textColor = UIColor.whiteColor()
+        lineChart.legend.labels = ["Price"]
+        lineChart.animate(xAxisDuration: 1.0, yAxisDuration: 0.0, easingOption: .Linear)
         
     }
     

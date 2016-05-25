@@ -46,8 +46,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
         monthlyButton.alpha = 0
         lineChart.alpha = 0
         lineChart.backgroundColor = UIColor.clearColor()
-        lineChart.noDataText = "Loading..."
-        
+        lineChart.noDataText = "Struggling to connect to the interweb..."
         
     }
     
@@ -144,9 +143,10 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
             self.etherHistorialPrices = etherHistoricalPrice
 
             // 1. Get last 7 hours
-            self.getLastxHoursPrice(12)
+            self.getLastxHoursPrice(24 * 30)
 
             //2. Get today's date
+//            self.getLastxDaysPrice(7)
             
             //3. Compare data set to today's date and pull last 7 days
             
@@ -159,7 +159,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     // =========================
     
     func getLastxHoursPrice(numberOfHours: Int) {
-        let lastSevenHours = Array(self.etherHistorialPrices.suffix(numberOfHours))
+        let lastxHours = Array(self.etherHistorialPrices.suffix(numberOfHours))
         
         var time = [String]()
         var price = [Double]()
@@ -167,8 +167,8 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.000Z"
         
-        for index in 0...(lastSevenHours.count - 1){
-            let timeString = lastSevenHours[index].time!
+        for index in 0...(lastxHours.count - 1){
+            let timeString = lastxHours[index].time!
             
             //Append time data
             let date = dateFormatter.dateFromString(timeString)
@@ -178,10 +178,41 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
             time.append("\(hour):00")
             
             //Append price data
-            price.append(Double(lastSevenHours[index].usd!))
+            price.append(Double(lastxHours[index].usd!))
         }
         
         setChart(time, values: price)
+        
+    }
+    
+    func getLastxDaysPrice(numberofDays: Int){
+        let lastxDaysInHours = Array(self.etherHistorialPrices.suffix(numberofDays * 24))
+        
+        var time = [String]()
+        var price = [Double]()
+        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.000Z"
+        
+        for index in 0...(lastxDaysInHours.count - 1){
+            let timeString = lastxDaysInHours[index].time!
+            
+            //Append time data
+            let date = dateFormatter.dateFromString(timeString)
+            let calendar = NSCalendar.currentCalendar()
+            let comp = calendar.components([.Hour, .Minute], fromDate: date!)
+            let hour = comp.hour
+            
+            if hour % 24 == 0 {
+                time.append("\(hour):00")
+                price.append(Double(lastxDaysInHours[index].usd!))
+            }
+            //Append price data
+            
+        }
+        
+        setChart(time, values: price)
+
         
     }
     
@@ -210,15 +241,33 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
             colors.append(color)
         }
         
+        // Format Data Set
         let lineChartDataSet = LineChartDataSet(yVals: dataEntries, label: "Units Sold")
+        lineChartDataSet.drawCirclesEnabled = false
+        lineChartDataSet.drawCubicEnabled = true
+        lineChartDataSet.drawFilledEnabled = true
+        lineChartDataSet.highlightColor = UIColor.whiteColor()
+        
+        // Format Data Points
         let lineChartData = LineChartData(xVals: dataPoints, dataSet: lineChartDataSet)
         lineChartData.setValueTextColor(UIColor.whiteColor())
+        let formatter: NSNumberFormatter = NSNumberFormatter()
+        formatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
+        lineChartData.setValueFormatter(formatter)
         lineChart.data = lineChartData
         
-        lineChart.descriptionText = ""
+        // Format Chart Axes
         lineChart.xAxis.labelTextColor = UIColor.whiteColor()
+        lineChart.leftAxis.labelTextColor = UIColor.whiteColor()
+        lineChart.xAxis.drawGridLinesEnabled = false
+        lineChart.leftAxis.drawGridLinesEnabled = false
+        lineChart.xAxis.drawAxisLineEnabled = false
+        lineChart.rightAxis.enabled = false
+        
+        // Format Other Chart Attributes
+        lineChart.descriptionText = ""
         lineChart.legend.textColor = UIColor.whiteColor()
-        lineChart.legend.labels = ["Price"]
+        lineChart.legend.labels = ["Price - USD"]
         lineChart.animate(xAxisDuration: 1.0, yAxisDuration: 0.0, easingOption: .Linear)
         
     }

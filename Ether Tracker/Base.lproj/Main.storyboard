@@ -34,40 +34,33 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topButtons" translatesAutoresizingMaskIntoConstraints="NO" id="dKe-1p-18h">
-                                <rect key="frame" x="150" y="45" width="300" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="Ow9-Tc-WT0"/>
-                                    <constraint firstAttribute="height" constant="32" id="WWz-CF-JuC"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z66-pr-xWp">
-                                <rect key="frame" x="150" y="46" width="100" height="31"/>
+                                <rect key="frame" x="153" y="45" width="75" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="3qx-CQ-2JA"/>
+                                    <constraint firstAttribute="width" constant="75" id="UJq-ph-zWf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="18"/>
-                                <state key="normal" title="Daily">
+                                <state key="normal" title="12 Hrs">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aux-xf-40m">
-                                <rect key="frame" x="250" y="45" width="100" height="31"/>
+                                <rect key="frame" x="228" y="45" width="75" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="ktB-Zq-Ld2"/>
+                                    <constraint firstAttribute="width" constant="75" id="2fx-vF-ti8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="18"/>
-                                <state key="normal" title="Weekly">
+                                <state key="normal" title="7 Days">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQF-8T-7ne">
-                                <rect key="frame" x="350" y="45" width="100" height="31"/>
+                                <rect key="frame" x="303" y="45" width="75" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="JFq-Oo-EYg"/>
+                                    <constraint firstAttribute="width" constant="75" id="J04-KG-p0i"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="18"/>
-                                <state key="normal" title="Monthly">
+                                <state key="normal" title="1 Mnth">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
@@ -85,33 +78,49 @@
                                     <action selector="etherLogoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bvk-w0-ihS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="316-eA-57y">
+                                <rect key="frame" x="378" y="45" width="75" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="y2z-Zq-HFc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="18"/>
+                                <state key="normal" title="1 Year">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="cZp-Vw-mGB" firstAttribute="top" secondItem="Z66-pr-xWp" secondAttribute="bottom" constant="-81" id="0N7-Td-sNk"/>
                             <constraint firstAttribute="leadingMargin" secondItem="OJ7-WW-gwC" secondAttribute="leading" id="0lZ-lQ-xdr"/>
                             <constraint firstItem="cZp-Vw-mGB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-5" id="88C-O3-wfm"/>
-                            <constraint firstItem="OJ7-WW-gwC" firstAttribute="top" secondItem="dKe-1p-18h" secondAttribute="bottom" constant="30" id="ACs-IX-ePd"/>
-                            <constraint firstItem="dKe-1p-18h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C24-W9-pWk"/>
-                            <constraint firstItem="AQF-8T-7ne" firstAttribute="leading" secondItem="dKe-1p-18h" secondAttribute="trailing" constant="-100" id="Cjx-Ob-jnk"/>
                             <constraint firstItem="fRX-vW-g03" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DvM-lJ-NBb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OJ7-WW-gwC" secondAttribute="trailing" id="EK6-HS-XZC"/>
+                            <constraint firstItem="316-eA-57y" firstAttribute="trailing" secondItem="cZp-Vw-mGB" secondAttribute="trailing" id="F65-z1-6Jb"/>
                             <constraint firstItem="c1D-fc-0fa" firstAttribute="top" secondItem="cZp-Vw-mGB" secondAttribute="bottom" constant="-140" id="FVR-9p-kmx"/>
+                            <constraint firstItem="cZp-Vw-mGB" firstAttribute="top" secondItem="316-eA-57y" secondAttribute="bottom" constant="-81" id="JEZ-U2-Ash"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cZp-Vw-mGB" secondAttribute="trailing" constant="-20" id="JSQ-wr-BgA"/>
                             <constraint firstItem="c1D-fc-0fa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MUe-yw-1JZ"/>
-                            <constraint firstItem="aux-xf-40m" firstAttribute="centerY" secondItem="dKe-1p-18h" secondAttribute="centerY" id="Mqe-ra-e9d"/>
                             <constraint firstItem="c1D-fc-0fa" firstAttribute="top" secondItem="OJ7-WW-gwC" secondAttribute="bottom" constant="16" id="NM7-PF-5jo"/>
-                            <constraint firstItem="cZp-Vw-mGB" firstAttribute="top" secondItem="dKe-1p-18h" secondAttribute="bottom" constant="-82" id="RIG-cO-R5r"/>
+                            <constraint firstItem="AQF-8T-7ne" firstAttribute="leading" secondItem="aux-xf-40m" secondAttribute="trailing" id="RW7-yl-qpH"/>
                             <constraint firstItem="cZp-Vw-mGB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="TWS-LF-9yo"/>
-                            <constraint firstItem="AQF-8T-7ne" firstAttribute="centerY" secondItem="dKe-1p-18h" secondAttribute="centerY" id="dh1-CI-ImJ"/>
-                            <constraint firstItem="dKe-1p-18h" firstAttribute="leading" secondItem="Z66-pr-xWp" secondAttribute="trailing" constant="-100" id="fhQ-Qr-u86"/>
+                            <constraint firstItem="316-eA-57y" firstAttribute="leading" secondItem="AQF-8T-7ne" secondAttribute="trailing" id="fR4-VL-0VT"/>
+                            <constraint firstItem="aux-xf-40m" firstAttribute="leading" secondItem="Z66-pr-xWp" secondAttribute="trailing" id="hLW-gv-KFE"/>
+                            <constraint firstItem="aux-xf-40m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-35" id="hvw-qW-onK"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cZp-Vw-mGB" secondAttribute="bottom" constant="-5" id="lWs-RQ-Ht2"/>
                             <constraint firstItem="CTt-GY-ANu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="nM3-vh-7Nn"/>
-                            <constraint firstItem="Z66-pr-xWp" firstAttribute="centerY" secondItem="dKe-1p-18h" secondAttribute="centerY" id="qR6-Ms-SiG"/>
-                            <constraint firstItem="aux-xf-40m" firstAttribute="leading" secondItem="dKe-1p-18h" secondAttribute="trailing" constant="-200" id="rQV-sB-2hX"/>
+                            <constraint firstItem="cZp-Vw-mGB" firstAttribute="top" secondItem="AQF-8T-7ne" secondAttribute="bottom" constant="-81" id="pfV-TQ-fHr"/>
+                            <constraint firstItem="cZp-Vw-mGB" firstAttribute="top" secondItem="aux-xf-40m" secondAttribute="bottom" constant="-81" id="qZ5-s7-ZB8"/>
+                            <constraint firstItem="OJ7-WW-gwC" firstAttribute="top" secondItem="aux-xf-40m" secondAttribute="bottom" constant="31" id="rFn-7N-TIr"/>
                             <constraint firstItem="OJ7-WW-gwC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tyc-p9-abR"/>
                             <constraint firstItem="CTt-GY-ANu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uJe-WS-I5u"/>
                             <constraint firstItem="fRX-vW-g03" firstAttribute="top" secondItem="cZp-Vw-mGB" secondAttribute="bottom" constant="-100" id="vx3-6k-g92"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="F65-z1-6Jb"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="dailyButton" destination="Z66-pr-xWp" id="1no-YC-kAh"/>
@@ -120,8 +129,8 @@
                         <outlet property="etherPriceLabel" destination="c1D-fc-0fa" id="PJL-3p-Dxu"/>
                         <outlet property="lineChart" destination="OJ7-WW-gwC" id="yBM-cU-PnR"/>
                         <outlet property="monthlyButton" destination="AQF-8T-7ne" id="ebr-Ca-vXa"/>
-                        <outlet property="topButtons" destination="dKe-1p-18h" id="BrO-2Z-art"/>
                         <outlet property="weeklyButton" destination="aux-xf-40m" id="jRg-Yi-LXg"/>
+                        <outlet property="yearlyButton" destination="316-eA-57y" id="iLc-2f-fNb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -132,6 +141,5 @@
     <resources>
         <image name="Ether logo" width="139" height="223"/>
         <image name="background-dark" width="375" height="667"/>
-        <image name="topButtons" width="300" height="34"/>
     </resources>
 </document>

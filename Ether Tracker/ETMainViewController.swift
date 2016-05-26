@@ -18,10 +18,10 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     
     @IBOutlet weak var etherLogo: UIImageView!
     @IBOutlet weak var etherPriceLabel: UILabel!
-    @IBOutlet weak var topButtons: UIImageView!
     @IBOutlet weak var dailyButton: UIButton!
     @IBOutlet weak var weeklyButton: UIButton!
     @IBOutlet weak var monthlyButton: UIButton!
+    @IBOutlet weak var yearlyButton: UIButton!
     @IBOutlet weak var lineChart: LineChartView!
     @IBOutlet weak var etherLogoYCoordinates: NSLayoutConstraint!
     
@@ -40,10 +40,10 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
         
         etherPriceLabel.alpha = 0
         etherPriceLabel.text = ""
-        topButtons.alpha = 0
         dailyButton.alpha = 0
         weeklyButton.alpha = 0
         monthlyButton.alpha = 0
+        yearlyButton.alpha = 0
         lineChart.alpha = 0
         lineChart.backgroundColor = UIColor.clearColor()
         lineChart.noDataText = "Struggling to connect to the interweb..."
@@ -64,10 +64,10 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
                 UIView.animateWithDuration(1, animations: {
                     
                     self.etherPriceLabel.alpha = 1
-                    self.topButtons.alpha = 1
                     self.dailyButton.alpha = 1
-                    self.weeklyButton.alpha = 1
-                    self.monthlyButton.alpha = 1
+                    self.weeklyButton.alpha = 0.5
+                    self.monthlyButton.alpha = 0.5
+                    self.yearlyButton.alpha = 0.5
                     self.lineChart.alpha = 1
                 })
         })

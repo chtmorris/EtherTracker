@@ -24,10 +24,15 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var yearlyButton: UIButton!
     @IBOutlet weak var lineChart: LineChartView!
     @IBOutlet weak var etherLogoYCoordinates: NSLayoutConstraint!
+    @IBOutlet weak var priceDateTimeLabel: UILabel!
     
     var etherPrices: EtherInfo!
     var etherHistorialPrices: [EtherHistoricalPrice]!
     var setCurrencyTo = Currency.USD
+    
+    var time = [String]()
+    var price = [Double]()
+    var priceDateTime = [String]()
     
     
     // =================
@@ -65,9 +70,9 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
                 UIView.animateWithDuration(1, animations: {
                     
                     self.etherPriceLabel.alpha = 1
-                    self.dailyButton.alpha = 1
+                    self.dailyButton.alpha = 0.5
                     self.weeklyButton.alpha = 0.5
-                    self.monthlyButton.alpha = 0.5
+                    self.monthlyButton.alpha = 1
                     self.yearlyButton.alpha = 0.5
                     self.lineChart.alpha = 1
                 })
@@ -116,8 +121,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     }
     
     func chartValueSelected(chartView: ChartViewBase, entry: ChartDataEntry, dataSetIndex: Int, highlight: ChartHighlight) {
-        print(entry.value)
-        print(entry.xIndex)
+        self.priceDateTimeLabel.text = priceDateTime[entry.xIndex]
     }
 
     @IBAction func dailyButtonTapped(sender: UIButton) {

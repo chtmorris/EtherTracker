@@ -73,20 +73,6 @@
                                     <action selector="monthlyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XxS-uQ-LC6"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJ7-WW-gwC" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="20" y="107" width="560" height="342"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRX-vW-g03">
-                                <rect key="frame" x="270" y="505" width="60" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="KsQ-BI-Kzp"/>
-                                    <constraint firstAttribute="height" constant="80" id="ng9-03-3Os"/>
-                                </constraints>
-                                <connections>
-                                    <action selector="etherLogoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bvk-w0-ihS"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="316-eA-57y">
                                 <rect key="frame" x="378" y="45" width="75" height="31"/>
                                 <constraints>
@@ -98,6 +84,35 @@
                                 </state>
                                 <connections>
                                     <action selector="yearlyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lb9-2z-euT"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJ7-WW-gwC" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="20" y="107" width="560" height="342"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfQ-PS-clY">
+                                        <rect key="frame" x="395" y="325" width="150" height="12"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="LYk-sx-b8B"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="sfQ-PS-clY" secondAttribute="bottom" constant="4" id="HCD-sI-z9k"/>
+                                    <constraint firstAttribute="trailing" secondItem="sfQ-PS-clY" secondAttribute="trailing" constant="15" id="ZVZ-6I-JbE"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRX-vW-g03">
+                                <rect key="frame" x="270" y="505" width="60" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="KsQ-BI-Kzp"/>
+                                    <constraint firstAttribute="height" constant="80" id="ng9-03-3Os"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="etherLogoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bvk-w0-ihS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -141,6 +156,7 @@
                         <outlet property="etherPriceLabel" destination="c1D-fc-0fa" id="PJL-3p-Dxu"/>
                         <outlet property="lineChart" destination="OJ7-WW-gwC" id="yBM-cU-PnR"/>
                         <outlet property="monthlyButton" destination="AQF-8T-7ne" id="ZLJ-Sr-e4r"/>
+                        <outlet property="priceDateTimeLabel" destination="sfQ-PS-clY" id="sL2-3i-GLT"/>
                         <outlet property="weeklyButton" destination="aux-xf-40m" id="jRg-Yi-LXg"/>
                         <outlet property="yearlyButton" destination="316-eA-57y" id="iLc-2f-fNb"/>
                     </connections>

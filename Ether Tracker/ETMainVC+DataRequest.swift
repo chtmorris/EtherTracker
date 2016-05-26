@@ -73,7 +73,7 @@ extension ETMainViewController {
             
             self.etherHistorialPrices = etherHistoricalPrice
             
-            self.getLastxHoursPrice(12, dateDisplay: "hours")
+            self.getLastxHoursPrice(30 * 24, dateDisplay: "month")
         }
         
     }

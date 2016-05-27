@@ -166,6 +166,7 @@
 				TargetAttributes = {
 					EC97A44F1CE9DC9800FC0495 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 79HLANPT5D;
 					};
 				};
 			};
@@ -377,9 +378,11 @@
 			baseConfigurationReference = EEBD699052BDBAB115FF8FF0 /* Pods-Ether Tracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Ether Tracker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mindfundstudio.Ether-Tracker";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flailingwhale.ethertracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -390,9 +393,11 @@
 			baseConfigurationReference = 94F48EF88F7BC07DBE7CD9B6 /* Pods-Ether Tracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Ether Tracker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mindfundstudio.Ether-Tracker";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flailingwhale.ethertracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

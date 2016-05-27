@@ -78,8 +78,6 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
                 })
         })
         
-
-        
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
@@ -180,7 +178,6 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     }
     
     
-
 }
 
 

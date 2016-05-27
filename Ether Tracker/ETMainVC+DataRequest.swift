@@ -82,6 +82,8 @@ extension ETMainViewController {
             (self.time12hours, self.price12hours, self.priceDateTime12hours) = self.getLastxHoursPrice(12, dateDisplay: "hours")
             (self.time7days, self.price7days, self.priceDateTime7days) = self.getLastxHoursPrice(24 * 7, dateDisplay: "days")
             (self.time1year, self.price1year, self.priceDateTime1year) = self.getLastxDaysPrice(365)
+            
+            self.dataLoaded = true
         }
         
     }

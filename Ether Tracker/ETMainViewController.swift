@@ -30,6 +30,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     var etherHistorialPrices: [EtherHistoricalPrice]!
     var setCurrencyTo = Currency.USD
     var priceDateTime  = [String]()
+    var dataLoaded = false
     
     // 12 hour data
     var time12hours = [String]()
@@ -69,7 +70,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
         yearlyButton.alpha = 0
         lineChart.alpha = 0
         lineChart.backgroundColor = UIColor.clearColor()
-        lineChart.noDataText = "Struggling to connect to the interweb..."
+        lineChart.noDataText = "Loading data..."
         
     }
     
@@ -140,8 +141,11 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     }
 
     @IBAction func dailyButtonTapped(sender: UIButton) {
-        setChart(time12hours, values: price12hours)
-        priceDateTime = priceDateTime12hours
+        
+        if dataLoaded {
+            setChart(time12hours, values: price12hours)
+            priceDateTime = priceDateTime12hours
+        }
         
         UIView.animateWithDuration(0.5, animations: {
             self.dailyButton.alpha = 1
@@ -154,8 +158,11 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     
     
     @IBAction func weeklyButtonTapped(sender: UIButton) {
-        setChart(time7days, values: price7days)
-        priceDateTime = priceDateTime7days
+        
+        if dataLoaded {
+            setChart(time7days, values: price7days)
+            priceDateTime = priceDateTime7days
+        }
         
         UIView.animateWithDuration(0.5, animations: {
             self.dailyButton.alpha = 0.5
@@ -168,8 +175,11 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     
     
     @IBAction func monthlyButtonTapped(sender: UIButton) {
-        setChart(time1month, values: price1month)
-        priceDateTime = priceDateTime1month
+        
+        if dataLoaded {
+            setChart(time1month, values: price1month)
+            priceDateTime = priceDateTime1month
+        }
         
         UIView.animateWithDuration(0.5, animations: {
             self.dailyButton.alpha = 0.5
@@ -182,8 +192,11 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     
     
     @IBAction func yearlyButtonTapped(sender: UIButton) {
-        setChart(time1year, values: price1year)
-        priceDateTime = priceDateTime1year
+        
+        if dataLoaded {
+            setChart(time1year, values: price1year)
+            priceDateTime = priceDateTime1year
+        }
         
         UIView.animateWithDuration(0.5, animations: {
             self.dailyButton.alpha = 0.5

@@ -11,12 +11,12 @@ import UIKit
 
 extension ETMainViewController {
     
-    func getLastxHoursPrice(numberOfHours: Int, dateDisplay: String) {
+    func getLastxHoursPrice(numberOfHours: Int, dateDisplay: String) -> ([String], [Double], [String]) {
         let lastxHours = Array(self.etherHistorialPrices.suffix(numberOfHours))
         
-        time = []
-        price = []
-        priceDateTime = []
+        var time:[String] = []
+        var price:[Double] = []
+        var priceDateTime:[String] = []
         
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.000Z"
@@ -53,16 +53,15 @@ extension ETMainViewController {
             priceDateTime.append("$\(String(format: "%.2f", priceAtTime)), \(monthSymbol) \(day), \(hour):00")
         }
         
-        setChart(time, values: price)
-        
+        return (time, price, priceDateTime)
     }
     
-    func getLastxDaysPrice(numberofDays: Int){
+    func getLastxDaysPrice(numberofDays: Int) -> ([String], [Double], [String]){
         let lastxDaysInHours = Array(self.etherHistorialPrices.suffix(numberofDays * 24))
         
-        time = []
-        price = []
-        priceDateTime = []
+        var time:[String] = []
+        var price:[Double] = []
+        var priceDateTime:[String] = []
         
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.000Z"
@@ -92,8 +91,7 @@ extension ETMainViewController {
             
         }
         
-        setChart(time, values: price)
-        
+        return (time, price, priceDateTime)
     }
     
 }

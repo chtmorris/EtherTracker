@@ -89,8 +89,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJ7-WW-gwC" customClass="LineChartView" customModule="Charts">
                                 <rect key="frame" x="20" y="107" width="560" height="342"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfQ-PS-clY">
-                                        <rect key="frame" x="395" y="325" width="150" height="12"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfQ-PS-clY">
+                                        <rect key="frame" x="395" y="338" width="150" height="0.0"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="LYk-sx-b8B"/>
                                         </constraints>

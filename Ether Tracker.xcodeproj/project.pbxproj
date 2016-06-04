@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7CD99292F7AE1D239D2CD249 /* Pods_Ether_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D83FB37294A500A66D6AB27 /* Pods_Ether_Tracker.framework */; };
+		EC6C30A81D0266E400756F2D /* ETNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6C30A71D0266E400756F2D /* ETNewsViewController.swift */; };
 		EC97A4541CE9DC9800FC0495 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC97A4531CE9DC9800FC0495 /* AppDelegate.swift */; };
 		EC97A4561CE9DC9800FC0495 /* ETMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC97A4551CE9DC9800FC0495 /* ETMainViewController.swift */; };
 		EC97A4591CE9DC9800FC0495 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC97A4571CE9DC9800FC0495 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		0D83FB37294A500A66D6AB27 /* Pods_Ether_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ether_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F48EF88F7BC07DBE7CD9B6 /* Pods-Ether Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ether Tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ether Tracker/Pods-Ether Tracker.release.xcconfig"; sourceTree = "<group>"; };
+		EC6C30A71D0266E400756F2D /* ETNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETNewsViewController.swift; sourceTree = "<group>"; };
 		EC97A4501CE9DC9800FC0495 /* Ether Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ether Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC97A4531CE9DC9800FC0495 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC97A4551CE9DC9800FC0495 /* ETMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETMainViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EC6C30A91D026AC700756F2D /* MainVC */ = {
+			isa = PBXGroup;
+			children = (
+				EC97A4551CE9DC9800FC0495 /* ETMainViewController.swift */,
+				ECB4027C1CF700FD00119326 /* ETMainVC+DataRequest.swift */,
+				ECB4027A1CF7002000119326 /* ETMainVC+ChartData.swift */,
+				ECB402781CF6A9F200119326 /* ETMainVC+ChartFormat.swift */,
+			);
+			name = MainVC;
+			sourceTree = "<group>";
+		};
+		EC6C30AA1D026ADC00756F2D /* NewsVC */ = {
+			isa = PBXGroup;
+			children = (
+				EC6C30A71D0266E400756F2D /* ETNewsViewController.swift */,
+			);
+			name = NewsVC;
+			sourceTree = "<group>";
+		};
 		EC97A4471CE9DC9800FC0495 = {
 			isa = PBXGroup;
 			children = (
@@ -112,10 +133,8 @@
 		ECAF661B1CED7FF8001D75B3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				EC97A4551CE9DC9800FC0495 /* ETMainViewController.swift */,
-				ECB4027C1CF700FD00119326 /* ETMainVC+DataRequest.swift */,
-				ECB4027A1CF7002000119326 /* ETMainVC+ChartData.swift */,
-				ECB402781CF6A9F200119326 /* ETMainVC+ChartFormat.swift */,
+				EC6C30A91D026AC700756F2D /* MainVC */,
+				EC6C30AA1D026ADC00756F2D /* NewsVC */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -264,6 +283,7 @@
 				EC97A46A1CEB109A00FC0495 /* ETEtherCurrentPrice.swift in Sources */,
 				ECAF661E1CED964C001D75B3 /* ETEtherHistoricalPrice.swift in Sources */,
 				ECAF661A1CED6AF9001D75B3 /* ETCurrency.swift in Sources */,
+				EC6C30A81D0266E400756F2D /* ETNewsViewController.swift in Sources */,
 				EC97A4541CE9DC9800FC0495 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

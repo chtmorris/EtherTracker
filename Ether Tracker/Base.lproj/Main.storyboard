@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="C5z-Wj-BJF">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -115,11 +115,23 @@
                                     <action selector="etherLogoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bvk-w0-ihS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndy-SC-HWh">
+                                <rect key="frame" x="540" y="526" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="ekT-Pc-Gze"/>
+                                    <constraint firstAttribute="height" constant="30" id="pa4-eN-pzw"/>
+                                </constraints>
+                                <state key="normal" image="News icon"/>
+                                <connections>
+                                    <segue destination="Jra-63-ajC" kind="show" id="gZN-fE-GTa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="cZp-Vw-mGB" firstAttribute="top" secondItem="Z66-pr-xWp" secondAttribute="bottom" constant="-81" id="0N7-Td-sNk"/>
                             <constraint firstAttribute="leadingMargin" secondItem="OJ7-WW-gwC" secondAttribute="leading" id="0lZ-lQ-xdr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ndy-SC-HWh" secondAttribute="bottom" constant="44" id="24X-PS-2xp"/>
                             <constraint firstItem="cZp-Vw-mGB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-5" id="88C-O3-wfm"/>
                             <constraint firstItem="fRX-vW-g03" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DvM-lJ-NBb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OJ7-WW-gwC" secondAttribute="trailing" id="EK6-HS-XZC"/>
@@ -127,6 +139,7 @@
                             <constraint firstItem="c1D-fc-0fa" firstAttribute="top" secondItem="cZp-Vw-mGB" secondAttribute="bottom" constant="-140" id="FVR-9p-kmx"/>
                             <constraint firstItem="cZp-Vw-mGB" firstAttribute="top" secondItem="316-eA-57y" secondAttribute="bottom" constant="-81" id="JEZ-U2-Ash"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cZp-Vw-mGB" secondAttribute="trailing" constant="-20" id="JSQ-wr-BgA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ndy-SC-HWh" secondAttribute="trailing" constant="10" id="Kzn-aW-esj"/>
                             <constraint firstItem="c1D-fc-0fa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MUe-yw-1JZ"/>
                             <constraint firstItem="c1D-fc-0fa" firstAttribute="top" secondItem="OJ7-WW-gwC" secondAttribute="bottom" constant="16" id="NM7-PF-5jo"/>
                             <constraint firstItem="AQF-8T-7ne" firstAttribute="leading" secondItem="aux-xf-40m" secondAttribute="trailing" id="RW7-yl-qpH"/>
@@ -149,6 +162,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="BID-IJ-u7C"/>
                     <connections>
                         <outlet property="dailyButton" destination="Z66-pr-xWp" id="1no-YC-kAh"/>
                         <outlet property="etherLogo" destination="CTt-GY-ANu" id="zAE-Si-dya"/>
@@ -156,6 +170,7 @@
                         <outlet property="etherPriceLabel" destination="c1D-fc-0fa" id="PJL-3p-Dxu"/>
                         <outlet property="lineChart" destination="OJ7-WW-gwC" id="yBM-cU-PnR"/>
                         <outlet property="monthlyButton" destination="AQF-8T-7ne" id="ZLJ-Sr-e4r"/>
+                        <outlet property="newsButton" destination="Ndy-SC-HWh" id="dpr-uc-CGJ"/>
                         <outlet property="priceDateTimeLabel" destination="sfQ-PS-clY" id="sL2-3i-GLT"/>
                         <outlet property="weeklyButton" destination="aux-xf-40m" id="jRg-Yi-LXg"/>
                         <outlet property="yearlyButton" destination="316-eA-57y" id="iLc-2f-fNb"/>
@@ -163,11 +178,72 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1229" y="452"/>
+        </scene>
+        <!--News View Controller-->
+        <scene sceneID="FrD-kI-NpJ">
+            <objects>
+                <viewController id="Jra-63-ajC" customClass="ETNewsViewController" customModule="Ether_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7y0-sV-HCE"/>
+                        <viewControllerLayoutGuide type="bottom" id="w0r-Fj-V34"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="euL-I2-ajY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-dark" translatesAutoresizingMaskIntoConstraints="NO" id="1JQ-gY-6uK">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2m-X1-Pap">
+                                <rect key="frame" x="548" y="32" width="19" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="Bl2-PW-28S"/>
+                                    <constraint firstAttribute="width" constant="19" id="fCi-F2-KLh"/>
+                                </constraints>
+                                <state key="normal" image="CloseX"/>
+                                <connections>
+                                    <action selector="closeXButtonTapped:" destination="Jra-63-ajC" eventType="touchUpInside" id="UZX-vN-4bG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="e2m-X1-Pap" secondAttribute="trailing" constant="13" id="AzD-vv-tGW"/>
+                            <constraint firstItem="1JQ-gY-6uK" firstAttribute="top" secondItem="euL-I2-ajY" secondAttribute="topMargin" id="Bcc-ue-kXJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1JQ-gY-6uK" secondAttribute="trailing" constant="-20" id="C9x-q8-c71"/>
+                            <constraint firstItem="w0r-Fj-V34" firstAttribute="top" secondItem="1JQ-gY-6uK" secondAttribute="bottom" id="RDl-Ob-DYU"/>
+                            <constraint firstItem="e2m-X1-Pap" firstAttribute="top" secondItem="7y0-sV-HCE" secondAttribute="bottom" constant="12" id="Vui-n6-k9S"/>
+                            <constraint firstItem="1JQ-gY-6uK" firstAttribute="leading" secondItem="euL-I2-ajY" secondAttribute="leadingMargin" constant="-20" id="u3o-bA-SLE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fwV-0O-fdX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2001" y="452"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JIJ-SH-BSN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="C5z-Wj-BJF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mth-2l-hdf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dnS-t5-zM5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a53-LY-mPZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="417" y="452"/>
         </scene>
     </scenes>
     <resources>
+        <image name="CloseX" width="19" height="20"/>
         <image name="Ether logo" width="139" height="223"/>
+        <image name="News icon" width="29" height="24"/>
         <image name="background-dark" width="375" height="667"/>
     </resources>
 </document>

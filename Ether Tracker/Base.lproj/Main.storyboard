@@ -196,7 +196,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2m-X1-Pap">
-                                <rect key="frame" x="548" y="32" width="19" height="22"/>
+                                <rect key="frame" x="561" y="35" width="19" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="Bl2-PW-28S"/>
                                     <constraint firstAttribute="width" constant="19" id="fCi-F2-KLh"/>
@@ -206,20 +206,96 @@
                                     <action selector="closeXButtonTapped:" destination="Jra-63-ajC" eventType="touchUpInside" id="UZX-vN-4bG"/>
                                 </connections>
                             </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9GL-tK-7DV">
+                                <rect key="frame" x="20" y="57" width="560" height="515"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wx4-5G-S0u">
+                                    <size key="itemSize" width="534.5" height="115"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewsCell" id="Zih-wd-pQD">
+                                        <rect key="frame" x="13" y="0.0" width="534.5" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="534.5" height="115"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All the cool kids are doing Ethereum now" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VvU-UX-dkT" userLabel="I">
+                                                    <rect key="frame" x="8" y="13" width="498.5" height="64"/>
+                                                    <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="20"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TechCrunch" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yE-oU-5wF" userLabel="I">
+                                                    <rect key="frame" x="8" y="73" width="352" height="29"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="29" id="pZW-Q1-zCD"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="September 23, 2016" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPI-SI-6zt" userLabel="I">
+                                                    <rect key="frame" x="380" y="73" width="146.5" height="29"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="29" id="EyJ-5U-p0P"/>
+                                                        <constraint firstAttribute="width" constant="146.5" id="qWl-Ge-zdM"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteLine" translatesAutoresizingMaskIntoConstraints="NO" id="PD5-fN-jba">
+                                                    <rect key="frame" x="8" y="98" width="518.5" height="9"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="9" id="qqg-98-aDa"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="TPI-SI-6zt" firstAttribute="bottom" secondItem="Zih-wd-pQD" secondAttribute="bottomMargin" constant="-5" id="8Lt-3a-5QI"/>
+                                            <constraint firstItem="PD5-fN-jba" firstAttribute="leading" secondItem="Zih-wd-pQD" secondAttribute="leadingMargin" id="LXN-Xb-0fM"/>
+                                            <constraint firstItem="TPI-SI-6zt" firstAttribute="trailing" secondItem="Zih-wd-pQD" secondAttribute="trailingMargin" id="QCO-19-zSB"/>
+                                            <constraint firstItem="PD5-fN-jba" firstAttribute="trailing" secondItem="Zih-wd-pQD" secondAttribute="trailingMargin" id="VEy-3i-8ky"/>
+                                            <constraint firstItem="PD5-fN-jba" firstAttribute="bottom" secondItem="Zih-wd-pQD" secondAttribute="bottomMargin" id="cu0-fj-mdm"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="VvU-UX-dkT" secondAttribute="trailing" constant="20" id="g8h-qA-Lrq"/>
+                                            <constraint firstItem="0yE-oU-5wF" firstAttribute="bottom" secondItem="Zih-wd-pQD" secondAttribute="bottomMargin" constant="-5" id="hqa-VH-X0k"/>
+                                            <constraint firstItem="VvU-UX-dkT" firstAttribute="top" secondItem="Zih-wd-pQD" secondAttribute="topMargin" constant="5" id="i7u-vA-cyb"/>
+                                            <constraint firstItem="TPI-SI-6zt" firstAttribute="leading" secondItem="0yE-oU-5wF" secondAttribute="trailing" constant="20" id="lXa-mA-hLO"/>
+                                            <constraint firstItem="VvU-UX-dkT" firstAttribute="leading" secondItem="Zih-wd-pQD" secondAttribute="leadingMargin" id="oU0-W8-pbw"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="VvU-UX-dkT" secondAttribute="bottom" constant="30" id="oeV-XY-PXZ"/>
+                                            <constraint firstItem="0yE-oU-5wF" firstAttribute="leading" secondItem="Zih-wd-pQD" secondAttribute="leadingMargin" id="vO2-Lc-tl3"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="e2m-X1-Pap" secondAttribute="trailing" constant="13" id="AzD-vv-tGW"/>
+                            <constraint firstItem="w0r-Fj-V34" firstAttribute="top" secondItem="9GL-tK-7DV" secondAttribute="bottom" constant="28" id="Ano-17-FTF"/>
+                            <constraint firstItem="9GL-tK-7DV" firstAttribute="top" secondItem="e2m-X1-Pap" secondAttribute="bottom" id="Aqz-MJ-Jqe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="e2m-X1-Pap" secondAttribute="trailing" id="AzD-vv-tGW"/>
                             <constraint firstItem="1JQ-gY-6uK" firstAttribute="top" secondItem="euL-I2-ajY" secondAttribute="topMargin" id="Bcc-ue-kXJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1JQ-gY-6uK" secondAttribute="trailing" constant="-20" id="C9x-q8-c71"/>
+                            <constraint firstItem="9GL-tK-7DV" firstAttribute="leading" secondItem="euL-I2-ajY" secondAttribute="leadingMargin" id="PCH-Lo-N5d"/>
                             <constraint firstItem="w0r-Fj-V34" firstAttribute="top" secondItem="1JQ-gY-6uK" secondAttribute="bottom" id="RDl-Ob-DYU"/>
-                            <constraint firstItem="e2m-X1-Pap" firstAttribute="top" secondItem="7y0-sV-HCE" secondAttribute="bottom" constant="12" id="Vui-n6-k9S"/>
+                            <constraint firstItem="e2m-X1-Pap" firstAttribute="top" secondItem="7y0-sV-HCE" secondAttribute="bottom" constant="15" id="Vui-n6-k9S"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9GL-tK-7DV" secondAttribute="trailing" id="fQw-cl-d3b"/>
                             <constraint firstItem="1JQ-gY-6uK" firstAttribute="leading" secondItem="euL-I2-ajY" secondAttribute="leadingMargin" constant="-20" id="u3o-bA-SLE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="newsCollectionView" destination="9GL-tK-7DV" id="iZ1-60-GHo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwV-0O-fdX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2001" y="452"/>
+            <point key="canvasLocation" x="1993" y="452"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JIJ-SH-BSN">
@@ -244,6 +320,7 @@
         <image name="CloseX" width="19" height="20"/>
         <image name="Ether logo" width="139" height="223"/>
         <image name="News icon" width="29" height="24"/>
+        <image name="WhiteLine" width="304" height="1"/>
         <image name="background-dark" width="375" height="667"/>
     </resources>
 </document>

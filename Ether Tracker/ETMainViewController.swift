@@ -25,6 +25,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var lineChart: LineChartView!
     @IBOutlet weak var etherLogoYCoordinates: NSLayoutConstraint!
     @IBOutlet weak var priceDateTimeLabel: UILabel!
+    @IBOutlet weak var newsButton: UIButton!
     
     var etherPrices: EtherInfo!
     var etherHistorialPrices: [EtherHistoricalPrice]!
@@ -69,6 +70,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
         monthlyButton.alpha = 0
         yearlyButton.alpha = 0
         lineChart.alpha = 0
+        newsButton.alpha = 0
         lineChart.backgroundColor = UIColor.clearColor()
         lineChart.noDataText = "Loading data..."
         
@@ -92,6 +94,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
                     self.weeklyButton.alpha = 0.5
                     self.monthlyButton.alpha = 1
                     self.yearlyButton.alpha = 0.5
+                    self.newsButton.alpha = 0.5
                     self.lineChart.alpha = 1
                 })
         })

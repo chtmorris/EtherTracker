@@ -170,6 +170,7 @@
                         <outlet property="etherPriceLabel" destination="c1D-fc-0fa" id="PJL-3p-Dxu"/>
                         <outlet property="lineChart" destination="OJ7-WW-gwC" id="yBM-cU-PnR"/>
                         <outlet property="monthlyButton" destination="AQF-8T-7ne" id="ZLJ-Sr-e4r"/>
+                        <outlet property="newsButton" destination="Ndy-SC-HWh" id="dpr-uc-CGJ"/>
                         <outlet property="priceDateTimeLabel" destination="sfQ-PS-clY" id="sL2-3i-GLT"/>
                         <outlet property="weeklyButton" destination="aux-xf-40m" id="jRg-Yi-LXg"/>
                         <outlet property="yearlyButton" destination="316-eA-57y" id="iLc-2f-fNb"/>
@@ -191,6 +192,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-dark" translatesAutoresizingMaskIntoConstraints="NO" id="1JQ-gY-6uK">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2m-X1-Pap">
                                 <rect key="frame" x="548" y="32" width="19" height="22"/>
                                 <constraints>
@@ -203,10 +207,13 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.098039215690000001" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="e2m-X1-Pap" secondAttribute="trailing" constant="13" id="AzD-vv-tGW"/>
+                            <constraint firstItem="1JQ-gY-6uK" firstAttribute="top" secondItem="euL-I2-ajY" secondAttribute="topMargin" id="Bcc-ue-kXJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1JQ-gY-6uK" secondAttribute="trailing" constant="-20" id="C9x-q8-c71"/>
+                            <constraint firstItem="w0r-Fj-V34" firstAttribute="top" secondItem="1JQ-gY-6uK" secondAttribute="bottom" id="RDl-Ob-DYU"/>
                             <constraint firstItem="e2m-X1-Pap" firstAttribute="top" secondItem="7y0-sV-HCE" secondAttribute="bottom" constant="12" id="Vui-n6-k9S"/>
+                            <constraint firstItem="1JQ-gY-6uK" firstAttribute="leading" secondItem="euL-I2-ajY" secondAttribute="leadingMargin" constant="-20" id="u3o-bA-SLE"/>
                         </constraints>
                     </view>
                 </viewController>

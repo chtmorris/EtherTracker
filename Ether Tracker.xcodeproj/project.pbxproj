@@ -77,6 +77,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EC6C30A91D026AC700756F2D /* MainVC */ = {
+			isa = PBXGroup;
+			children = (
+				EC97A4551CE9DC9800FC0495 /* ETMainViewController.swift */,
+				ECB4027C1CF700FD00119326 /* ETMainVC+DataRequest.swift */,
+				ECB4027A1CF7002000119326 /* ETMainVC+ChartData.swift */,
+				ECB402781CF6A9F200119326 /* ETMainVC+ChartFormat.swift */,
+			);
+			name = MainVC;
+			sourceTree = "<group>";
+		};
+		EC6C30AA1D026ADC00756F2D /* NewsVC */ = {
+			isa = PBXGroup;
+			children = (
+				EC6C30A71D0266E400756F2D /* ETNewsViewController.swift */,
+			);
+			name = NewsVC;
+			sourceTree = "<group>";
+		};
 		EC97A4471CE9DC9800FC0495 = {
 			isa = PBXGroup;
 			children = (
@@ -114,11 +133,8 @@
 		ECAF661B1CED7FF8001D75B3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				EC97A4551CE9DC9800FC0495 /* ETMainViewController.swift */,
-				ECB4027C1CF700FD00119326 /* ETMainVC+DataRequest.swift */,
-				ECB4027A1CF7002000119326 /* ETMainVC+ChartData.swift */,
-				ECB402781CF6A9F200119326 /* ETMainVC+ChartFormat.swift */,
-				EC6C30A71D0266E400756F2D /* ETNewsViewController.swift */,
+				EC6C30A91D026AC700756F2D /* MainVC */,
+				EC6C30AA1D026ADC00756F2D /* NewsVC */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";

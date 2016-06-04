@@ -115,21 +115,15 @@
                                     <action selector="etherLogoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bvk-w0-ihS"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="News icon" translatesAutoresizingMaskIntoConstraints="NO" id="Osq-AZ-sma">
-                                <rect key="frame" x="540" y="514" width="30" height="54"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="RuI-He-AT9"/>
-                                    <constraint firstAttribute="height" constant="54" id="wSZ-b7-pvf"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndy-SC-HWh">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndy-SC-HWh">
                                 <rect key="frame" x="540" y="526" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="ekT-Pc-Gze"/>
                                     <constraint firstAttribute="height" constant="30" id="pa4-eN-pzw"/>
                                 </constraints>
+                                <state key="normal" image="News icon"/>
                                 <connections>
-                                    <segue destination="Jra-63-ajC" kind="show" id="khA-Tr-Wxg"/>
+                                    <segue destination="Jra-63-ajC" kind="show" id="gZN-fE-GTa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -146,11 +140,9 @@
                             <constraint firstItem="cZp-Vw-mGB" firstAttribute="top" secondItem="316-eA-57y" secondAttribute="bottom" constant="-81" id="JEZ-U2-Ash"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cZp-Vw-mGB" secondAttribute="trailing" constant="-20" id="JSQ-wr-BgA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ndy-SC-HWh" secondAttribute="trailing" constant="10" id="Kzn-aW-esj"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Osq-AZ-sma" secondAttribute="bottom" constant="32" id="LcQ-sa-Mph"/>
                             <constraint firstItem="c1D-fc-0fa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MUe-yw-1JZ"/>
                             <constraint firstItem="c1D-fc-0fa" firstAttribute="top" secondItem="OJ7-WW-gwC" secondAttribute="bottom" constant="16" id="NM7-PF-5jo"/>
                             <constraint firstItem="AQF-8T-7ne" firstAttribute="leading" secondItem="aux-xf-40m" secondAttribute="trailing" id="RW7-yl-qpH"/>
-                            <constraint firstItem="Osq-AZ-sma" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="-10" id="TW8-ca-eCi"/>
                             <constraint firstItem="cZp-Vw-mGB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="TWS-LF-9yo"/>
                             <constraint firstItem="316-eA-57y" firstAttribute="leading" secondItem="AQF-8T-7ne" secondAttribute="trailing" id="fR4-VL-0VT"/>
                             <constraint firstItem="aux-xf-40m" firstAttribute="leading" secondItem="Z66-pr-xWp" secondAttribute="trailing" id="hLW-gv-KFE"/>
@@ -187,10 +179,10 @@
             </objects>
             <point key="canvasLocation" x="1229" y="452"/>
         </scene>
-        <!--View Controller-->
+        <!--News View Controller-->
         <scene sceneID="FrD-kI-NpJ">
             <objects>
-                <viewController id="Jra-63-ajC" sceneMemberID="viewController">
+                <viewController id="Jra-63-ajC" customClass="ETNewsViewController" customModule="Ether_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7y0-sV-HCE"/>
                         <viewControllerLayoutGuide type="bottom" id="w0r-Fj-V34"/>
@@ -206,6 +198,9 @@
                                     <constraint firstAttribute="width" constant="19" id="fCi-F2-KLh"/>
                                 </constraints>
                                 <state key="normal" image="CloseX"/>
+                                <connections>
+                                    <action selector="closeXButtonTapped:" destination="Jra-63-ajC" eventType="touchUpInside" id="UZX-vN-4bG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.098039215690000001" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>

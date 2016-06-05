@@ -27,6 +27,8 @@ class ETNewsViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         newsCollectionView.delegate = self
         newsCollectionView.dataSource = self
+        
+        getEtherNews()
 
         // Do any additional setup after loading the view.
     }
@@ -62,5 +64,60 @@ class ETNewsViewController: UIViewController, UICollectionViewDelegate, UICollec
     @IBAction func closeXButtonTapped(sender: UIButton) {
         navigationController?.popViewControllerAnimated(true)
     }
+    
+    
+    func getEtherNews() {
+        
+        ETDataManager.getEtherNewsFromUrlWithSuccess { (data) -> Void in
+//            var jsonpString: String = String(data: data, encoding: NSUTF8StringEncoding)!
+//            print(jsonpString)
+//            jsonpString = jsonpString.stringByReplacingOccurrencesOfString("\"", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
+//            
+//            let newStartIndex = jsonpString.startIndex.advancedBy(18)
+//            let newEndIndex = jsonpString.endIndex.advancedBy(-2)
+//            
+//            let jsonString = jsonpString.substringWithRange(newStartIndex..<newEndIndex)
+//            
+//            print(jsonString)
+            
+            
+            var json: [String: AnyObject]!
+            
+                        
+            do {
+                json = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions()) as? [String: AnyObject]
+            } catch {
+                print(error)
+            }
+            
+            print(json)
+//
+//            guard let etherData = EtherInfo(json: json) else {
+//                print("Error initializing object")
+//                return
+//            }
+//            
+//            guard let etherPrice = etherData.price else {
+//                print("No such item")
+//                return
+//            }
+//            
+//            self.etherPrices = etherData
+//            
+//            let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
+//            dispatch_async(dispatch_get_global_queue(priority, 0)) {
+//                // do some task
+//                let priceToBeDisplayed = String(format: "%.3f", etherPrice.btc!)
+//                
+//                dispatch_async(dispatch_get_main_queue()) {
+//                    // update some UI
+//                    self.etherPriceLabel.text = "1 eth = \(priceToBeDisplayed) BTC"
+//                }
+//            }
+            
+        }
+        
+    }
+
 
 }

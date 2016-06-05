@@ -60,7 +60,7 @@ extension ETMainViewController {
             } catch {
                 print(error)
             }
-            
+                        
             guard let etherHistoricalData = EtherHistoricalData(json: json) else {
                 print("Error initializing object")
                 return

@@ -135,7 +135,6 @@
                             <constraint firstItem="cZp-Vw-mGB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-5" id="88C-O3-wfm"/>
                             <constraint firstItem="fRX-vW-g03" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DvM-lJ-NBb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OJ7-WW-gwC" secondAttribute="trailing" id="EK6-HS-XZC"/>
-                            <constraint firstItem="316-eA-57y" firstAttribute="trailing" secondItem="cZp-Vw-mGB" secondAttribute="trailing" id="F65-z1-6Jb"/>
                             <constraint firstItem="c1D-fc-0fa" firstAttribute="top" secondItem="cZp-Vw-mGB" secondAttribute="bottom" constant="-140" id="FVR-9p-kmx"/>
                             <constraint firstItem="cZp-Vw-mGB" firstAttribute="top" secondItem="316-eA-57y" secondAttribute="bottom" constant="-81" id="JEZ-U2-Ash"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cZp-Vw-mGB" secondAttribute="trailing" constant="-20" id="JSQ-wr-BgA"/>
@@ -156,11 +155,6 @@
                             <constraint firstItem="CTt-GY-ANu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uJe-WS-I5u"/>
                             <constraint firstItem="fRX-vW-g03" firstAttribute="top" secondItem="cZp-Vw-mGB" secondAttribute="bottom" constant="-100" id="vx3-6k-g92"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="F65-z1-6Jb"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="BID-IJ-u7C"/>
                     <connections>
@@ -193,7 +187,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-dark" translatesAutoresizingMaskIntoConstraints="NO" id="1JQ-gY-6uK">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="605"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2m-X1-Pap">
                                 <rect key="frame" x="561" y="35" width="19" height="22"/>
@@ -216,7 +210,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewsCell" id="Zih-wd-pQD">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewsCell" id="Zih-wd-pQD" customClass="ETNewsArticleCell" customModule="Ether_Tracker" customModuleProvider="target">
                                         <rect key="frame" x="13" y="0.0" width="534.5" height="115"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -272,6 +266,11 @@
                                             <constraint firstAttribute="bottomMargin" secondItem="VvU-UX-dkT" secondAttribute="bottom" constant="30" id="oeV-XY-PXZ"/>
                                             <constraint firstItem="0yE-oU-5wF" firstAttribute="leading" secondItem="Zih-wd-pQD" secondAttribute="leadingMargin" id="vO2-Lc-tl3"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="TPI-SI-6zt" id="GvI-XF-Sax"/>
+                                            <outlet property="publicationLabel" destination="0yE-oU-5wF" id="Sjj-Vw-sTc"/>
+                                            <outlet property="titleLabel" destination="VvU-UX-dkT" id="CbC-k7-hC7"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -283,14 +282,14 @@
                             <constraint firstItem="1JQ-gY-6uK" firstAttribute="top" secondItem="euL-I2-ajY" secondAttribute="topMargin" id="Bcc-ue-kXJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1JQ-gY-6uK" secondAttribute="trailing" constant="-20" id="C9x-q8-c71"/>
                             <constraint firstItem="9GL-tK-7DV" firstAttribute="leading" secondItem="euL-I2-ajY" secondAttribute="leadingMargin" id="PCH-Lo-N5d"/>
-                            <constraint firstItem="w0r-Fj-V34" firstAttribute="top" secondItem="1JQ-gY-6uK" secondAttribute="bottom" id="RDl-Ob-DYU"/>
+                            <constraint firstItem="w0r-Fj-V34" firstAttribute="top" secondItem="1JQ-gY-6uK" secondAttribute="bottom" constant="-5" id="RDl-Ob-DYU"/>
                             <constraint firstItem="e2m-X1-Pap" firstAttribute="top" secondItem="7y0-sV-HCE" secondAttribute="bottom" constant="15" id="Vui-n6-k9S"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9GL-tK-7DV" secondAttribute="trailing" id="fQw-cl-d3b"/>
                             <constraint firstItem="1JQ-gY-6uK" firstAttribute="leading" secondItem="euL-I2-ajY" secondAttribute="leadingMargin" constant="-20" id="u3o-bA-SLE"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="newsCollectionView" destination="9GL-tK-7DV" id="iZ1-60-GHo"/>
+                        <outlet property="collectionView" destination="9GL-tK-7DV" id="Eui-XD-ETB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwV-0O-fdX" userLabel="First Responder" sceneMemberID="firstResponder"/>

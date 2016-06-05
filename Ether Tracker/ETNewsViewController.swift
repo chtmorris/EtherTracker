@@ -15,7 +15,9 @@ class ETNewsViewController: UIViewController, UICollectionViewDelegate, UICollec
     // MARK: - PROPERTIES
     // ==================
     
-    @IBOutlet weak var newsCollectionView: UICollectionView!
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    var etherNews: [EtherNewsFeedArticles]! = []
     
     
     // =================
@@ -25,8 +27,8 @@ class ETNewsViewController: UIViewController, UICollectionViewDelegate, UICollec
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        newsCollectionView.delegate = self
-        newsCollectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.dataSource = self
         
         getEtherNews()
 
@@ -43,13 +45,19 @@ class ETNewsViewController: UIViewController, UICollectionViewDelegate, UICollec
     // ======================
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return etherNews.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("NewsCell", forIndexPath: indexPath)
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("NewsCell", forIndexPath: indexPath) as? ETNewsArticleCell
         
-        return cell
+        cell?.configure(
+            title: etherNews[indexPath.row].title!,
+            publication: etherNews[indexPath.row].publication!,
+            date: etherNews[indexPath.row].title!
+        )
+
+        return cell!
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
@@ -69,17 +77,6 @@ class ETNewsViewController: UIViewController, UICollectionViewDelegate, UICollec
     func getEtherNews() {
         
         ETDataManager.getEtherNewsFromUrlWithSuccess { (data) -> Void in
-//            var jsonpString: String = String(data: data, encoding: NSUTF8StringEncoding)!
-//            print(jsonpString)
-//            jsonpString = jsonpString.stringByReplacingOccurrencesOfString("\"", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
-//            
-//            let newStartIndex = jsonpString.startIndex.advancedBy(18)
-//            let newEndIndex = jsonpString.endIndex.advancedBy(-2)
-//            
-//            let jsonString = jsonpString.substringWithRange(newStartIndex..<newEndIndex)
-//            
-//            print(jsonString)
-            
             
             var json: [String: AnyObject]!
             
@@ -90,30 +87,30 @@ class ETNewsViewController: UIViewController, UICollectionViewDelegate, UICollec
                 print(error)
             }
             
-            print(json)
-//
-//            guard let etherData = EtherInfo(json: json) else {
-//                print("Error initializing object")
-//                return
-//            }
-//            
-//            guard let etherPrice = etherData.price else {
-//                print("No such item")
-//                return
-//            }
-//            
-//            self.etherPrices = etherData
-//            
-//            let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
-//            dispatch_async(dispatch_get_global_queue(priority, 0)) {
-//                // do some task
+            guard let etherNews = EtherNewsFeed(json: json) else {
+                print("Error initializing object")
+                return
+            }
+            
+            guard let newsFeed = etherNews.newsFeed else {
+                print("No such item")
+                return
+            }
+            
+//            print(newsFeed[0].publication!)
+            
+            self.etherNews = newsFeed
+            
+            let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
+            dispatch_async(dispatch_get_global_queue(priority, 0)) {
+                // do some task
 //                let priceToBeDisplayed = String(format: "%.3f", etherPrice.btc!)
-//                
-//                dispatch_async(dispatch_get_main_queue()) {
-//                    // update some UI
-//                    self.etherPriceLabel.text = "1 eth = \(priceToBeDisplayed) BTC"
-//                }
-//            }
+                
+                dispatch_async(dispatch_get_main_queue()) {
+                    // update some UI
+                    self.collectionView.reloadData()
+                }
+            }
             
         }
         

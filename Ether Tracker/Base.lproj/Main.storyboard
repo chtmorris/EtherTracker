@@ -187,7 +187,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-dark" translatesAutoresizingMaskIntoConstraints="NO" id="1JQ-gY-6uK">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="605"/>
+                                <rect key="frame" x="0.0" y="-5" width="600" height="610"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2m-X1-Pap">
                                 <rect key="frame" x="561" y="35" width="19" height="22"/>
@@ -211,19 +211,19 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewsCell" id="Zih-wd-pQD" customClass="ETNewsArticleCell" customModule="Ether_Tracker" customModuleProvider="target">
-                                        <rect key="frame" x="13" y="0.0" width="534.5" height="115"/>
+                                        <rect key="frame" x="13" y="0.0" width="535" height="115"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="534.5" height="115"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="535" height="115"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All the cool kids are doing Ethereum now" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VvU-UX-dkT" userLabel="I">
-                                                    <rect key="frame" x="8" y="13" width="498.5" height="64"/>
+                                                    <rect key="frame" x="8" y="13" width="499" height="64"/>
                                                     <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="20"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TechCrunch" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yE-oU-5wF" userLabel="I">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TechCrunch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yE-oU-5wF" userLabel="I">
                                                     <rect key="frame" x="8" y="73" width="352" height="29"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="29" id="pZW-Q1-zCD"/>
@@ -232,8 +232,8 @@
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="September 23, 2016" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPI-SI-6zt" userLabel="I">
-                                                    <rect key="frame" x="380" y="73" width="146.5" height="29"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="September 23, 2016" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPI-SI-6zt" userLabel="I">
+                                                    <rect key="frame" x="380" y="73" width="147" height="29"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="29" id="EyJ-5U-p0P"/>
                                                         <constraint firstAttribute="width" constant="146.5" id="qWl-Ge-zdM"/>
@@ -243,7 +243,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteLine" translatesAutoresizingMaskIntoConstraints="NO" id="PD5-fN-jba">
-                                                    <rect key="frame" x="8" y="98" width="518.5" height="9"/>
+                                                    <rect key="frame" x="8" y="98" width="519" height="9"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="9" id="qqg-98-aDa"/>
                                                     </constraints>
@@ -279,7 +279,7 @@
                             <constraint firstItem="w0r-Fj-V34" firstAttribute="top" secondItem="9GL-tK-7DV" secondAttribute="bottom" constant="28" id="Ano-17-FTF"/>
                             <constraint firstItem="9GL-tK-7DV" firstAttribute="top" secondItem="e2m-X1-Pap" secondAttribute="bottom" id="Aqz-MJ-Jqe"/>
                             <constraint firstAttribute="trailingMargin" secondItem="e2m-X1-Pap" secondAttribute="trailing" id="AzD-vv-tGW"/>
-                            <constraint firstItem="1JQ-gY-6uK" firstAttribute="top" secondItem="euL-I2-ajY" secondAttribute="topMargin" id="Bcc-ue-kXJ"/>
+                            <constraint firstItem="1JQ-gY-6uK" firstAttribute="top" secondItem="euL-I2-ajY" secondAttribute="topMargin" constant="-5" id="Bcc-ue-kXJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1JQ-gY-6uK" secondAttribute="trailing" constant="-20" id="C9x-q8-c71"/>
                             <constraint firstItem="9GL-tK-7DV" firstAttribute="leading" secondItem="euL-I2-ajY" secondAttribute="leadingMargin" id="PCH-Lo-N5d"/>
                             <constraint firstItem="w0r-Fj-V34" firstAttribute="top" secondItem="1JQ-gY-6uK" secondAttribute="bottom" constant="-5" id="RDl-Ob-DYU"/>

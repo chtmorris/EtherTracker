@@ -24,10 +24,14 @@ struct EtherNewsFeedArticles: Decodable {
     
     let title: String?
     let publication: String?
+    let date: String?
+    let link: String?
     
     // MARK: - Deserialization
     init?(json: JSON) {
         self.title = "title" <~~ json
         self.publication = "publication" <~~ json
+        self.date = "date" <~~ json
+        self.link = "link" <~~ json
     }
 }

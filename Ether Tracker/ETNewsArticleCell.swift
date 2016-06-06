@@ -13,11 +13,13 @@ class ETNewsArticleCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var publicationLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
+    var urlLink: String!
     
-    func configure(title title: String, publication: String, date: String) {
+    func configure(title title: String, publication: String, date: String, link: String) {
         titleLabel.text = title
         publicationLabel.text = publication
         dateLabel.text = date
+        urlLink = link
     }
 
 }

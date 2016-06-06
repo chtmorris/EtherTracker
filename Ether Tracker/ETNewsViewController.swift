@@ -18,6 +18,7 @@ class ETNewsViewController: UIViewController, UICollectionViewDelegate, UICollec
     @IBOutlet weak var collectionView: UICollectionView!
     
     var etherNews: [EtherNewsFeedArticles]! = []
+    var websiteURL: String!
     
     
     // =================
@@ -54,7 +55,8 @@ class ETNewsViewController: UIViewController, UICollectionViewDelegate, UICollec
         cell?.configure(
             title: etherNews[indexPath.row].title!,
             publication: etherNews[indexPath.row].publication!,
-            date: etherNews[indexPath.row].title!
+            date: etherNews[indexPath.row].date!,
+            link: etherNews[indexPath.row].link!
         )
 
         return cell!
@@ -64,6 +66,20 @@ class ETNewsViewController: UIViewController, UICollectionViewDelegate, UICollec
         return CGSize(width: collectionView.bounds.width, height: 115)
     }
     
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        if let cell = collectionView.cellForItemAtIndexPath(indexPath) as? ETNewsArticleCell {
+            self.websiteURL = cell.urlLink
+            self.performSegueWithIdentifier("showWebsite", sender: self)
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if (segue.identifier == "showWebsite") {
+            let nextVC = segue.destinationViewController as! ETWebsiteViewController
+            nextVC.websiteURL = self.websiteURL
+        }
+    }
+        
     
     // ====================
     // MARK: - INTERACTIONS

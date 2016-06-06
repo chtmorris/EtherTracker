@@ -11,6 +11,7 @@
 		EC6C30A81D0266E400756F2D /* ETNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6C30A71D0266E400756F2D /* ETNewsViewController.swift */; };
 		EC6C30AC1D03B53300756F2D /* ETNewsFeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6C30AB1D03B53300756F2D /* ETNewsFeedData.swift */; };
 		EC6C30AE1D03CCCD00756F2D /* ETNewsArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6C30AD1D03CCCD00756F2D /* ETNewsArticleCell.swift */; };
+		EC6C30B01D058B5500756F2D /* ETWebsiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6C30AF1D058B5500756F2D /* ETWebsiteViewController.swift */; };
 		EC97A4541CE9DC9800FC0495 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC97A4531CE9DC9800FC0495 /* AppDelegate.swift */; };
 		EC97A4561CE9DC9800FC0495 /* ETMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC97A4551CE9DC9800FC0495 /* ETMainViewController.swift */; };
 		EC97A4591CE9DC9800FC0495 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC97A4571CE9DC9800FC0495 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		EC6C30A71D0266E400756F2D /* ETNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETNewsViewController.swift; sourceTree = "<group>"; };
 		EC6C30AB1D03B53300756F2D /* ETNewsFeedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETNewsFeedData.swift; sourceTree = "<group>"; };
 		EC6C30AD1D03CCCD00756F2D /* ETNewsArticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETNewsArticleCell.swift; sourceTree = "<group>"; };
+		EC6C30AF1D058B5500756F2D /* ETWebsiteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETWebsiteViewController.swift; sourceTree = "<group>"; };
 		EC97A4501CE9DC9800FC0495 /* Ether Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ether Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC97A4531CE9DC9800FC0495 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC97A4551CE9DC9800FC0495 /* ETMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETMainViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				EC6C30A71D0266E400756F2D /* ETNewsViewController.swift */,
 				EC6C30AD1D03CCCD00756F2D /* ETNewsArticleCell.swift */,
+				EC6C30AF1D058B5500756F2D /* ETWebsiteViewController.swift */,
 			);
 			name = NewsVC;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				EC97A4561CE9DC9800FC0495 /* ETMainViewController.swift in Sources */,
 				EC97A46C1CEB171C00FC0495 /* ETDataManager.swift in Sources */,
 				ECB4027D1CF700FD00119326 /* ETMainVC+DataRequest.swift in Sources */,
+				EC6C30B01D058B5500756F2D /* ETWebsiteViewController.swift in Sources */,
 				ECB402791CF6A9F200119326 /* ETMainVC+ChartFormat.swift in Sources */,
 				ECB4027B1CF7002000119326 /* ETMainVC+ChartData.swift in Sources */,
 				EC97A4661CE9E2CD00FC0495 /* Helpers.swift in Sources */,

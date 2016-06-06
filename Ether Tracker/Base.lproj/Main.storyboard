@@ -211,15 +211,15 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewsCell" id="Zih-wd-pQD" customClass="ETNewsArticleCell" customModule="Ether_Tracker" customModuleProvider="target">
-                                        <rect key="frame" x="13" y="0.0" width="535" height="115"/>
+                                        <rect key="frame" x="13" y="0.0" width="534.5" height="115"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="535" height="115"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="534.5" height="115"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All the cool kids are doing Ethereum now" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VvU-UX-dkT" userLabel="I">
-                                                    <rect key="frame" x="8" y="13" width="499" height="64"/>
-                                                    <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="20"/>
+                                                    <rect key="frame" x="8" y="13" width="498.5" height="64"/>
+                                                    <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="18"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -233,7 +233,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="September 23, 2016" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPI-SI-6zt" userLabel="I">
-                                                    <rect key="frame" x="380" y="73" width="147" height="29"/>
+                                                    <rect key="frame" x="380" y="73" width="146.5" height="29"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="29" id="EyJ-5U-p0P"/>
                                                         <constraint firstAttribute="width" constant="146.5" id="qWl-Ge-zdM"/>
@@ -243,7 +243,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteLine" translatesAutoresizingMaskIntoConstraints="NO" id="PD5-fN-jba">
-                                                    <rect key="frame" x="8" y="98" width="519" height="9"/>
+                                                    <rect key="frame" x="8" y="98" width="518.5" height="9"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="9" id="qqg-98-aDa"/>
                                                     </constraints>
@@ -274,6 +274,15 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sourced from EthereumZone.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7N-pA-U79">
+                                <rect key="frame" x="150" y="580" width="301" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="301" id="q1p-UK-Wzi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <constraints>
                             <constraint firstItem="w0r-Fj-V34" firstAttribute="top" secondItem="9GL-tK-7DV" secondAttribute="bottom" constant="28" id="Ano-17-FTF"/>
@@ -283,18 +292,76 @@
                             <constraint firstAttribute="trailingMargin" secondItem="1JQ-gY-6uK" secondAttribute="trailing" constant="-20" id="C9x-q8-c71"/>
                             <constraint firstItem="9GL-tK-7DV" firstAttribute="leading" secondItem="euL-I2-ajY" secondAttribute="leadingMargin" id="PCH-Lo-N5d"/>
                             <constraint firstItem="w0r-Fj-V34" firstAttribute="top" secondItem="1JQ-gY-6uK" secondAttribute="bottom" constant="-5" id="RDl-Ob-DYU"/>
+                            <constraint firstItem="w0r-Fj-V34" firstAttribute="top" secondItem="k7N-pA-U79" secondAttribute="bottom" constant="5" id="T3e-QA-sPn"/>
                             <constraint firstItem="e2m-X1-Pap" firstAttribute="top" secondItem="7y0-sV-HCE" secondAttribute="bottom" constant="15" id="Vui-n6-k9S"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9GL-tK-7DV" secondAttribute="trailing" id="fQw-cl-d3b"/>
+                            <constraint firstItem="k7N-pA-U79" firstAttribute="centerX" secondItem="euL-I2-ajY" secondAttribute="centerX" id="sua-HA-d8g"/>
                             <constraint firstItem="1JQ-gY-6uK" firstAttribute="leading" secondItem="euL-I2-ajY" secondAttribute="leadingMargin" constant="-20" id="u3o-bA-SLE"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="9GL-tK-7DV" id="Eui-XD-ETB"/>
+                        <segue destination="wTJ-zY-wZZ" kind="show" identifier="showWebsite" id="Ss5-KB-EJH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwV-0O-fdX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1993" y="452"/>
+        </scene>
+        <!--Website View Controller-->
+        <scene sceneID="t14-Cg-G3J">
+            <objects>
+                <viewController id="wTJ-zY-wZZ" customClass="ETWebsiteViewController" customModule="Ether_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N1Z-By-eKq"/>
+                        <viewControllerLayoutGuide type="bottom" id="JYr-Rg-d1h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tMF-6m-ZCQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-dark" translatesAutoresizingMaskIntoConstraints="NO" id="lvm-w0-yO4">
+                                <rect key="frame" x="0.0" y="-5" width="600" height="610"/>
+                            </imageView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxO-a7-bE7">
+                                <rect key="frame" x="0.0" y="72" width="600" height="528"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veI-lF-I85">
+                                <rect key="frame" x="558" y="35" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="IL6-dG-5Oq"/>
+                                    <constraint firstAttribute="width" constant="22" id="wrR-64-57Z"/>
+                                </constraints>
+                                <state key="normal" image="CloseX">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="wTJ-zY-wZZ" eventType="touchUpInside" id="V0f-Ls-c8M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="dxO-a7-bE7" secondAttribute="trailing" constant="-20" id="8rQ-Bk-zyT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="veI-lF-I85" secondAttribute="trailing" id="IrJ-f5-UCE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lvm-w0-yO4" secondAttribute="trailing" constant="-20" id="UN9-64-lWa"/>
+                            <constraint firstItem="JYr-Rg-d1h" firstAttribute="top" secondItem="lvm-w0-yO4" secondAttribute="bottom" constant="-5" id="aSA-mD-mI6"/>
+                            <constraint firstItem="JYr-Rg-d1h" firstAttribute="top" secondItem="dxO-a7-bE7" secondAttribute="bottom" id="f0X-mc-Pyg"/>
+                            <constraint firstItem="dxO-a7-bE7" firstAttribute="top" secondItem="veI-lF-I85" secondAttribute="bottom" constant="15" id="f75-Hd-OgE"/>
+                            <constraint firstItem="lvm-w0-yO4" firstAttribute="top" secondItem="tMF-6m-ZCQ" secondAttribute="topMargin" constant="-5" id="grn-V0-dHD"/>
+                            <constraint firstItem="dxO-a7-bE7" firstAttribute="leading" secondItem="tMF-6m-ZCQ" secondAttribute="leadingMargin" constant="-20" id="ie3-Cw-oWg"/>
+                            <constraint firstItem="lvm-w0-yO4" firstAttribute="leading" secondItem="tMF-6m-ZCQ" secondAttribute="leadingMargin" constant="-20" id="kaQ-HU-3jP"/>
+                            <constraint firstItem="veI-lF-I85" firstAttribute="top" secondItem="N1Z-By-eKq" secondAttribute="bottom" constant="15" id="si5-oM-q48"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="dxO-a7-bE7" id="jgb-LH-bdY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M0I-D0-tVs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2719" y="457"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JIJ-SH-BSN">

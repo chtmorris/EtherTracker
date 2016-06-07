@@ -16,10 +16,11 @@ class ETNewsViewController: UIViewController, UICollectionViewDelegate, UICollec
     // ==================
     
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var blackBottomGradientView: UIView!
     
     var etherNews: [EtherNewsFeedArticles]! = []
     var websiteURL: String!
-    
+    let bottomGradientLayer = CAGradientLayer()
     
     // =================
     // MARK: - LIFECYCLE
@@ -32,8 +33,7 @@ class ETNewsViewController: UIViewController, UICollectionViewDelegate, UICollec
         collectionView.dataSource = self
         
         getEtherNews()
-
-        // Do any additional setup after loading the view.
+        addBottomGradientLayer()
     }
     
     override func prefersStatusBarHidden() -> Bool {
@@ -79,7 +79,25 @@ class ETNewsViewController: UIViewController, UICollectionViewDelegate, UICollec
             nextVC.websiteURL = self.websiteURL
         }
     }
+    
+    
+    // =======================
+    // MARK: - GRADIENT LAYERS
+    // =======================
+    
+    func addBottomGradientLayer() {
+        bottomGradientLayer.frame = blackBottomGradientView.bounds
         
+        let color1 = UIColor.blackColor().CGColor as CGColorRef
+        let color2 = UIColor.blackColor().CGColor as CGColorRef
+        let color3 = UIColor.clearColor().CGColor as CGColorRef
+        bottomGradientLayer.colors = [color3, color2, color1]
+        
+        bottomGradientLayer.locations = [0.0, 0.3, 1.0]
+        
+        blackBottomGradientView.layer.addSublayer(bottomGradientLayer)
+    }
+    
     
     // ====================
     // MARK: - INTERACTIONS
@@ -113,14 +131,11 @@ class ETNewsViewController: UIViewController, UICollectionViewDelegate, UICollec
                 return
             }
             
-//            print(newsFeed[0].publication!)
-            
             self.etherNews = newsFeed
             
             let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
             dispatch_async(dispatch_get_global_queue(priority, 0)) {
                 // do some task
-//                let priceToBeDisplayed = String(format: "%.3f", etherPrice.btc!)
                 
                 dispatch_async(dispatch_get_main_queue()) {
                     // update some UI

@@ -25,9 +25,7 @@ class ETWebsiteViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        print(websiteURL)
-        
+                
         let url = NSURL (string: websiteURL)
         let requestObj = NSURLRequest(URL: url!)
         webView.loadRequest(requestObj)

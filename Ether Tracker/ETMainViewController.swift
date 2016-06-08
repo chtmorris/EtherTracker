@@ -26,6 +26,8 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var etherLogoYCoordinates: NSLayoutConstraint!
     @IBOutlet weak var priceDateTimeLabel: UILabel!
     @IBOutlet weak var newsButton: UIButton!
+    @IBOutlet weak var whiteUnderLine: UIImageView!
+    
     
     var etherPrices: EtherInfo!
     var etherHistorialPrices: [EtherHistoricalPrice]!
@@ -69,6 +71,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
         weeklyButton.alpha = 0
         monthlyButton.alpha = 0
         yearlyButton.alpha = 0
+        whiteUnderLine.alpha = 0
         lineChart.alpha = 0
         newsButton.alpha = 0
         lineChart.backgroundColor = UIColor.clearColor()
@@ -86,6 +89,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
         UIView.animateWithDuration(3, delay: 0.3, options: .CurveEaseInOut, animations: {
             self.view.layoutIfNeeded()
             self.etherLogo.transform = CGAffineTransformMakeScale(0.3, 0.3)
+
             }, completion: { (finished: Bool) -> Void in
                 UIView.animateWithDuration(1, animations: {
                     
@@ -93,6 +97,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
                     self.dailyButton.alpha = 0.5
                     self.weeklyButton.alpha = 0.5
                     self.monthlyButton.alpha = 1
+                    self.whiteUnderLine.alpha = 1
                     self.yearlyButton.alpha = 0.5
                     self.newsButton.alpha = 0.5
                     self.lineChart.alpha = 1
@@ -155,6 +160,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
             self.weeklyButton.alpha = 0.5
             self.monthlyButton.alpha = 0.5
             self.yearlyButton.alpha = 0.5
+            self.whiteUnderLine.center.x = self.dailyButton.center.x
         })
         
     }
@@ -172,6 +178,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
             self.weeklyButton.alpha = 1
             self.monthlyButton.alpha = 0.5
             self.yearlyButton.alpha = 0.5
+            self.whiteUnderLine.center.x = self.weeklyButton.center.x
         })
         
     }
@@ -189,6 +196,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
             self.weeklyButton.alpha = 0.5
             self.monthlyButton.alpha = 1
             self.yearlyButton.alpha = 0.5
+            self.whiteUnderLine.center.x = self.monthlyButton.center.x
         })
         
     }
@@ -206,6 +214,8 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
             self.weeklyButton.alpha = 0.5
             self.monthlyButton.alpha = 0.5
             self.yearlyButton.alpha = 1
+            self.whiteUnderLine.center.x = self.yearlyButton.center.x
+
         })
         
     }

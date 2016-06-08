@@ -83,6 +83,7 @@ class ETNewsViewController: UIViewController, UICollectionViewDelegate, UICollec
             self.performSegueWithIdentifier("showWebsite", sender: self)
             UIView.animateWithDuration(0.5, animations: {
                 self.closeXButton.alpha = 0
+                self.collectionView.alpha = 0
             })
         }
     }
@@ -100,6 +101,7 @@ class ETNewsViewController: UIViewController, UICollectionViewDelegate, UICollec
         dim(.Out, speed: 0.5)
         UIView.animateWithDuration(0.5, animations: {
             self.closeXButton.alpha = 1
+            self.collectionView.alpha = 1
         })
     }
 

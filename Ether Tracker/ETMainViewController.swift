@@ -27,6 +27,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var priceDateTimeLabel: UILabel!
     @IBOutlet weak var newsButton: UIButton!
     @IBOutlet weak var whiteUnderLine: UIImageView!
+    @IBOutlet weak var refreshButton: UIButton!
     
     
     var etherPrices: EtherInfo!
@@ -74,6 +75,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
         whiteUnderLine.alpha = 0
         lineChart.alpha = 0
         newsButton.alpha = 0
+        refreshButton.alpha = 0
         lineChart.backgroundColor = UIColor.clearColor()
         lineChart.noDataText = "Loading data..."
         
@@ -100,6 +102,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
                     self.whiteUnderLine.alpha = 1
                     self.yearlyButton.alpha = 0.5
                     self.newsButton.alpha = 0.5
+                    self.refreshButton.alpha = 0.5
                     self.lineChart.alpha = 1
                 })
         })
@@ -143,6 +146,11 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
         }
         
     }
+    
+    @IBAction func refreshButtonTapped(sender: UIButton) {
+        getHistoricalEtherPrice()
+    }
+    
     
     func chartValueSelected(chartView: ChartViewBase, entry: ChartDataEntry, dataSetIndex: Int, highlight: ChartHighlight) {
         self.priceDateTimeLabel.text = priceDateTime[entry.xIndex]

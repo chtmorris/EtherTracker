@@ -133,6 +133,17 @@
                                     <constraint firstAttribute="width" constant="60" id="iFn-Ly-crJ"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1SN-7u-8mr">
+                                <rect key="frame" x="30" y="528" width="27" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="27" id="HTE-fp-xsl"/>
+                                    <constraint firstAttribute="height" constant="26" id="huj-3L-0me"/>
+                                </constraints>
+                                <state key="normal" image="refresh"/>
+                                <connections>
+                                    <action selector="refreshButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VJ3-1F-TLu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -154,7 +165,9 @@
                             <constraint firstItem="316-eA-57y" firstAttribute="leading" secondItem="AQF-8T-7ne" secondAttribute="trailing" id="fR4-VL-0VT"/>
                             <constraint firstItem="aux-xf-40m" firstAttribute="leading" secondItem="Z66-pr-xWp" secondAttribute="trailing" id="hLW-gv-KFE"/>
                             <constraint firstItem="aux-xf-40m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-35" id="hvw-qW-onK"/>
+                            <constraint firstItem="1SN-7u-8mr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="iRm-m8-nOj"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cZp-Vw-mGB" secondAttribute="bottom" constant="-5" id="lWs-RQ-Ht2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1SN-7u-8mr" secondAttribute="bottom" constant="46" id="mjH-dm-W7N"/>
                             <constraint firstItem="CTt-GY-ANu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="nM3-vh-7Nn"/>
                             <constraint firstItem="cZp-Vw-mGB" firstAttribute="top" secondItem="AQF-8T-7ne" secondAttribute="bottom" constant="-81" id="pfV-TQ-fHr"/>
                             <constraint firstItem="aYD-fY-hmi" firstAttribute="leading" secondItem="AQF-8T-7ne" secondAttribute="leading" constant="9" id="plS-o3-lR5"/>
@@ -175,6 +188,7 @@
                         <outlet property="monthlyButton" destination="AQF-8T-7ne" id="ZLJ-Sr-e4r"/>
                         <outlet property="newsButton" destination="Ndy-SC-HWh" id="dpr-uc-CGJ"/>
                         <outlet property="priceDateTimeLabel" destination="sfQ-PS-clY" id="sL2-3i-GLT"/>
+                        <outlet property="refreshButton" destination="1SN-7u-8mr" id="lNU-Ut-wEh"/>
                         <outlet property="weeklyButton" destination="aux-xf-40m" id="jRg-Yi-LXg"/>
                         <outlet property="whiteUnderLine" destination="aYD-fY-hmi" id="wRo-Tu-xl0"/>
                         <outlet property="yearlyButton" destination="316-eA-57y" id="iLc-2f-fNb"/>
@@ -422,5 +436,6 @@
         <image name="WhiteLine" width="304" height="1"/>
         <image name="background-dark" width="375" height="667"/>
         <image name="closeArticle" width="20" height="11"/>
+        <image name="refresh" width="27" height="26"/>
     </resources>
 </document>

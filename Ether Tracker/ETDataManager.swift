@@ -26,6 +26,14 @@ public class ETDataManager {
         })
     }
     
+    public class func getEtherNewsFromUrlWithSuccess(success: ((EtherData: NSData!) -> Void)) {
+        loadDataFromURL(NSURL(string: "https://dl.dropboxusercontent.com/s/tfa7nlrxe2lx4ff/EtherTracker.json")!, completion:{(data, error) -> Void in
+            if let data = data {
+                success(EtherData: data)
+            }
+        })
+    }
+    
     public class func loadDataFromURL(url: NSURL, completion:(data: NSData?, error: NSError?) -> Void) {
         let session = NSURLSession.sharedSession()
         

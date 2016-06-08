@@ -15,7 +15,7 @@ extension ETMainViewController {
         
         ETDataManager.getEtherPriceFromUrlWithSuccess { (data) -> Void in
             var json: [String: AnyObject]!
-            
+                        
             do {
                 json = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions()) as? [String: AnyObject]
             } catch {
@@ -60,7 +60,7 @@ extension ETMainViewController {
             } catch {
                 print(error)
             }
-            
+                        
             guard let etherHistoricalData = EtherHistoricalData(json: json) else {
                 print("Error initializing object")
                 return

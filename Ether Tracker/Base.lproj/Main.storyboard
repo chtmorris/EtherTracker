@@ -127,7 +127,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="cZp-Vw-mGB" firstAttribute="top" secondItem="Z66-pr-xWp" secondAttribute="bottom" constant="-81" id="0N7-Td-sNk"/>
                             <constraint firstAttribute="leadingMargin" secondItem="OJ7-WW-gwC" secondAttribute="leading" id="0lZ-lQ-xdr"/>
@@ -291,6 +291,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="ayX-fp-VqZ" secondAttribute="trailing" constant="-20" id="4OS-W1-hwV"/>
                             <constraint firstItem="w0r-Fj-V34" firstAttribute="top" secondItem="9GL-tK-7DV" secondAttribute="bottom" constant="28" id="Ano-17-FTF"/>
@@ -312,7 +313,7 @@
                     <connections>
                         <outlet property="blackBottomGradientView" destination="ayX-fp-VqZ" id="rQn-Ad-MIk"/>
                         <outlet property="collectionView" destination="9GL-tK-7DV" id="Eui-XD-ETB"/>
-                        <segue destination="wTJ-zY-wZZ" kind="show" identifier="showWebsite" id="Ss5-KB-EJH"/>
+                        <segue destination="wTJ-zY-wZZ" kind="presentation" identifier="showWebsite" id="Ss5-KB-EJH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwV-0O-fdX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -322,7 +323,7 @@
         <!--Website View Controller-->
         <scene sceneID="t14-Cg-G3J">
             <objects>
-                <viewController id="wTJ-zY-wZZ" customClass="ETWebsiteViewController" customModule="Ether_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="wTJ-zY-wZZ" customClass="ETWebsiteViewController" customModule="Ether_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="N1Z-By-eKq"/>
                         <viewControllerLayoutGuide type="bottom" id="JYr-Rg-d1h"/>
@@ -331,9 +332,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-dark" translatesAutoresizingMaskIntoConstraints="NO" id="lvm-w0-yO4">
-                                <rect key="frame" x="0.0" y="-5" width="600" height="610"/>
-                            </imageView>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxO-a7-bE7">
                                 <rect key="frame" x="0.0" y="72" width="600" height="528"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
@@ -348,21 +346,17 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="backButtonTapped:" destination="wTJ-zY-wZZ" eventType="touchUpInside" id="V0f-Ls-c8M"/>
+                                    <action selector="backButtonTapped:" destination="wTJ-zY-wZZ" eventType="touchUpInside" id="caL-j1-1RL"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="dxO-a7-bE7" secondAttribute="trailing" constant="-20" id="8rQ-Bk-zyT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="veI-lF-I85" secondAttribute="trailing" id="IrJ-f5-UCE"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="lvm-w0-yO4" secondAttribute="trailing" constant="-20" id="UN9-64-lWa"/>
-                            <constraint firstItem="JYr-Rg-d1h" firstAttribute="top" secondItem="lvm-w0-yO4" secondAttribute="bottom" constant="-5" id="aSA-mD-mI6"/>
                             <constraint firstItem="JYr-Rg-d1h" firstAttribute="top" secondItem="dxO-a7-bE7" secondAttribute="bottom" id="f0X-mc-Pyg"/>
                             <constraint firstItem="dxO-a7-bE7" firstAttribute="top" secondItem="veI-lF-I85" secondAttribute="bottom" constant="15" id="f75-Hd-OgE"/>
-                            <constraint firstItem="lvm-w0-yO4" firstAttribute="top" secondItem="tMF-6m-ZCQ" secondAttribute="topMargin" constant="-5" id="grn-V0-dHD"/>
                             <constraint firstItem="dxO-a7-bE7" firstAttribute="leading" secondItem="tMF-6m-ZCQ" secondAttribute="leadingMargin" constant="-20" id="ie3-Cw-oWg"/>
-                            <constraint firstItem="lvm-w0-yO4" firstAttribute="leading" secondItem="tMF-6m-ZCQ" secondAttribute="leadingMargin" constant="-20" id="kaQ-HU-3jP"/>
                             <constraint firstItem="veI-lF-I85" firstAttribute="top" secondItem="N1Z-By-eKq" secondAttribute="bottom" constant="15" id="si5-oM-q48"/>
                         </constraints>
                     </view>

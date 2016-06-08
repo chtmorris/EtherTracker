@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol ETWebsiteViewControllerDelegate: class {
+    func isDismissed()
+}
+
 class ETWebsiteViewController: UIViewController {
 
     // ==================
@@ -16,6 +20,7 @@ class ETWebsiteViewController: UIViewController {
     
     @IBOutlet weak var webView: UIWebView!
     var websiteURL: String!
+    weak var delegate: ETWebsiteViewControllerDelegate?
 
     
     // =================
@@ -25,7 +30,9 @@ class ETWebsiteViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-                
+        
+//        view.opaque = false
+        
         let url = NSURL (string: websiteURL)
         let requestObj = NSURLRequest(URL: url!)
         webView.loadRequest(requestObj)
@@ -34,14 +41,18 @@ class ETWebsiteViewController: UIViewController {
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
-
+    
     
     // ====================
     // MARK: - INTERACTIONS
     // ====================
     
     @IBAction func backButtonTapped(sender: UIButton) {
-        navigationController?.popViewControllerAnimated(true)
+        self.dismissViewControllerAnimated(true, completion: {
+            self.delegate?.isDismissed()
+            print("delegate Called")
+        })
     }
+    
 
 }

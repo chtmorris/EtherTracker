@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ETNewsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class ETNewsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, Dimmable, ETWebsiteViewControllerDelegate {
     
     
     // ==================
@@ -75,11 +75,18 @@ class ETNewsViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "showWebsite") {
+            dim(.In, alpha: 0.5, speed: 0.5)
             let nextVC = segue.destinationViewController as! ETWebsiteViewController
             nextVC.websiteURL = self.websiteURL
+            nextVC.delegate = self
         }
     }
     
+    func isDismissed() {
+        print("called")
+        dim(.Out, speed: 0.5)
+    }
+
     
     // =======================
     // MARK: - GRADIENT LAYERS

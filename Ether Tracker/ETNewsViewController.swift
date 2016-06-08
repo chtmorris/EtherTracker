@@ -17,11 +17,14 @@ class ETNewsViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var blackBottomGradientView: UIView!
+    @IBOutlet weak var closeXButton: UIButton!
     
     var etherNews: [EtherNewsFeedArticles]! = []
     var websiteURL: String!
     let bottomGradientLayer = CAGradientLayer()
-    
+    var restingCloseXPosition: CGFloat?
+    var refreshControl: UIRefreshControl!
+
     // =================
     // MARK: - LIFECYCLE
     // =================
@@ -32,8 +35,16 @@ class ETNewsViewController: UIViewController, UICollectionViewDelegate, UICollec
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        getEtherNews()
+        refreshNewsFeed("")
         addBottomGradientLayer()
+        
+        self.navigationController?.navigationBarHidden = true
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        self.restingCloseXPosition = closeXButton.frame.origin.x
+        getEtherNews()
     }
     
     override func prefersStatusBarHidden() -> Bool {
@@ -70,6 +81,9 @@ class ETNewsViewController: UIViewController, UICollectionViewDelegate, UICollec
         if let cell = collectionView.cellForItemAtIndexPath(indexPath) as? ETNewsArticleCell {
             self.websiteURL = cell.urlLink
             self.performSegueWithIdentifier("showWebsite", sender: self)
+            UIView.animateWithDuration(0.5, animations: {
+                self.closeXButton.alpha = 0
+            })
         }
     }
     
@@ -83,8 +97,10 @@ class ETNewsViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
     func isDismissed() {
-        print("called")
         dim(.Out, speed: 0.5)
+        UIView.animateWithDuration(0.5, animations: {
+            self.closeXButton.alpha = 1
+        })
     }
 
     
@@ -115,7 +131,20 @@ class ETNewsViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
     
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        if scrollView.contentOffset.y < 0 {
+            self.closeXButton.frame.origin.x = restingCloseXPosition! + (scrollView.contentOffset.y / 10)
+        }
+    }
+    
+    
+    // =================
+    // MARK: - NEWS FEED
+    // =================
+    
     func getEtherNews() {
+        
+        startSpinner()
         
         ETDataManager.getEtherNewsFromUrlWithSuccess { (data) -> Void in
             
@@ -147,11 +176,39 @@ class ETNewsViewController: UIViewController, UICollectionViewDelegate, UICollec
                 dispatch_async(dispatch_get_main_queue()) {
                     // update some UI
                     self.collectionView.reloadData()
+                    self.refreshControl.endRefreshing()
                 }
             }
             
         }
         
+    }
+    
+    func refreshNewsFeed(spinnerTitle: String) {
+        refreshControl = UIRefreshControl()
+        refreshControl.tintColor = UIColor.whiteColor()
+        let attributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        let attributedTitle = NSAttributedString(string: spinnerTitle, attributes: attributes)
+        refreshControl.attributedTitle = attributedTitle
+        refreshControl.addTarget(self, action: #selector(ETNewsViewController.refresh(_:)), forControlEvents: UIControlEvents.ValueChanged)
+        collectionView.addSubview(refreshControl)
+    }
+    
+    func refresh(sender:AnyObject) {
+        getEtherNews()
+    }
+    
+    
+    // ========================
+    // MARK: - HELPER FUNCTIONS
+    // ========================
+    
+    func startSpinner(){
+        // Start spinner - need this to make it white
+        if self.collectionView.contentOffset.y == 0 {
+            self.collectionView.contentOffset = CGPointMake(0, -self.refreshControl.frame.size.height)
+            refreshControl.beginRefreshing()
+        }
     }
 
 

@@ -19,6 +19,8 @@ class ETWebsiteViewController: UIViewController {
     // ==================
     
     @IBOutlet weak var webView: UIWebView!
+    @IBOutlet weak var closeButton: UIButton!
+    
     var websiteURL: String!
     weak var delegate: ETWebsiteViewControllerDelegate?
 
@@ -31,11 +33,16 @@ class ETWebsiteViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-//        view.opaque = false
-        
+        self.closeButton.alpha = 0
         let url = NSURL (string: websiteURL)
         let requestObj = NSURLRequest(URL: url!)
         webView.loadRequest(requestObj)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        UIView.animateWithDuration(0.5, animations: {
+            self.closeButton.alpha = 1
+        })
     }
     
     override func prefersStatusBarHidden() -> Bool {
@@ -50,7 +57,6 @@ class ETWebsiteViewController: UIViewController {
     @IBAction func backButtonTapped(sender: UIButton) {
         self.dismissViewControllerAnimated(true, completion: {
             self.delegate?.isDismissed()
-            print("delegate Called")
         })
     }
     

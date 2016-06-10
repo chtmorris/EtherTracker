@@ -35,6 +35,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     var setCurrencyTo = Currency.USD
     var priceDateTime  = [String]()
     var dataLoaded = false
+    var currentChartShowing = "time1month"
     
     // 12 hour data
     var time12hours = [String]()
@@ -83,7 +84,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     
     override func viewDidAppear(animated: Bool) {
         getEtherPrice()
-        getHistoricalEtherPrice()
+        getHistoricalEtherPriceOnAppLaunch()
         
         let destinationY:CGFloat = (view.bounds.height)/2 - 60
         self.etherLogoYCoordinates.constant = destinationY
@@ -114,9 +115,9 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     }
     
     
-    // ====================
-    // MARK: - INTERACTIONS
-    // ====================
+    // ===============================
+    // MARK: - TAB BUTTON INTERACTIONS
+    // ===============================
     
     @IBAction func etherLogoTapped(sender: UIButton) {
         
@@ -148,19 +149,30 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     }
     
     @IBAction func refreshButtonTapped(sender: UIButton) {
-        getHistoricalEtherPrice()
+        getHistoricalEtherPrice(currentChartShowing)
     }
     
     
     func chartValueSelected(chartView: ChartViewBase, entry: ChartDataEntry, dataSetIndex: Int, highlight: ChartHighlight) {
         self.priceDateTimeLabel.text = priceDateTime[entry.xIndex]
     }
+    
+}
 
+
+extension ETMainViewController {
+    
+    
+    // ===============================
+    // MARK: - CHART TIME INTERACTIONS
+    // ===============================
+    
     @IBAction func dailyButtonTapped(sender: UIButton) {
         
         if dataLoaded {
             setChart(time12hours, values: price12hours)
             priceDateTime = priceDateTime12hours
+            currentChartShowing = "time12hours"
         }
         
         UIView.animateWithDuration(0.5, animations: {
@@ -179,6 +191,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
         if dataLoaded {
             setChart(time7days, values: price7days)
             priceDateTime = priceDateTime7days
+            currentChartShowing = "time7days"
         }
         
         UIView.animateWithDuration(0.5, animations: {
@@ -197,6 +210,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
         if dataLoaded {
             setChart(time1month, values: price1month)
             priceDateTime = priceDateTime1month
+            currentChartShowing = "time1month"
         }
         
         UIView.animateWithDuration(0.5, animations: {
@@ -215,6 +229,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
         if dataLoaded {
             setChart(time1year, values: price1year)
             priceDateTime = priceDateTime1year
+            currentChartShowing = "time1year"
         }
         
         UIView.animateWithDuration(0.5, animations: {
@@ -223,11 +238,10 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
             self.monthlyButton.alpha = 0.5
             self.yearlyButton.alpha = 1
             self.whiteUnderLine.center.x = self.yearlyButton.center.x
-
+            
         })
         
     }
-    
     
 }
 

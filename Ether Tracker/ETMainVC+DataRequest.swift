@@ -49,8 +49,47 @@ extension ETMainViewController {
         
     }
     
+    func getHistoricalEtherPriceOnAppLaunch() {
+        
+        ETDataManager.getEtherHistoricalPriceFromUrlWithSuccess { (data) -> Void in
+            var json: [String: AnyObject]!
+            
+            do {
+                json = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions()) as? [String: AnyObject]
+            } catch {
+                print(error)
+            }
+            
+            guard let etherHistoricalData = EtherHistoricalData(json: json) else {
+                print("Error initializing object")
+                return
+            }
+            
+            guard let etherHistoricalPrice = etherHistoricalData.historicalData else {
+                print("No such item")
+                return
+            }
+            
+            self.etherHistorialPrices = etherHistoricalPrice
+            
+            (self.time1month, self.price1month, self.priceDateTime1month) = self.getLastxHoursPrice(30 * 24, dateDisplay: "month")
+            self.setChart(self.time1month, values: self.price1month)
+            self.priceDateTime = self.priceDateTime1month
+            self.monthlyButton.sendActionsForControlEvents(.TouchUpInside)
+            
+            // Load up other data sets
+            (self.time12hours, self.price12hours, self.priceDateTime12hours) = self.getLastxHoursPrice(12, dateDisplay: "hours")
+            (self.time7days, self.price7days, self.priceDateTime7days) = self.getLastxHoursPrice(24 * 7, dateDisplay: "days")
+            (self.time1year, self.price1year, self.priceDateTime1year) = self.getLastxDaysPrice(365)
+            
+            self.dataLoaded = true
+        }
+        
+    }
+
     
-    func getHistoricalEtherPrice() {
+    
+    func getHistoricalEtherPrice(chartToShow: String) {
         
         ETDataManager.getEtherHistoricalPriceFromUrlWithSuccess { (data) -> Void in
             var json: [String: AnyObject]!
@@ -73,15 +112,44 @@ extension ETMainViewController {
             
             self.etherHistorialPrices = etherHistoricalPrice
             
-            // Set-up first chart
-            (self.time1month, self.price1month, self.priceDateTime1month) = self.getLastxHoursPrice(30 * 24, dateDisplay: "month")
-            self.setChart(self.time1month, values: self.price1month)
-            self.priceDateTime = self.priceDateTime1month
+            // Set-up shown chart
+            switch chartToShow {
+            case "time12hours":
+                (self.time12hours, self.price12hours, self.priceDateTime12hours) = self.getLastxHoursPrice(12, dateDisplay: "hours")
+                self.setChart(self.time12hours, values: self.price12hours)
+                self.priceDateTime = self.priceDateTime12hours
+                self.dailyButton.sendActionsForControlEvents(.TouchUpInside)
+                
+            case "time7days":
+                (self.time7days, self.price7days, self.priceDateTime7days) = self.getLastxHoursPrice(24 * 7, dateDisplay: "days")
+                self.setChart(self.time7days, values: self.price7days)
+                self.priceDateTime = self.priceDateTime7days
+                self.weeklyButton.sendActionsForControlEvents(.TouchUpInside)
+
+            case "time1month":
+                (self.time1month, self.price1month, self.priceDateTime1month) = self.getLastxHoursPrice(30 * 24, dateDisplay: "month")
+                self.setChart(self.time1month, values: self.price1month)
+                self.priceDateTime = self.priceDateTime1month
+                self.monthlyButton.sendActionsForControlEvents(.TouchUpInside)
+                
+            case "time1year":
+                (self.time1year, self.price1year, self.priceDateTime1year) = self.getLastxDaysPrice(365)
+                self.setChart(self.time1year, values: self.price1year)
+                self.priceDateTime = self.priceDateTime1year
+                self.yearlyButton.sendActionsForControlEvents(.TouchUpInside)
+                
+            default:
+                self.setChart(self.time1month, values: self.price1month)
+                self.priceDateTime = self.priceDateTime1month
+                self.monthlyButton.sendActionsForControlEvents(.TouchUpInside)
+            }
             
             // Load up other data sets
             (self.time12hours, self.price12hours, self.priceDateTime12hours) = self.getLastxHoursPrice(12, dateDisplay: "hours")
             (self.time7days, self.price7days, self.priceDateTime7days) = self.getLastxHoursPrice(24 * 7, dateDisplay: "days")
+            (self.time1month, self.price1month, self.priceDateTime1month) = self.getLastxHoursPrice(30 * 24, dateDisplay: "month")
             (self.time1year, self.price1year, self.priceDateTime1year) = self.getLastxDaysPrice(365)
+
             
             self.dataLoaded = true
         }

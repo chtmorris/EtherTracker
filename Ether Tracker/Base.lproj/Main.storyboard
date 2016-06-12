@@ -126,13 +126,6 @@
                                     <segue destination="Jra-63-ajC" kind="show" id="gZN-fE-GTa"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteLine" translatesAutoresizingMaskIntoConstraints="NO" id="aYD-fY-hmi">
-                                <rect key="frame" x="312" y="71" width="60" height="1"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="9hz-AG-B07"/>
-                                    <constraint firstAttribute="width" constant="60" id="iFn-Ly-crJ"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1SN-7u-8mr">
                                 <rect key="frame" x="30" y="528" width="27" height="26"/>
                                 <constraints>
@@ -149,7 +142,6 @@
                         <constraints>
                             <constraint firstItem="cZp-Vw-mGB" firstAttribute="top" secondItem="Z66-pr-xWp" secondAttribute="bottom" constant="-81" id="0N7-Td-sNk"/>
                             <constraint firstAttribute="leadingMargin" secondItem="OJ7-WW-gwC" secondAttribute="leading" id="0lZ-lQ-xdr"/>
-                            <constraint firstItem="aYD-fY-hmi" firstAttribute="top" secondItem="AQF-8T-7ne" secondAttribute="bottom" constant="-5" id="1Q7-Oh-rvf"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ndy-SC-HWh" secondAttribute="bottom" constant="44" id="24X-PS-2xp"/>
                             <constraint firstItem="cZp-Vw-mGB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-5" id="88C-O3-wfm"/>
                             <constraint firstItem="fRX-vW-g03" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DvM-lJ-NBb"/>
@@ -170,7 +162,6 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1SN-7u-8mr" secondAttribute="bottom" constant="46" id="mjH-dm-W7N"/>
                             <constraint firstItem="CTt-GY-ANu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="nM3-vh-7Nn"/>
                             <constraint firstItem="cZp-Vw-mGB" firstAttribute="top" secondItem="AQF-8T-7ne" secondAttribute="bottom" constant="-81" id="pfV-TQ-fHr"/>
-                            <constraint firstItem="aYD-fY-hmi" firstAttribute="leading" secondItem="AQF-8T-7ne" secondAttribute="leading" constant="9" id="plS-o3-lR5"/>
                             <constraint firstItem="cZp-Vw-mGB" firstAttribute="top" secondItem="aux-xf-40m" secondAttribute="bottom" constant="-81" id="qZ5-s7-ZB8"/>
                             <constraint firstItem="OJ7-WW-gwC" firstAttribute="top" secondItem="aux-xf-40m" secondAttribute="bottom" constant="31" id="rFn-7N-TIr"/>
                             <constraint firstItem="OJ7-WW-gwC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tyc-p9-abR"/>
@@ -190,7 +181,6 @@
                         <outlet property="priceDateTimeLabel" destination="sfQ-PS-clY" id="sL2-3i-GLT"/>
                         <outlet property="refreshButton" destination="1SN-7u-8mr" id="lNU-Ut-wEh"/>
                         <outlet property="weeklyButton" destination="aux-xf-40m" id="jRg-Yi-LXg"/>
-                        <outlet property="whiteUnderLine" destination="aYD-fY-hmi" id="wRo-Tu-xl0"/>
                         <outlet property="yearlyButton" destination="316-eA-57y" id="iLc-2f-fNb"/>
                     </connections>
                 </viewController>

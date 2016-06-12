@@ -26,9 +26,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var etherLogoYCoordinates: NSLayoutConstraint!
     @IBOutlet weak var priceDateTimeLabel: UILabel!
     @IBOutlet weak var newsButton: UIButton!
-    @IBOutlet weak var whiteUnderLine: UIImageView!
     @IBOutlet weak var refreshButton: UIButton!
-    
     
     var etherPrices: EtherInfo!
     var etherHistorialPrices: [EtherHistoricalPrice]!
@@ -36,6 +34,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     var priceDateTime  = [String]()
     var dataLoaded = false
     var currentChartShowing = "time1month"
+    var appJustLaunched = true
     
     // 12 hour data
     var time12hours = [String]()
@@ -73,7 +72,6 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
         weeklyButton.alpha = 0
         monthlyButton.alpha = 0
         yearlyButton.alpha = 0
-        whiteUnderLine.alpha = 0
         lineChart.alpha = 0
         newsButton.alpha = 0
         refreshButton.alpha = 0
@@ -84,29 +82,33 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     
     override func viewDidAppear(animated: Bool) {
         getEtherPrice()
-        getHistoricalEtherPriceOnAppLaunch()
+        print(currentChartShowing)
         
-        let destinationY:CGFloat = (view.bounds.height)/2 - 60
-        self.etherLogoYCoordinates.constant = destinationY
+        if appJustLaunched {
+            getHistoricalEtherPriceOnAppLaunch()
         
-        UIView.animateWithDuration(3, delay: 0.3, options: .CurveEaseInOut, animations: {
-            self.view.layoutIfNeeded()
-            self.etherLogo.transform = CGAffineTransformMakeScale(0.3, 0.3)
+            let destinationY:CGFloat = (view.bounds.height)/2 - 60
+            self.etherLogoYCoordinates.constant = destinationY
+            
+            UIView.animateWithDuration(3, delay: 0.3, options: .CurveEaseInOut, animations: {
+                self.view.layoutIfNeeded()
+                self.etherLogo.transform = CGAffineTransformMakeScale(0.3, 0.3)
 
-            }, completion: { (finished: Bool) -> Void in
-                UIView.animateWithDuration(1, animations: {
-                    
-                    self.etherPriceLabel.alpha = 1
-                    self.dailyButton.alpha = 0.5
-                    self.weeklyButton.alpha = 0.5
-                    self.monthlyButton.alpha = 1
-                    self.whiteUnderLine.alpha = 1
-                    self.yearlyButton.alpha = 0.5
-                    self.newsButton.alpha = 0.5
-                    self.refreshButton.alpha = 0.5
-                    self.lineChart.alpha = 1
-                })
-        })
+                }, completion: { (finished: Bool) -> Void in
+                    UIView.animateWithDuration(1, animations: {
+                        self.etherPriceLabel.alpha = 1
+                        self.dailyButton.alpha = 0.5
+                        self.weeklyButton.alpha = 0.5
+                        self.monthlyButton.alpha = 1
+                        self.yearlyButton.alpha = 0.5
+                        self.newsButton.alpha = 0.5
+                        self.refreshButton.alpha = 0.5
+                        self.lineChart.alpha = 1
+                    })
+            })
+            
+            appJustLaunched = false
+        }
         
     }
     
@@ -149,7 +151,12 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     }
     
     @IBAction func refreshButtonTapped(sender: UIButton) {
-        getHistoricalEtherPrice(currentChartShowing)
+        UIView.animateWithDuration(1) { 
+            self.refreshButton.alpha = 0.1
+        }
+        
+        getEtherPrice()
+        refreshHistoricalEtherPrice(currentChartShowing)
     }
     
     
@@ -159,91 +166,6 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     
 }
 
-
-extension ETMainViewController {
-    
-    
-    // ===============================
-    // MARK: - CHART TIME INTERACTIONS
-    // ===============================
-    
-    @IBAction func dailyButtonTapped(sender: UIButton) {
-        
-        if dataLoaded {
-            setChart(time12hours, values: price12hours)
-            priceDateTime = priceDateTime12hours
-            currentChartShowing = "time12hours"
-        }
-        
-        UIView.animateWithDuration(0.5, animations: {
-            self.dailyButton.alpha = 1
-            self.weeklyButton.alpha = 0.5
-            self.monthlyButton.alpha = 0.5
-            self.yearlyButton.alpha = 0.5
-            self.whiteUnderLine.center.x = self.dailyButton.center.x
-        })
-        
-    }
-    
-    
-    @IBAction func weeklyButtonTapped(sender: UIButton) {
-        
-        if dataLoaded {
-            setChart(time7days, values: price7days)
-            priceDateTime = priceDateTime7days
-            currentChartShowing = "time7days"
-        }
-        
-        UIView.animateWithDuration(0.5, animations: {
-            self.dailyButton.alpha = 0.5
-            self.weeklyButton.alpha = 1
-            self.monthlyButton.alpha = 0.5
-            self.yearlyButton.alpha = 0.5
-            self.whiteUnderLine.center.x = self.weeklyButton.center.x
-        })
-        
-    }
-    
-    
-    @IBAction func monthlyButtonTapped(sender: UIButton) {
-        
-        if dataLoaded {
-            setChart(time1month, values: price1month)
-            priceDateTime = priceDateTime1month
-            currentChartShowing = "time1month"
-        }
-        
-        UIView.animateWithDuration(0.5, animations: {
-            self.dailyButton.alpha = 0.5
-            self.weeklyButton.alpha = 0.5
-            self.monthlyButton.alpha = 1
-            self.yearlyButton.alpha = 0.5
-            self.whiteUnderLine.center.x = self.monthlyButton.center.x
-        })
-        
-    }
-    
-    
-    @IBAction func yearlyButtonTapped(sender: UIButton) {
-        
-        if dataLoaded {
-            setChart(time1year, values: price1year)
-            priceDateTime = priceDateTime1year
-            currentChartShowing = "time1year"
-        }
-        
-        UIView.animateWithDuration(0.5, animations: {
-            self.dailyButton.alpha = 0.5
-            self.weeklyButton.alpha = 0.5
-            self.monthlyButton.alpha = 0.5
-            self.yearlyButton.alpha = 1
-            self.whiteUnderLine.center.x = self.yearlyButton.center.x
-            
-        })
-        
-    }
-    
-}
 
 
 

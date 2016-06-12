@@ -133,10 +133,6 @@ extension ETMainViewController {
                 self.monthlyButton.sendActionsForControlEvents(.TouchUpInside)
             }
             
-            UIView.animateWithDuration(1, animations: { 
-                self.refreshButton.alpha = 0.5
-            })
-            
             // Load up all data sets
             (self.time12hours, self.price12hours, self.priceDateTime12hours) = self.getLastxHoursPrice(12, dateDisplay: "hours")
             (self.time7days, self.price7days, self.priceDateTime7days) = self.getLastxHoursPrice(24 * 7, dateDisplay: "days")

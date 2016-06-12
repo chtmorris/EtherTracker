@@ -82,7 +82,6 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     
     override func viewDidAppear(animated: Bool) {
         getEtherPrice()
-        print(currentChartShowing)
         
         if appJustLaunched {
             getHistoricalEtherPriceOnAppLaunch()
@@ -151,8 +150,12 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     }
     
     @IBAction func refreshButtonTapped(sender: UIButton) {
-        UIView.animateWithDuration(1) { 
-            self.refreshButton.alpha = 0.1
+        UIView.animateWithDuration(1, animations: { 
+            self.refreshButton.alpha = 0
+            }) { (Bool) in
+                UIView.animateWithDuration(1, animations: { 
+                    self.refreshButton.alpha = 0.5
+                })
         }
         
         getEtherPrice()

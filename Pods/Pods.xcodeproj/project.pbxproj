@@ -13,31 +13,26 @@
 		<key>003EBB47E856DBB92F4A63FC2AD8C892</key>
 		<dict>
 			<key>fileRef</key>
-			<string>6AEE1E41BB6AD775B97211E78A9F6225</string>
+			<string>CC51F9AEB82DA1606CB26027015EE5AA</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>02C1BEA6FE84433F6C6A713533B7B9BD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>352B67925A5774D4075213CC9B6BCF92</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>04CE75499A585FE086C9A10CB652FEBF</key>
+		<key>0097125616F16D3BD9F3971C657CD439</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>CLSAttributes.h</string>
 			<key>path</key>
-			<string>Info.plist</string>
+			<string>iOS/Crashlytics.framework/Headers/CLSAttributes.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>063649C12321CE63E81532F2949FAA1A</key>
+		<key>019E769CBD61F68570D00735D0E43D9C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -46,9 +41,61 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>LineRadarChartRenderer.swift</string>
+			<string>ChartDefaultFillFormatter.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Renderers/LineRadarChartRenderer.swift</string>
+			<string>Charts/Classes/Formatters/ChartDefaultFillFormatter.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>02C1BEA6FE84433F6C6A713533B7B9BD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>879E83759942AB214E7092FE3CAE5D62</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>03554CD8D3C1097675CFF552944D4416</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ScatterChartView.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Charts/ScatterChartView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>04A6E9BEF2B53929122650C2970E8099</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ChartXAxisRendererRadarChart.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Renderers/ChartXAxisRendererRadarChart.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>066EB05B989F43B3D538D35B07B82068</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>LineChartDataSet.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Data/Implementations/Standard/LineChartDataSet.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -67,7 +114,7 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>09B32E2C9D2A34F54667DD867F425EE0</key>
+		<key>0B000FE81D0B71C4DF70559D1D09AAD5</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -76,20 +123,20 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>PieChartDataSet.swift</string>
+			<string>ScatterChartRenderer.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Data/Implementations/Standard/PieChartDataSet.swift</string>
+			<string>Charts/Classes/Renderers/ScatterChartRenderer.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>0CF512C725ED2C0B04D005A6D203DCEC</key>
 		<dict>
 			<key>fileRef</key>
-			<string>35982491302F248A1EBCAC8B53C853F5</string>
+			<string>BC34F76B2DAAD9740EF91AA949B084BD</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>0F9E3A93EBB07BE3F1C5C4E4D7F13A9F</key>
+		<key>0F8853EA4BE09B2DF46127EB348FC0FC</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -98,50 +145,33 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>Encoder.swift</string>
+			<string>BubbleChartRenderer.swift</string>
 			<key>path</key>
-			<string>Sources/Encoder.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>10278E066BD66EA42A213ED40436D64E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>BubbleChartDataProvider.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Interfaces/BubbleChartDataProvider.swift</string>
+			<string>Charts/Classes/Renderers/BubbleChartRenderer.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>10DA9C9D58BDE4AEBC101C70A645E315</key>
 		<dict>
 			<key>fileRef</key>
-			<string>09B32E2C9D2A34F54667DD867F425EE0</string>
+			<string>89321337E0D0609338E6667CC4C39B28</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>11886B4E5ED5155F85EB25BCA0657572</key>
+		<key>10E2662340AE9C359C066C325938B878</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>children</key>
+			<array>
+				<string>1E206CEA2D8947D33635C4967177ABC8</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>AnimatedMoveViewJob.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Jobs/AnimatedMoveViewJob.swift</string>
+			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>121F9982EC2BD2E924D1AD28E4DC18BD</key>
+		<key>11967D9EBC43D9460963602F6F8462A5</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -150,121 +180,136 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>LineScatterCandleRadarChartDataSet.swift</string>
+			<string>CandleStickChartRenderer.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Data/Implementations/Standard/LineScatterCandleRadarChartDataSet.swift</string>
+			<string>Charts/Classes/Renderers/CandleStickChartRenderer.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>124D0BAABE6160B5E0B6ADC527C58418</key>
 		<dict>
 			<key>fileRef</key>
-			<string>EB7E83139620425C23087138C129DDEB</string>
+			<string>C2B0523A9F580F8F7B88E6C143B97FD4</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>1268FBA2F4CEE4DC3577E8DD52D25975</key>
 		<dict>
 			<key>fileRef</key>
-			<string>D3BB6294C70FC1DADFAE6621556DC7D3</string>
+			<string>1BAC9933647C771A0040742EBEB583CD</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>127AB4661AC9A5832C3D5A4077C1A58C</key>
 		<dict>
 			<key>fileRef</key>
-			<string>587EA3F591BD8B752C0824488E876B09</string>
+			<string>ED5F38E5E11F4661591C3CD40076C92A</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>13659EB92F4AA31C8926FDFA52101FE9</key>
+		<key>14661842E8E7C80C9A8DD58E78667A43</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>ChartDataRendererBase.swift</string>
+			<string>Answers.h</string>
 			<key>path</key>
-			<string>Charts/Classes/Renderers/ChartDataRendererBase.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>138E17820B6D2476356FEAE41C8F8D05</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>BarChartData.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Data/Implementations/Standard/BarChartData.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>14F475176F0070CC0E82580ED50C0FE3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>CombinedChartView.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Charts/CombinedChartView.swift</string>
+			<string>iOS/Crashlytics.framework/Headers/Answers.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>1568D9F321313FECF78F199CE4E7B442</key>
 		<dict>
 			<key>fileRef</key>
-			<string>9259E21679A6312FCBAC3C7AFC6A255D</string>
+			<string>CCE2BC2A609B2142D4100B559C01D734</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>156E52704B250B121BD8E8C03BA723A2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>BubbleChartDataSet.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Data/Implementations/Standard/BubbleChartDataSet.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>15AD01DB1A64F162CCBC2E4D02B1458A</key>
 		<dict>
 			<key>fileRef</key>
-			<string>404CCD47E74B7755946CB2092AE60574</string>
+			<string>1898355CCCA40DBA9704ED93CD29FFA0</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>1657BB3BEB8DB9F2A4E363684EB0FDFD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ScatterChartDataSet.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Data/Implementations/Standard/ScatterChartDataSet.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>1677FAD2A148DA1DDE73736B4848878B</key>
 		<dict>
 			<key>fileRef</key>
-			<string>6C2EDBBE682EB65B61C4CAC8D5EF13DC</string>
+			<string>933D1A38D2D78D4CD8433D5F0FBD12A9</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>1711226039A0CD668F7DBEEE45D9E238</key>
 		<dict>
 			<key>fileRef</key>
-			<string>49411AC0181149447BF59D0640D0DBCC</string>
+			<string>FD8B42D2C29BEC74A8A678A6EBDB9D07</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>1792949332E845FCE9745F455932668C</key>
 		<dict>
 			<key>fileRef</key>
-			<string>121F9982EC2BD2E924D1AD28E4DC18BD</string>
+			<string>94A8844E2A1F9AA4E5C094E37E50BC5B</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>17E8ECFF7879DDE903F47869DEBAA874</key>
 		<dict>
 			<key>fileRef</key>
-			<string>13659EB92F4AA31C8926FDFA52101FE9</string>
+			<string>76A287351D3D8B574A66A6018B8A55F9</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>187C657C4D9A96935B8459E004AB451B</key>
+		<key>1898355CCCA40DBA9704ED93CD29FFA0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ChartColorTemplates.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Utils/ChartColorTemplates.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>18D019F82854ADB70EC2B45A02D0C937</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -279,51 +324,21 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>18B40E0A91A13D19B300AD8D6E2A0A52</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>LineChartData.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Data/Implementations/Standard/LineChartData.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>18FF9D77B54F9EEAF7D6F10B977C5FF6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ChartPlatform.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Utils/ChartPlatform.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>1A576993F97A4BD21C20CE9685D55B45</key>
 		<dict>
 			<key>fileRef</key>
-			<string>E25B5C088C3FD966B1F3CF7CD127E6A6</string>
+			<string>066EB05B989F43B3D538D35B07B82068</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>1AA2BFF6AAA29B3C65D9109C6D89B631</key>
 		<dict>
 			<key>fileRef</key>
-			<string>87D0C071CB5D489F1763F2DEA414CAE3</string>
+			<string>F20A2254C4EFB425ED1AE3E7F0CB6185</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>1ADD830D80714FB8D6909B65AE2B217D</key>
+		<key>1ACF6056FA0C4611609DEB2AD144EC8E</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -332,13 +347,26 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>IBarChartDataSet.swift</string>
+			<string>CombinedHighlighter.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Data/Interfaces/IBarChartDataSet.swift</string>
+			<string>Charts/Classes/Highlight/CombinedHighlighter.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>1C04791773B1860CC56AE1106F7F8878</key>
+		<key>1B5EDB515B685A7B3585BF31A75F16AA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Gloss-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1BAC9933647C771A0040742EBEB583CD</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -347,9 +375,9 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>ChartXAxisRendererRadarChart.swift</string>
+			<string>ChartDataEntry.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Renderers/ChartXAxisRendererRadarChart.swift</string>
+			<string>Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -366,10 +394,25 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>1DAD6E4B70CC6120FD0E53B7A87D15B1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ChartViewBase.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Charts/ChartViewBase.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>1DC8EE64C0FAADD12D9BC44BB7D1E3DA</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>F1FE699583F95648DD5457B652C44E79</string>
+			<string>E52F9B25DB36B6A65DBBF49005110520</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -437,36 +480,60 @@
 			<key>remoteInfo</key>
 			<string>Gloss</string>
 		</dict>
-		<key>1EC7B0FD4B8FF236052D7A5D7DE8F171</key>
+		<key>1E206CEA2D8947D33635C4967177ABC8</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
+			<string>wrapper.framework</string>
 			<key>name</key>
-			<string>ChartRendererBase.swift</string>
+			<string>Fabric.framework</string>
 			<key>path</key>
-			<string>Charts/Classes/Renderers/ChartRendererBase.swift</string>
+			<string>iOS/Fabric.framework</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>1ED95865A0F35E6479942C08DC17E359</key>
 		<dict>
 			<key>fileRef</key>
-			<string>F1D85A9EA6F1878221AD1190E3F12CE4</string>
+			<string>361F6176B7E6A2C07026302DBB8FB124</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>1EE4CB0D03F5ADA0FDAA95FC65287637</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Gloss.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1EFEE4F32A811F969F6619849C7283DD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ChartYAxisRendererHorizontalBarChart.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Renderers/ChartYAxisRendererHorizontalBarChart.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>1FFA88C4B3A1DAF8DA3FBD1FB22358B5</key>
 		<dict>
 			<key>fileRef</key>
-			<string>DD57F0B427BC433F2A174BCACB7D5945</string>
+			<string>20FD5429AFD1A35519076DA6AB349764</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>21429242C97EFF5F1252F3E71E8AB094</key>
+		<key>20FD5429AFD1A35519076DA6AB349764</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -475,13 +542,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>RadarChartView.swift</string>
+			<string>BarChartDataEntry.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Charts/RadarChartView.swift</string>
+			<string>Charts/Classes/Data/Implementations/Standard/BarChartDataEntry.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>218C266299D7A303368A09726AF0C47D</key>
+		<key>21365C5C9F4B7D1186B26D47CCA9C3C8</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -490,23 +557,23 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>LineScatterCandleRadarChartRenderer.swift</string>
+			<string>CombinedChartView.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Renderers/LineScatterCandleRadarChartRenderer.swift</string>
+			<string>Charts/Classes/Charts/CombinedChartView.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>224F8C8DCD27EA9658A028C095C4F275</key>
 		<dict>
 			<key>fileRef</key>
-			<string>3F8D1513023F3453110488156118E703</string>
+			<string>5CF2E5AE18BC89B2D3E4DE9ED0A51529</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>22EC238EF53E9FF5C49794DB0854D1BA</key>
 		<dict>
 			<key>fileRef</key>
-			<string>0F9E3A93EBB07BE3F1C5C4E4D7F13A9F</string>
+			<string>FF3E1E7B0415A0846108D9CDAD3F83BB</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -521,7 +588,7 @@
 			<key>targetProxy</key>
 			<string>B7EA7037DF5F007B72733D1D2DFC0063</string>
 		</dict>
-		<key>233D739D442898FF6C3A8B0B421542CB</key>
+		<key>23A522F3322AFC8DB99E546D1E9149B2</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -530,62 +597,20 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>ChartXAxis.swift</string>
+			<string>IPieChartDataSet.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Components/ChartXAxis.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>23EB2405728280AA90C474B964E179F6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ChartAnimationEasing.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Animation/ChartAnimationEasing.swift</string>
+			<string>Charts/Classes/Data/Interfaces/IPieChartDataSet.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>24A9C720DFCC621D045671BF48493E8A</key>
 		<dict>
 			<key>fileRef</key>
-			<string>F74959D76DC13BE16824616C5947C42F</string>
+			<string>5E80DAF0B3AD525AE41FDCB501BDFDE0</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>2578581FD71FDA0ACAA8094CF2BBD0E2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C9AEB3F9A980D384D2E035444AC96417</string>
-				<string>D214A09E99EBD2C88AFBCC3163C970C9</string>
-				<string>4B1CB651358BF4893ECC1266717B83D0</string>
-				<string>E8303C84A9A9EFB428A7828CA501B5E6</string>
-				<string>91456A90C43633537F3C3F46D44ACBC6</string>
-				<string>04CE75499A585FE086C9A10CB652FEBF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/Gloss</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>268957DD1BCCEB3ABCE0BA4DED45EA01</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB2A1EE887C0E4F43F8B44008F67C97B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>294FB67F20751E7EE034FA68772B0E7D</key>
+		<key>2572C843D587E31F2140E53B00D03C5A</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -594,11 +619,18 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>MoveChartViewJob.swift</string>
+			<string>ILineRadarChartDataSet.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Jobs/MoveChartViewJob.swift</string>
+			<string>Charts/Classes/Data/Interfaces/ILineRadarChartDataSet.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>268957DD1BCCEB3ABCE0BA4DED45EA01</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EFB14BD32E0F346E3E3B4213FD3EF1EF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>2B389FAB51F6EEA43F72CA7BDC8E8E28</key>
 		<dict>
@@ -676,24 +708,9 @@
 		<key>2B44A572F8A1ACA0F3964493F4D3228D</key>
 		<dict>
 			<key>fileRef</key>
-			<string>30212D6737FB6B4CE317F432AE9E3F24</string>
+			<string>019E769CBD61F68570D00735D0E43D9C</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>2C64C304F825D6DEDF94FEDDA9F6778D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ChartAnimator.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Animation/ChartAnimator.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
 		<dict>
@@ -712,76 +729,46 @@
 		<key>2DFEDFAB407EBB39DF8E289418A7BE63</key>
 		<dict>
 			<key>fileRef</key>
-			<string>3AE3E709BB7AC169E9D1A7EFA5B1072A</string>
+			<string>8DBAE2F184E3E2DD62827A8CF670FBBF</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>2E176E84663592A2EB1DF3E23B6D3225</key>
 		<dict>
 			<key>fileRef</key>
-			<string>42303030761E9C9FC4FE064969C37E86</string>
+			<string>370DE963E49F9669DF67624CDB882701</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>2E6846DB220C35EF387C119161A37580</key>
 		<dict>
 			<key>fileRef</key>
-			<string>6B209787678343C3C9BA615D1F707823</string>
+			<string>9801B4E4980D4230FD7D2265AD46B58A</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>2EBAA77DF6F106BCE20CADC931D8C84F</key>
 		<dict>
 			<key>fileRef</key>
-			<string>C85DBCA9D223417988F02EB19C758438</string>
+			<string>F5FABE9521AC399A05002F949AC3134F</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>30092F63FB79CD827CB85D797464FB40</key>
 		<dict>
 			<key>fileRef</key>
-			<string>3FFE53A350F3963259F7B82EA7F91759</string>
+			<string>E69B069B731179FD526A06BA2787A86C</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>30212D6737FB6B4CE317F432AE9E3F24</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ChartDefaultFillFormatter.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Formatters/ChartDefaultFillFormatter.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3044924FC4A5445069BD35295F507E5D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>BarChartRenderer.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Renderers/BarChartRenderer.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>317A3E7B043018C7BD7F857B76FE1462</key>
 		<dict>
 			<key>fileRef</key>
-			<string>59574842EF5E7EC8298B38404CE84DDD</string>
+			<string>1DAD6E4B70CC6120FD0E53B7A87D15B1</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>31FF788E222C1F0105C5C34625FCE9C2</key>
+		<key>3411AC6D23D26838084BD00297096D92</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -790,55 +777,25 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>CandleChartData.swift</string>
+			<string>ChartDefaultXAxisValueFormatter.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Data/Implementations/Standard/CandleChartData.swift</string>
+			<string>Charts/Classes/Formatters/ChartDefaultXAxisValueFormatter.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>3519CBA7EE38A591227561F3B974D709</key>
 		<dict>
 			<key>fileRef</key>
-			<string>E8C3A56A5A7A910449705B22C13F99E3</string>
+			<string>8696A6A0ADD7CA468A416CAE22E48A91</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>352B67925A5774D4075213CC9B6BCF92</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>BarLineScatterCandleBubbleChartData.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Data/Implementations/Standard/BarLineScatterCandleBubbleChartData.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>352EF1AF94125D67FEAA040F32449B24</key>
 		<dict>
 			<key>fileRef</key>
-			<string>658A9C07D74B9FFC0CD80B2E7714998D</string>
+			<string>6DECBC89388E0E12F71D342BFD6CC3F3</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>35982491302F248A1EBCAC8B53C853F5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>Operators.swift</string>
-			<key>path</key>
-			<string>Sources/Operators.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>35A096F26E97C706CBEA29CF965447E7</key>
 		<dict>
@@ -859,10 +816,25 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+		<key>35B9558299112FBAD1350C7FB80913FD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ChartTransformer.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Utils/ChartTransformer.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>361CB8CE5FB0F7E9DADD6D243BA09A05</key>
 		<dict>
 			<key>fileRef</key>
-			<string>69E6D6F24CA7E2945362EB9DE1412032</string>
+			<string>6D03DE38C32ACB11195E8DB530EC676F</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -873,14 +845,20 @@
 				</array>
 			</dict>
 		</dict>
-		<key>371FCB701E2FA5156BA218C0C95A1C5E</key>
+		<key>361F6176B7E6A2C07026302DBB8FB124</key>
 		<dict>
-			<key>fileRef</key>
-			<string>CD2C5AB48AA9376137A74442574D32F9</string>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Charts-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
-		<key>37EC1A225EA62276D4EFE82D01D9C5B7</key>
+		<key>370DE963E49F9669DF67624CDB882701</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -889,23 +867,30 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>PieChartRenderer.swift</string>
+			<string>CandleStickChartView.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Renderers/PieChartRenderer.swift</string>
+			<string>Charts/Classes/Charts/CandleStickChartView.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>371FCB701E2FA5156BA218C0C95A1C5E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>92D203ABFBBC49D94AE68578B20810FC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>38482CD39B3757452D67AE22C1DA5F29</key>
 		<dict>
 			<key>fileRef</key>
-			<string>B6BA8F3626EE3505B0ED1B6F53D20049</string>
+			<string>69ED9E6F75AC28F75653088D9941482C</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>38E5AE8278D6C47639BB70049876C110</key>
 		<dict>
 			<key>fileRef</key>
-			<string>76AA7CA6A9E00C8B023B2540BD904A9D</string>
+			<string>7364F00791176298BCC3A494DF62A06E</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -916,7 +901,7 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>3AE3E709BB7AC169E9D1A7EFA5B1072A</key>
+		<key>39C69067AC768DF46783453341108D4B</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -925,37 +910,52 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>HorizontalBarChartRenderer.swift</string>
+			<string>MoveChartViewJob.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Renderers/HorizontalBarChartRenderer.swift</string>
+			<string>Charts/Classes/Jobs/MoveChartViewJob.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3A1611B1663BD48AC6A3AF33B3CAC6FA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ChartLegend.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Components/ChartLegend.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>3B2ED386492166C28D7631B4488EA230</key>
 		<dict>
 			<key>fileRef</key>
-			<string>18FF9D77B54F9EEAF7D6F10B977C5FF6</string>
+			<string>425CA40D80A8F5754D51B92DA01A2F9D</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>3C50B55F32F9344B641ACF672F0220A4</key>
 		<dict>
 			<key>fileRef</key>
-			<string>F2AAD74CFCE5EF566470EE6F9A45DD20</string>
+			<string>9532E82AB50AF9B72CB26C66CCBCB373</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>3D8DDA0FEB1A3AFF6643F9121E19D044</key>
 		<dict>
 			<key>fileRef</key>
-			<string>21429242C97EFF5F1252F3E71E8AB094</string>
+			<string>5438B0103E1E312B4EBF632624DDB9D3</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>3DB99C22AB1CE344BFE50941C299F2AB</key>
 		<dict>
 			<key>fileRef</key>
-			<string>A3C1401091DE257EF859526B42C7FAC1</string>
+			<string>E7C42322A9BCF5C96355D63F3A5B19F5</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -975,100 +975,25 @@
 		<key>3EED0E841D10FEAA033A3C645CB219D3</key>
 		<dict>
 			<key>fileRef</key>
-			<string>5DAA236B1EE085B0D65E8C4B3848A8DD</string>
+			<string>9E5B3D059E4CC0A6A853F77BCDF72CBF</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>3EF3C6E2D5466E70A62B0CE90DA2604C</key>
 		<dict>
 			<key>fileRef</key>
-			<string>5569AE184130B61C5086A0D6C3829893</string>
+			<string>59A4219B48BF01403339673D4942084D</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>3F8D1513023F3453110488156118E703</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ChartFillFormatter.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Formatters/ChartFillFormatter.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F9D037BA793F872A7AC56E2C68C571C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>RadarChartDataSet.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Data/Implementations/Standard/RadarChartDataSet.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3FFE53A350F3963259F7B82EA7F91759</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ChartViewPortHandler.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Utils/ChartViewPortHandler.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>404CCD47E74B7755946CB2092AE60574</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ChartColorTemplates.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Utils/ChartColorTemplates.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4065B3DB290A9ACE6930184F246E3E15</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>BubbleChartRenderer.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Renderers/BubbleChartRenderer.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>421EC967AD86F44E9BDB88301D94B33B</key>
 		<dict>
 			<key>fileRef</key>
-			<string>C002F44E9A4485C0E84F2F96A6DF5182</string>
+			<string>CE9001AFB3B6632FB74F29660C12040D</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>42303030761E9C9FC4FE064969C37E86</key>
+		<key>425CA40D80A8F5754D51B92DA01A2F9D</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1077,20 +1002,20 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>CandleStickChartView.swift</string>
+			<string>ChartPlatform.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Charts/CandleStickChartView.swift</string>
+			<string>Charts/Classes/Utils/ChartPlatform.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>4410FC385A2CC0E7D78A1EEAC0DCD240</key>
 		<dict>
 			<key>fileRef</key>
-			<string>A0FC0BB172396EA10B10BB185472E01E</string>
+			<string>B0EB28E2D94A071CEACA0D66621EB627</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>45F3985AB82E36AEE37C5D910E7C2D84</key>
+		<key>4494B366ED621FDDEC039FE6D62E5273</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1099,152 +1024,20 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>ChartDataProvider.swift</string>
+			<string>ZoomChartViewJob.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Interfaces/ChartDataProvider.swift</string>
+			<string>Charts/Classes/Jobs/ZoomChartViewJob.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>465CB044A4902D7BAA80597E096B0E67</key>
 		<dict>
 			<key>fileRef</key>
-			<string>7526D3B89C75AF85EA12A912496ACB70</string>
+			<string>F810B1F6992E0FB5D09D398406393C26</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>46C0ED5BCD3E9AF6A99BC06BD7A28358</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>11886B4E5ED5155F85EB25BCA0657572</string>
-				<string>ABA9EECE16961A9E7906E54371F5A015</string>
-				<string>7176F100E03E117FDB8056A0A0151DD5</string>
-				<string>138E17820B6D2476356FEAE41C8F8D05</string>
-				<string>DD57F0B427BC433F2A174BCACB7D5945</string>
-				<string>5569AE184130B61C5086A0D6C3829893</string>
-				<string>7E4663BBBAB9BBC8D27AAD2A5E8A9E1F</string>
-				<string>7526D3B89C75AF85EA12A912496ACB70</string>
-				<string>3044924FC4A5445069BD35295F507E5D</string>
-				<string>5381DEFFC2440152F5960C80321C58BE</string>
-				<string>658A9C07D74B9FFC0CD80B2E7714998D</string>
-				<string>352B67925A5774D4075213CC9B6BCF92</string>
-				<string>702BE2672962A85A4FA9D316C9FADFDF</string>
-				<string>A0535A1B13D923420B8531B488918C29</string>
-				<string>B61393DFDC7E319345515C83B524403D</string>
-				<string>77D1B5CE11A912FBAD360B0939EE98DE</string>
-				<string>10278E066BD66EA42A213ED40436D64E</string>
-				<string>55989ED53CC757C661920D85C34B80DF</string>
-				<string>4065B3DB290A9ACE6930184F246E3E15</string>
-				<string>86EED73F906D919790A5D34F98A3F008</string>
-				<string>31FF788E222C1F0105C5C34625FCE9C2</string>
-				<string>6D4BF98D19275FDDB5984A3A701AFD4F</string>
-				<string>BBC60C65827058B47FCEFDAA65BA6F2F</string>
-				<string>6B209787678343C3C9BA615D1F707823</string>
-				<string>54C21929D2CB2EF9F89C9D813039B2BD</string>
-				<string>42303030761E9C9FC4FE064969C37E86</string>
-				<string>23EB2405728280AA90C474B964E179F6</string>
-				<string>2C64C304F825D6DEDF94FEDDA9F6778D</string>
-				<string>4EE7B0E86B3ACFB85F1991C4C7C1253D</string>
-				<string>9F65D6F0B9FB611ACD1B55D17FE42D2A</string>
-				<string>AA47FA2EE9C7FA6DAC46C2AFEA30CEF3</string>
-				<string>404CCD47E74B7755946CB2092AE60574</string>
-				<string>AB2A1EE887C0E4F43F8B44008F67C97B</string>
-				<string>76AA7CA6A9E00C8B023B2540BD904A9D</string>
-				<string>6AEE1E41BB6AD775B97211E78A9F6225</string>
-				<string>86099BA0EA1D669F5150668DB52D07BE</string>
-				<string>D3BB6294C70FC1DADFAE6621556DC7D3</string>
-				<string>45F3985AB82E36AEE37C5D910E7C2D84</string>
-				<string>13659EB92F4AA31C8926FDFA52101FE9</string>
-				<string>EB7E83139620425C23087138C129DDEB</string>
-				<string>30212D6737FB6B4CE317F432AE9E3F24</string>
-				<string>B5A2C9D2DFFE47012D3360B322038ECE</string>
-				<string>C002F44E9A4485C0E84F2F96A6DF5182</string>
-				<string>3F8D1513023F3453110488156118E703</string>
-				<string>EFC2FC7A2A18682B3F1B70E709532D99</string>
-				<string>F2AAD74CFCE5EF566470EE6F9A45DD20</string>
-				<string>DDDE204BD7DD0A84C06707715E3A5714</string>
-				<string>F1BB850874B6A34661379A66F7A36304</string>
-				<string>F948B6DE65647E7E64F4714D79C1559C</string>
-				<string>7811F6AC60C8DA13EE1E298EE5BB37CC</string>
-				<string>18FF9D77B54F9EEAF7D6F10B977C5FF6</string>
-				<string>F74959D76DC13BE16824616C5947C42F</string>
-				<string>1EC7B0FD4B8FF236052D7A5D7DE8F171</string>
-				<string>CD2C5AB48AA9376137A74442574D32F9</string>
-				<string>A56D1B7403CD361EBCD547DEF8D8D843</string>
-				<string>848B04407AF2ABB35FB63AB98D5565D4</string>
-				<string>6E2E835495E12C29013E73A4780A6753</string>
-				<string>59574842EF5E7EC8298B38404CE84DDD</string>
-				<string>3FFE53A350F3963259F7B82EA7F91759</string>
-				<string>50EAD2126708125520ADA68A5D31A14A</string>
-				<string>233D739D442898FF6C3A8B0B421542CB</string>
-				<string>5DAA236B1EE085B0D65E8C4B3848A8DD</string>
-				<string>49411AC0181149447BF59D0640D0DBCC</string>
-				<string>B6BA8F3626EE3505B0ED1B6F53D20049</string>
-				<string>1C04791773B1860CC56AE1106F7F8878</string>
-				<string>F99A3B6542F72DD77BF9747B65456138</string>
-				<string>6C2EDBBE682EB65B61C4CAC8D5EF13DC</string>
-				<string>A5E238658EDC438DC0586529565962CC</string>
-				<string>ACECBE554BEF23E2A8F347BE5BFA07C2</string>
-				<string>DC7A5E0B7B82CEA09A6B030DF6A40BAE</string>
-				<string>7F3BAC05762A53B25E09B8A41E2C7B88</string>
-				<string>8C169B2F65BE81F209ADC69134E74E75</string>
-				<string>14F475176F0070CC0E82580ED50C0FE3</string>
-				<string>BD5048371C43D604BF14EF2A0877763D</string>
-				<string>E4B59FD4E46F07428CAFF51B9FA59EA6</string>
-				<string>3AE3E709BB7AC169E9D1A7EFA5B1072A</string>
-				<string>F296E92711E1B6864BCB98FEE12B8CE9</string>
-				<string>1ADD830D80714FB8D6909B65AE2B217D</string>
-				<string>C7E3294E1D1FB7A95CE43229F56C77F8</string>
-				<string>187C657C4D9A96935B8459E004AB451B</string>
-				<string>E8C3A56A5A7A910449705B22C13F99E3</string>
-				<string>F0E779FFC0EF27E0539FD4E000D1D4C7</string>
-				<string>D2B17B39B01F583F63EF78FFC4B66696</string>
-				<string>E66BB251687FA32C623DCA5F17A010DA</string>
-				<string>72080911E4797400B401A26A2EE73713</string>
-				<string>D4452B8B29E5AF96834E8DE79FACCC53</string>
-				<string>EEC45B99904A192C45E3B1623318FEAB</string>
-				<string>D58A61D7F52BDC8EBD86E9144A5E5812</string>
-				<string>18B40E0A91A13D19B300AD8D6E2A0A52</string>
-				<string>C85DBCA9D223417988F02EB19C758438</string>
-				<string>E25B5C088C3FD966B1F3CF7CD127E6A6</string>
-				<string>A3C1401091DE257EF859526B42C7FAC1</string>
-				<string>B73EE53AE9AF9DF298D96C38F564AE47</string>
-				<string>9259E21679A6312FCBAC3C7AFC6A255D</string>
-				<string>063649C12321CE63E81532F2949FAA1A</string>
-				<string>121F9982EC2BD2E924D1AD28E4DC18BD</string>
-				<string>218C266299D7A303368A09726AF0C47D</string>
-				<string>294FB67F20751E7EE034FA68772B0E7D</string>
-				<string>772DB5526781B1EFEFB3707DC5AAC482</string>
-				<string>09B32E2C9D2A34F54667DD867F425EE0</string>
-				<string>37EC1A225EA62276D4EFE82D01D9C5B7</string>
-				<string>CA6AD46183B27A5A372423745E419D60</string>
-				<string>587EA3F591BD8B752C0824488E876B09</string>
-				<string>5A3F7D25046E19836673FE98E5598230</string>
-				<string>3F9D037BA793F872A7AC56E2C68C571C</string>
-				<string>BE258562B987521FC8E36AFD15673F72</string>
-				<string>21429242C97EFF5F1252F3E71E8AB094</string>
-				<string>7C7028B80AC1979945B23222940D50C7</string>
-				<string>87D0C071CB5D489F1763F2DEA414CAE3</string>
-				<string>996F12FAFDAAFA8329A1D4DCB93A6485</string>
-				<string>E8D8083F91450E92AAC49E03973C07DD</string>
-				<string>98A9AAFF38522DD6B9B0670DE20479A5</string>
-				<string>8E285AF4005747B44FBFEB9B0A620867</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Core</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4846448B6998275139FBF24E87C11D42</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1EC7B0FD4B8FF236052D7A5D7DE8F171</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>49411AC0181149447BF59D0640D0DBCC</key>
+		<key>475A04EC26F0DCDE8DC6070C91EEB8E7</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1253,58 +1046,108 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>ChartXAxisRendererBarChart.swift</string>
+			<string>BarChartDataSet.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Renderers/ChartXAxisRendererBarChart.swift</string>
+			<string>Charts/Classes/Data/Implementations/Standard/BarChartDataSet.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>494C4D78699C6C0D990FA47768CD723C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F9E67584AFC936E7BAC459A63268AECC</string>
-				<string>F1FE699583F95648DD5457B652C44E79</string>
-				<string>F1D85A9EA6F1878221AD1190E3F12CE4</string>
-				<string>E7DC8306A30C1077F4CE0A64D68DAA43</string>
-				<string>69E6D6F24CA7E2945362EB9DE1412032</string>
-				<string>AC2EDC788AD96E90ABEA3E5E96AC0D6B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/Charts</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4ABE19F043A4FECE8C2A3F1F72AB3F7F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>702BE2672962A85A4FA9D316C9FADFDF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4B1CB651358BF4893ECC1266717B83D0</key>
+		<key>47651831AA93200D43FAB4209F90BB85</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ExtensionArray.swift</string>
 			<key>path</key>
-			<string>Gloss-dummy.m</string>
+			<string>Sources/ExtensionArray.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4846448B6998275139FBF24E87C11D42</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D440DFCD4239DB34A3184BA58C90C4CD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>490AA2A6503B84B73A30215FBDF179A2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>IBarLineScatterCandleBubbleChartDataSet.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Data/Interfaces/IBarLineScatterCandleBubbleChartDataSet.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4A537460E78B0E9B93D6F68966F5DEDB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>BarChartView.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Charts/BarChartView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4ABE19F043A4FECE8C2A3F1F72AB3F7F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F196988866495D929B4246E9B90DB67C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4B5B73E9F049C6C0A3A498FAAFA6521F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ChartMarker.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Components/ChartMarker.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>4BD7EE6ED468BE4A70A0739940369D7D</key>
 		<dict>
 			<key>fileRef</key>
-			<string>14F475176F0070CC0E82580ED50C0FE3</string>
+			<string>21365C5C9F4B7D1186B26D47CCA9C3C8</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>4DC75C4AC7D49FD83C3632B41689A7E8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>847EF794CD62BB83E2AD8F7494204A1E</string>
+				<string>A2C006A7593D9AA35BBA6EA6FBBBFB76</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Charts</string>
+			<key>path</key>
+			<string>Charts</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>4E6F92E661AA0204A55B3CA860FD56DD</key>
 		<dict>
@@ -1320,68 +1163,51 @@
 		<key>4EC9879E9DEB9D169929ADA6EEFB18FD</key>
 		<dict>
 			<key>fileRef</key>
-			<string>ABA9EECE16961A9E7906E54371F5A015</string>
+			<string>5D1BED6AA01A887E1EC1105CC1D4D506</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>4EE7B0E86B3ACFB85F1991C4C7C1253D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ChartAxisBase.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Components/ChartAxisBase.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>4EEF9EF82DBD9FA2F25E1ABDE291AC02</key>
 		<dict>
 			<key>fileRef</key>
-			<string>138E17820B6D2476356FEAE41C8F8D05</string>
+			<string>F251D046855213BD1AC86D7C2ADE7E95</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>4F64F6110F30DDAC32E20AF71EA6869F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>Crashlytics.h</string>
+			<key>path</key>
+			<string>iOS/Crashlytics.framework/Headers/Crashlytics.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5011C4ECDC3D41F0F24F67106F75E197</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Gloss-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>50AE3A2D24BA4DE093FC4BD2657AC1FB</key>
 		<dict>
 			<key>fileRef</key>
-			<string>848B04407AF2ABB35FB63AB98D5565D4</string>
+			<string>556BCB9A6D835782126D38674F5DA44C</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>50EAD2126708125520ADA68A5D31A14A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ChartViewPortJob.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Jobs/ChartViewPortJob.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5381DEFFC2440152F5960C80321C58BE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>BarChartView.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Charts/BarChartView.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>538F85CC32C09E92C0ECE777AF440BB3</key>
 		<dict>
@@ -1393,6 +1219,36 @@
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
 			<string>Pods-Ether Tracker-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5410A6E604D7AACA48FCD80B8CCE7388</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ChartDataProvider.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Interfaces/ChartDataProvider.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5438B0103E1E312B4EBF632624DDB9D3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>RadarChartView.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Charts/RadarChartView.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1411,25 +1267,10 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>54C21929D2CB2EF9F89C9D813039B2BD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>CandleStickChartRenderer.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Renderers/CandleStickChartRenderer.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>54E862294530B7914A37F408C0DFF74C</key>
 		<dict>
 			<key>fileRef</key>
-			<string>4EE7B0E86B3ACFB85F1991C4C7C1253D</string>
+			<string>A976DF8F4F154A0AFCCCDD40AEA9C1F8</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -1446,7 +1287,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>5569AE184130B61C5086A0D6C3829893</key>
+		<key>556BCB9A6D835782126D38674F5DA44C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1455,24 +1296,22 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>BarChartDataProvider.swift</string>
+			<string>ChartTransformerHorizontalBarChart.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Interfaces/BarChartDataProvider.swift</string>
+			<string>Charts/Classes/Utils/ChartTransformerHorizontalBarChart.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>55989ED53CC757C661920D85C34B80DF</key>
+		<key>5668BAB7A9D4883034CF7176E2528F8B</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>BubbleChartDataSet.swift</string>
+			<string>text.plist.xml</string>
 			<key>path</key>
-			<string>Charts/Classes/Data/Implementations/Standard/BubbleChartDataSet.swift</string>
+			<string>Info.plist</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1491,7 +1330,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>587EA3F591BD8B752C0824488E876B09</key>
+		<key>59A4219B48BF01403339673D4942084D</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1500,24 +1339,9 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>PieRadarChartViewBase.swift</string>
+			<string>BarChartDataProvider.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Charts/PieRadarChartViewBase.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>59574842EF5E7EC8298B38404CE84DDD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ChartViewBase.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Charts/ChartViewBase.swift</string>
+			<string>Charts/Classes/Interfaces/BarChartDataProvider.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1602,7 +1426,7 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>5A3F7D25046E19836673FE98E5598230</key>
+		<key>5A14D6ACD550D2FCD63CB0FD0083CE12</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1611,9 +1435,24 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>RadarChartData.swift</string>
+			<string>LineChartView.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Data/Implementations/Standard/RadarChartData.swift</string>
+			<string>Charts/Classes/Charts/LineChartView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5CF2E5AE18BC89B2D3E4DE9ED0A51529</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ChartFillFormatter.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Formatters/ChartFillFormatter.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1630,7 +1469,7 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>5DAA236B1EE085B0D65E8C4B3848A8DD</key>
+		<key>5D1BED6AA01A887E1EC1105CC1D4D506</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1639,25 +1478,105 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>ChartXAxisRenderer.swift</string>
+			<string>AnimatedViewPortJob.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Renderers/ChartXAxisRenderer.swift</string>
+			<string>Charts/Classes/Jobs/AnimatedViewPortJob.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5D6D208B88926BF17FA4963ED62AEDD2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ILineScatterCandleRadarChartDataSet.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Data/Interfaces/ILineScatterCandleRadarChartDataSet.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5D6D408AC9CDC1DB90339CCF9B33518C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1EE4CB0D03F5ADA0FDAA95FC65287637</string>
+				<string>7584CE8AC1DCB84420DF3F7B6400D7F8</string>
+				<string>1B5EDB515B685A7B3585BF31A75F16AA</string>
+				<string>BEED0AE091E3D70181610ABE3337094E</string>
+				<string>5011C4ECDC3D41F0F24F67106F75E197</string>
+				<string>5668BAB7A9D4883034CF7176E2528F8B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/Gloss</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5E80DAF0B3AD525AE41FDCB501BDFDE0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ChartRange.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Highlight/ChartRange.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5F559F146029091135B2BFF1C2049C2D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ChartLegendRenderer.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Renderers/ChartLegendRenderer.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>604D5A1EF4ABD6E0ACB3B5C820C9F841</key>
 		<dict>
 			<key>fileRef</key>
-			<string>B73EE53AE9AF9DF298D96C38F564AE47</string>
+			<string>5A14D6ACD550D2FCD63CB0FD0083CE12</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>620860DD966F93A5BB284ECA65E3FF68</key>
 		<dict>
 			<key>fileRef</key>
-			<string>A0535A1B13D923420B8531B488918C29</string>
+			<string>F2A487AA386385F10537C71C48BA9EAD</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>620E1788047E14B8FF86404E7953D734</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>CombinedChartRenderer.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Renderers/CombinedChartRenderer.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>62B9AFC977C9ACE21C0328597D8D6F75</key>
 		<dict>
@@ -1675,14 +1594,14 @@
 		<key>631BAC0B955DDA472F2092F853D8624D</key>
 		<dict>
 			<key>fileRef</key>
-			<string>18B40E0A91A13D19B300AD8D6E2A0A52</string>
+			<string>C56015FF6F32A2197FCEE458EEB2E22B</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>63ABB94203A0A85EC9E2A657BDAFB391</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>D214A09E99EBD2C88AFBCC3163C970C9</string>
+			<string>7584CE8AC1DCB84420DF3F7B6400D7F8</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -1737,7 +1656,36 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>658A9C07D74B9FFC0CD80B2E7714998D</key>
+		<key>641B32BE00F1219FDF7D3ACABB3CFB66</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>97F9038F32DE4447537B226DE89115EF</string>
+				<string>14661842E8E7C80C9A8DD58E78667A43</string>
+				<string>0097125616F16D3BD9F3971C657CD439</string>
+				<string>E8BCFE7EDF52170DD0BD2DA190F891B3</string>
+				<string>6C27E494432362F0C65FD0447D7D189F</string>
+				<string>CE808E745AD3171CAE94AA092307F1D3</string>
+				<string>4F64F6110F30DDAC32E20AF71EA6869F</string>
+				<string>702CB1FC098E04AC08696772241D2A0E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Crashlytics</string>
+			<key>path</key>
+			<string>Crashlytics</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>65FB4C3B9C6D3DF8ED9A60732536021D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4B5B73E9F049C6C0A3A498FAAFA6521F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6632270C91D2F385E701F530BD0B39C6</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1746,18 +1694,11 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>BarLineChartViewBase.swift</string>
+			<string>BubbleChartDataProvider.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Charts/BarLineChartViewBase.swift</string>
+			<string>Charts/Classes/Interfaces/BubbleChartDataProvider.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>65FB4C3B9C6D3DF8ED9A60732536021D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7811F6AC60C8DA13EE1E298EE5BB37CC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
 		</dict>
 		<key>67184F1852A59AB997108F4DB5AF70B0</key>
 		<dict>
@@ -1769,9 +1710,24 @@
 		<key>6744F19C73C44705160ECB1E7C7FB733</key>
 		<dict>
 			<key>fileRef</key>
-			<string>5A3F7D25046E19836673FE98E5598230</string>
+			<string>F0D5F8A77FF6AE5FC8FA5B961690F3C4</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>67ABFC91B84A3CCB2A428A241A95636F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>RadarChartRenderer.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Renderers/RadarChartRenderer.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>693BB7B0BBB5FD9565BDE6CB1E05CCAD</key>
 		<dict>
@@ -1784,20 +1740,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>69E6D6F24CA7E2945362EB9DE1412032</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Charts-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6AEE1E41BB6AD775B97211E78A9F6225</key>
+		<key>69ED9E6F75AC28F75653088D9941482C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1806,276 +1749,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>ChartDataApproximatorFilter.swift</string>
+			<string>ChartXAxisRendererHorizontalBarChart.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Filters/ChartDataApproximatorFilter.swift</string>
+			<string>Charts/Classes/Renderers/ChartXAxisRendererHorizontalBarChart.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>6B209787678343C3C9BA615D1F707823</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>CandleChartDataSet.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Data/Implementations/Standard/CandleChartDataSet.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6C2EDBBE682EB65B61C4CAC8D5EF13DC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ChartYAxis.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Components/ChartYAxis.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6C77A1B3D784E94C0A704E5758AF6E14</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D4452B8B29E5AF96834E8DE79FACCC53</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6D19F0531EE609B34E6DA8F87E7F3102</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E81898ADE0CC2D0D0D50C9BE169A5D45</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6D4BF98D19275FDDB5984A3A701AFD4F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>CandleChartDataEntry.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Data/Implementations/Standard/CandleChartDataEntry.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E2E835495E12C29013E73A4780A6753</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ChartUtils.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Utils/ChartUtils.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6F27F0A0E87FC39880EE7BC442E7525C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>86EED73F906D919790A5D34F98A3F008</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>70073C35619976BCC6D659E523A9375E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BBC60C65827058B47FCEFDAA65BA6F2F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>702BE2672962A85A4FA9D316C9FADFDF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>BarLineScatterCandleBubbleChartDataProvider.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Interfaces/BarLineScatterCandleBubbleChartDataProvider.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7176F100E03E117FDB8056A0A0151DD5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>AnimatedZoomViewJob.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Jobs/AnimatedZoomViewJob.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>72080911E4797400B401A26A2EE73713</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ILineScatterCandleRadarChartDataSet.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Data/Interfaces/ILineScatterCandleRadarChartDataSet.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>729F9E9B68A861150F91F93D765BD254</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1ADD830D80714FB8D6909B65AE2B217D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7526D3B89C75AF85EA12A912496ACB70</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>BarChartHighlighter.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Highlight/BarChartHighlighter.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>76AA7CA6A9E00C8B023B2540BD904A9D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ChartData.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Data/Implementations/Standard/ChartData.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>770318C2100C2A9A4D14D224B041B0E5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7F3BAC05762A53B25E09B8A41E2C7B88</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>772DB5526781B1EFEFB3707DC5AAC482</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>PieChartData.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Data/Implementations/Standard/PieChartData.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>778126769FD6E223F9574C2E19DD5453</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F1BB850874B6A34661379A66F7A36304</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>77D1B5CE11A912FBAD360B0939EE98DE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>BubbleChartDataEntry.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Data/Implementations/Standard/BubbleChartDataEntry.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7811F6AC60C8DA13EE1E298EE5BB37CC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ChartMarker.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Components/ChartMarker.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>783C44EF16D4C79ADC985C8C86C458D5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A56D1B7403CD361EBCD547DEF8D8D843</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>797C9F2528F449390500C4FECCBAA135</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F948B6DE65647E7E64F4714D79C1559C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7B234F4406FD51E392E7B688A295E8FB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EEC45B99904A192C45E3B1623318FEAB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7C204B9F7D811C860F446BAB1575C344</key>
-		<dict>
-			<key>fileRef</key>
-			<string>86099BA0EA1D669F5150668DB52D07BE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7C7028B80AC1979945B23222940D50C7</key>
+		<key>6A2CF589381C6DFF82B293080EE4D58E</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2090,22 +1770,68 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<key>6BBB2165FF00AFE568F7E5DB1363BEE5</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
-				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
-				<string>8F3BE49A74941BBA263497EB1A9F2030</string>
-				<string>5748AC2FBC4A4E6368657FD3356A9828</string>
-				<string>E30B229B20E1102FDCA5E7FA287BF2DC</string>
-			</array>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Crashlytics.framework</string>
+			<key>path</key>
+			<string>iOS/Crashlytics.framework</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7E4663BBBAB9BBC8D27AAD2A5E8A9E1F</key>
+		<key>6C27E494432362F0C65FD0447D7D189F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>CLSReport.h</string>
+			<key>path</key>
+			<string>iOS/Crashlytics.framework/Headers/CLSReport.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6C77A1B3D784E94C0A704E5758AF6E14</key>
+		<dict>
+			<key>fileRef</key>
+			<string>23A522F3322AFC8DB99E546D1E9149B2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6D03DE38C32ACB11195E8DB530EC676F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Charts-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6D19F0531EE609B34E6DA8F87E7F3102</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E81898ADE0CC2D0D0D50C9BE169A5D45</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6DECBC89388E0E12F71D342BFD6CC3F3</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2114,9 +1840,188 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>BarChartDataSet.swift</string>
+			<string>BarLineChartViewBase.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Data/Implementations/Standard/BarChartDataSet.swift</string>
+			<string>Charts/Classes/Charts/BarLineChartViewBase.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6F27F0A0E87FC39880EE7BC442E7525C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AF56C766476EE6DCA22ABFA644AEB6D2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>70073C35619976BCC6D659E523A9375E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EE6A556298F6D538D791451ABA4AF796</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>702CB1FC098E04AC08696772241D2A0E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6BBB2165FF00AFE568F7E5DB1363BEE5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>71DEECB0DA3FB58E90D7EDDD734A4793</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ChartLimitLine.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Components/ChartLimitLine.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>729F9E9B68A861150F91F93D765BD254</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CF76746681EB6966297CEB8CA0040D52</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7364F00791176298BCC3A494DF62A06E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ChartData.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Data/Implementations/Standard/ChartData.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>73AA60CE2B8CE2F9363FB34B7BF3CCB8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>HorizontalBarChartView.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Charts/HorizontalBarChartView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7584CE8AC1DCB84420DF3F7B6400D7F8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Gloss.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76A287351D3D8B574A66A6018B8A55F9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ChartDataRendererBase.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Renderers/ChartDataRendererBase.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>770318C2100C2A9A4D14D224B041B0E5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DC04C3DBEBCC945DC17D5C77EE3BD570</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>778126769FD6E223F9574C2E19DD5453</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5F559F146029091135B2BFF1C2049C2D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>783C44EF16D4C79ADC985C8C86C458D5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>35B9558299112FBAD1350C7FB80913FD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>797C9F2528F449390500C4FECCBAA135</key>
+		<dict>
+			<key>fileRef</key>
+			<string>71DEECB0DA3FB58E90D7EDDD734A4793</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>79C2FEA993C72819D817913FEC353218</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Gloss.swift</string>
+			<key>path</key>
+			<string>Sources/Gloss.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7B234F4406FD51E392E7B688A295E8FB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>89EBEDFFE8AC1E7F551AA549C3199D1D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7C204B9F7D811C860F446BAB1575C344</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A30EB72D8E1A3D9276FBCB0540D7C6AF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
+				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
+				<string>F719307FA1DE4072414467F83EDD6C73</string>
+				<string>5748AC2FBC4A4E6368657FD3356A9828</string>
+				<string>E30B229B20E1102FDCA5E7FA287BF2DC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2182,25 +2087,31 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>7F3BAC05762A53B25E09B8A41E2C7B88</key>
+		<key>7F23DE6FD238007C6C37AD7028A3E504</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>children</key>
+			<array>
+				<string>C8E1CC6427AB1F2F3639830A373D1BED</string>
+				<string>FF3E1E7B0415A0846108D9CDAD3F83BB</string>
+				<string>47651831AA93200D43FAB4209F90BB85</string>
+				<string>B0EB28E2D94A071CEACA0D66621EB627</string>
+				<string>79C2FEA993C72819D817913FEC353218</string>
+				<string>BC34F76B2DAAD9740EF91AA949B084BD</string>
+				<string>5D6D408AC9CDC1DB90339CCF9B33518C</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>CombinedChartData.swift</string>
+			<string>Gloss</string>
 			<key>path</key>
-			<string>Charts/Classes/Data/Implementations/Standard/CombinedChartData.swift</string>
+			<string>Gloss</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>7FBC4AFD30A318C9630BB34750428F3A</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>F1FE699583F95648DD5457B652C44E79</string>
+			<string>E52F9B25DB36B6A65DBBF49005110520</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -2256,11 +2167,136 @@
 		<key>821EB8A5F1FC9B2F4EAB51C67F4DE2C6</key>
 		<dict>
 			<key>fileRef</key>
-			<string>063649C12321CE63E81532F2949FAA1A</string>
+			<string>9F051D263BAEF5447AB743F4D610277F</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>848B04407AF2ABB35FB63AB98D5565D4</key>
+		<key>847EF794CD62BB83E2AD8F7494204A1E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>84E0823D6AF3CC9748F98F369C78AEF1</string>
+				<string>5D1BED6AA01A887E1EC1105CC1D4D506</string>
+				<string>84E70FAABADDA627E37098E41CD45EB0</string>
+				<string>F251D046855213BD1AC86D7C2ADE7E95</string>
+				<string>20FD5429AFD1A35519076DA6AB349764</string>
+				<string>59A4219B48BF01403339673D4942084D</string>
+				<string>475A04EC26F0DCDE8DC6070C91EEB8E7</string>
+				<string>F810B1F6992E0FB5D09D398406393C26</string>
+				<string>D5FBB3B7BCB4C5F257041B064B3BA683</string>
+				<string>4A537460E78B0E9B93D6F68966F5DEDB</string>
+				<string>6DECBC89388E0E12F71D342BFD6CC3F3</string>
+				<string>879E83759942AB214E7092FE3CAE5D62</string>
+				<string>F196988866495D929B4246E9B90DB67C</string>
+				<string>F2A487AA386385F10537C71C48BA9EAD</string>
+				<string>E14BCF08D61BC571B8D7A595379C5C67</string>
+				<string>E978DC185AAFB759C37F1308143A2F32</string>
+				<string>6632270C91D2F385E701F530BD0B39C6</string>
+				<string>156E52704B250B121BD8E8C03BA723A2</string>
+				<string>0F8853EA4BE09B2DF46127EB348FC0FC</string>
+				<string>AF56C766476EE6DCA22ABFA644AEB6D2</string>
+				<string>C7E2A38AEF092A780E7A9D2529002499</string>
+				<string>B3D4C864CF2D9377E415158C01BA4FCA</string>
+				<string>EE6A556298F6D538D791451ABA4AF796</string>
+				<string>9801B4E4980D4230FD7D2265AD46B58A</string>
+				<string>11967D9EBC43D9460963602F6F8462A5</string>
+				<string>370DE963E49F9669DF67624CDB882701</string>
+				<string>C10A965C6B2484361AAFA3421D86E489</string>
+				<string>A968915028C24017C43EEF0388FB485F</string>
+				<string>A976DF8F4F154A0AFCCCDD40AEA9C1F8</string>
+				<string>9BDA736EAC6D0B8DCB363A9195A96241</string>
+				<string>D8430EADDCD8F90BC1B5356DAE5AEE19</string>
+				<string>1898355CCCA40DBA9704ED93CD29FFA0</string>
+				<string>EFB14BD32E0F346E3E3B4213FD3EF1EF</string>
+				<string>7364F00791176298BCC3A494DF62A06E</string>
+				<string>CC51F9AEB82DA1606CB26027015EE5AA</string>
+				<string>A30EB72D8E1A3D9276FBCB0540D7C6AF</string>
+				<string>1BAC9933647C771A0040742EBEB583CD</string>
+				<string>5410A6E604D7AACA48FCD80B8CCE7388</string>
+				<string>76A287351D3D8B574A66A6018B8A55F9</string>
+				<string>C2B0523A9F580F8F7B88E6C143B97FD4</string>
+				<string>019E769CBD61F68570D00735D0E43D9C</string>
+				<string>3411AC6D23D26838084BD00297096D92</string>
+				<string>CE9001AFB3B6632FB74F29660C12040D</string>
+				<string>5CF2E5AE18BC89B2D3E4DE9ED0A51529</string>
+				<string>DC417BEFA767B5B6C7AC9FE5E7F787CE</string>
+				<string>9532E82AB50AF9B72CB26C66CCBCB373</string>
+				<string>3A1611B1663BD48AC6A3AF33B3CAC6FA</string>
+				<string>5F559F146029091135B2BFF1C2049C2D</string>
+				<string>71DEECB0DA3FB58E90D7EDDD734A4793</string>
+				<string>4B5B73E9F049C6C0A3A498FAAFA6521F</string>
+				<string>425CA40D80A8F5754D51B92DA01A2F9D</string>
+				<string>5E80DAF0B3AD525AE41FDCB501BDFDE0</string>
+				<string>D440DFCD4239DB34A3184BA58C90C4CD</string>
+				<string>92D203ABFBBC49D94AE68578B20810FC</string>
+				<string>35B9558299112FBAD1350C7FB80913FD</string>
+				<string>556BCB9A6D835782126D38674F5DA44C</string>
+				<string>A3AA82DFC5DA1DC7BB032EBFF07090E7</string>
+				<string>1DAD6E4B70CC6120FD0E53B7A87D15B1</string>
+				<string>E69B069B731179FD526A06BA2787A86C</string>
+				<string>F3C6E53EFCC51C991D12D2B6F50AC644</string>
+				<string>93740DFECAF95F279E1D29C90C3828D6</string>
+				<string>9E5B3D059E4CC0A6A853F77BCDF72CBF</string>
+				<string>FD8B42D2C29BEC74A8A678A6EBDB9D07</string>
+				<string>69ED9E6F75AC28F75653088D9941482C</string>
+				<string>04A6E9BEF2B53929122650C2970E8099</string>
+				<string>9F6ABA6763E8BD4AC592418F47EC56A7</string>
+				<string>933D1A38D2D78D4CD8433D5F0FBD12A9</string>
+				<string>D5D9B1BB621DF60F56F5EFDC94C28ED4</string>
+				<string>1EFEE4F32A811F969F6619849C7283DD</string>
+				<string>9E22AD731B4529E816E80CC79365359C</string>
+				<string>DC04C3DBEBCC945DC17D5C77EE3BD570</string>
+				<string>620E1788047E14B8FF86404E7953D734</string>
+				<string>21365C5C9F4B7D1186B26D47CCA9C3C8</string>
+				<string>1ACF6056FA0C4611609DEB2AD144EC8E</string>
+				<string>99BC0B6D576535A4516CC4062BC7FC6E</string>
+				<string>8DBAE2F184E3E2DD62827A8CF670FBBF</string>
+				<string>73AA60CE2B8CE2F9363FB34B7BF3CCB8</string>
+				<string>CF76746681EB6966297CEB8CA0040D52</string>
+				<string>490AA2A6503B84B73A30215FBDF179A2</string>
+				<string>18D019F82854ADB70EC2B45A02D0C937</string>
+				<string>8696A6A0ADD7CA468A416CAE22E48A91</string>
+				<string>D935908718FA5B41FD7E367AE7977A70</string>
+				<string>9E7458FB589BF1AE3F62AF54EB657828</string>
+				<string>2572C843D587E31F2140E53B00D03C5A</string>
+				<string>5D6D208B88926BF17FA4963ED62AEDD2</string>
+				<string>23A522F3322AFC8DB99E546D1E9149B2</string>
+				<string>89EBEDFFE8AC1E7F551AA549C3199D1D</string>
+				<string>B53C76BED0BCF6DBB395A604C1960EB3</string>
+				<string>C56015FF6F32A2197FCEE458EEB2E22B</string>
+				<string>F5FABE9521AC399A05002F949AC3134F</string>
+				<string>066EB05B989F43B3D538D35B07B82068</string>
+				<string>E7C42322A9BCF5C96355D63F3A5B19F5</string>
+				<string>5A14D6ACD550D2FCD63CB0FD0083CE12</string>
+				<string>CCE2BC2A609B2142D4100B559C01D734</string>
+				<string>9F051D263BAEF5447AB743F4D610277F</string>
+				<string>94A8844E2A1F9AA4E5C094E37E50BC5B</string>
+				<string>D31DBA7E1B5760F9C348546A16771115</string>
+				<string>39C69067AC768DF46783453341108D4B</string>
+				<string>B600E32AA0AEDF9B8B1C0AF3107EE24C</string>
+				<string>89321337E0D0609338E6667CC4C39B28</string>
+				<string>F0ABA3C72F80D342D05381CAAAEB1F16</string>
+				<string>F98D57F9100253581FB0FEBF42CF04C0</string>
+				<string>ED5F38E5E11F4661591C3CD40076C92A</string>
+				<string>F0D5F8A77FF6AE5FC8FA5B961690F3C4</string>
+				<string>D3B39B245D8AFEC95F996E8799698213</string>
+				<string>67ABFC91B84A3CCB2A428A241A95636F</string>
+				<string>5438B0103E1E312B4EBF632624DDB9D3</string>
+				<string>6A2CF589381C6DFF82B293080EE4D58E</string>
+				<string>F20A2254C4EFB425ED1AE3E7F0CB6185</string>
+				<string>1657BB3BEB8DB9F2A4E363684EB0FDFD</string>
+				<string>0B000FE81D0B71C4DF70559D1D09AAD5</string>
+				<string>03554CD8D3C1097675CFF552944D4416</string>
+				<string>4494B366ED621FDDEC039FE6D62E5273</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Core</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>84E0823D6AF3CC9748F98F369C78AEF1</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2269,9 +2305,24 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>ChartTransformerHorizontalBarChart.swift</string>
+			<string>AnimatedMoveViewJob.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Utils/ChartTransformerHorizontalBarChart.swift</string>
+			<string>Charts/Classes/Jobs/AnimatedMoveViewJob.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>84E70FAABADDA627E37098E41CD45EB0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>AnimatedZoomViewJob.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Jobs/AnimatedZoomViewJob.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2288,29 +2339,14 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>86099BA0EA1D669F5150668DB52D07BE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ChartDataBaseFilter.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Filters/ChartDataBaseFilter.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>86712FE294355019927A4B113B072F63</key>
 		<dict>
 			<key>fileRef</key>
-			<string>E66BB251687FA32C623DCA5F17A010DA</string>
+			<string>2572C843D587E31F2140E53B00D03C5A</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>86EED73F906D919790A5D34F98A3F008</key>
+		<key>8696A6A0ADD7CA468A416CAE22E48A91</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2319,16 +2355,16 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>BubbleChartView.swift</string>
+			<string>ICandleChartDataSet.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Charts/BubbleChartView.swift</string>
+			<string>Charts/Classes/Data/Interfaces/ICandleChartDataSet.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>86F265DD248E17D2B6A3C5E4AA8B6800</key>
 		<dict>
 			<key>fileRef</key>
-			<string>54C21929D2CB2EF9F89C9D813039B2BD</string>
+			<string>11967D9EBC43D9460963602F6F8462A5</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -2346,7 +2382,7 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>87D0C071CB5D489F1763F2DEA414CAE3</key>
+		<key>879E83759942AB214E7092FE3CAE5D62</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2355,9 +2391,39 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>ScatterChartDataProvider.swift</string>
+			<string>BarLineScatterCandleBubbleChartData.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Interfaces/ScatterChartDataProvider.swift</string>
+			<string>Charts/Classes/Data/Implementations/Standard/BarLineScatterCandleBubbleChartData.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>89321337E0D0609338E6667CC4C39B28</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>PieChartDataSet.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Data/Implementations/Standard/PieChartDataSet.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>89EBEDFFE8AC1E7F551AA549C3199D1D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>IRadarChartDataSet.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Data/Interfaces/IRadarChartDataSet.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2371,21 +2437,6 @@
 			<string>text</string>
 			<key>path</key>
 			<string>Pods-Ether Tracker-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8C169B2F65BE81F209ADC69134E74E75</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>CombinedChartRenderer.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Renderers/CombinedChartRenderer.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2403,6 +2454,21 @@
 				</array>
 			</dict>
 		</dict>
+		<key>8DBAE2F184E3E2DD62827A8CF670FBBF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>HorizontalBarChartRenderer.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Renderers/HorizontalBarChartRenderer.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>8E180ED5FD01342AE8A536D38E30C73F</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -2413,35 +2479,6 @@
 			<string>text.plist.xml</string>
 			<key>path</key>
 			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8E285AF4005747B44FBFEB9B0A620867</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ZoomChartViewJob.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Jobs/ZoomChartViewJob.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8F3BE49A74941BBA263497EB1A9F2030</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C419ADA66DA27AC0D742C95084236AD8</string>
-				<string>AA543FFF754AD034960EAFA4594B3062</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2458,7 +2495,103 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>91456A90C43633537F3C3F46D44ACBC6</key>
+		<key>9181C57B0D5E511D518D6ED675AC30A6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D935908718FA5B41FD7E367AE7977A70</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>92D203ABFBBC49D94AE68578B20810FC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ChartSelectionDetail.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Utils/ChartSelectionDetail.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>933D1A38D2D78D4CD8433D5F0FBD12A9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ChartYAxis.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Components/ChartYAxis.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93740DFECAF95F279E1D29C90C3828D6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ChartXAxis.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Components/ChartXAxis.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93A187916A781F07154570F3B048D972</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1B5EDB515B685A7B3585BF31A75F16AA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>94A8844E2A1F9AA4E5C094E37E50BC5B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>LineScatterCandleRadarChartDataSet.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Data/Implementations/Standard/LineScatterCandleRadarChartDataSet.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9505960D18F60DAA70871C006CA302EF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A3AA82DFC5DA1DC7BB032EBFF07090E7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9532E82AB50AF9B72CB26C66CCBCB373</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ChartHighlighter.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Highlight/ChartHighlighter.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97F9038F32DE4447537B226DE89115EF</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2466,19 +2599,14 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ANSCompatibility.h</string>
 			<key>path</key>
-			<string>Gloss-umbrella.h</string>
+			<string>iOS/Crashlytics.framework/Headers/ANSCompatibility.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>9181C57B0D5E511D518D6ED675AC30A6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F0E779FFC0EF27E0539FD4E000D1D4C7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9259E21679A6312FCBAC3C7AFC6A255D</key>
+		<key>9801B4E4980D4230FD7D2265AD46B58A</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2487,62 +2615,18 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>LineRadarChartDataSet.swift</string>
+			<string>CandleChartDataSet.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Data/Implementations/Standard/LineRadarChartDataSet.swift</string>
+			<string>Charts/Classes/Data/Implementations/Standard/CandleChartDataSet.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>93A187916A781F07154570F3B048D972</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4B1CB651358BF4893ECC1266717B83D0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9505960D18F60DAA70871C006CA302EF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6E2E835495E12C29013E73A4780A6753</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
 		</dict>
 		<key>9838C7578BE14F947489DA4D1C595898</key>
 		<dict>
 			<key>fileRef</key>
-			<string>77D1B5CE11A912FBAD360B0939EE98DE</string>
+			<string>E978DC185AAFB759C37F1308143A2F32</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>98A9AAFF38522DD6B9B0670DE20479A5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ScatterChartView.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Charts/ScatterChartView.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>996F12FAFDAAFA8329A1D4DCB93A6485</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ScatterChartDataSet.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Data/Implementations/Standard/ScatterChartDataSet.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>997531086E97E7DC427CDDFA4D09479E</key>
 		<dict>
@@ -2557,33 +2641,78 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>99BC0B6D576535A4516CC4062BC7FC6E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>HorizontalBarChartHighlighter.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Highlight/HorizontalBarChartHighlighter.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>99DC0137E12C0E6A0CF0626CB80CB1D5</key>
 		<dict>
 			<key>fileRef</key>
-			<string>2C64C304F825D6DEDF94FEDDA9F6778D</string>
+			<string>A968915028C24017C43EEF0388FB485F</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>9BBB90314EEDCAA33FB3160A02862010</key>
 		<dict>
 			<key>fileRef</key>
-			<string>23EB2405728280AA90C474B964E179F6</string>
+			<string>C10A965C6B2484361AAFA3421D86E489</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>9BDA736EAC6D0B8DCB363A9195A96241</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ChartAxisRendererBase.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Renderers/ChartAxisRendererBase.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>9DD2A8006D79DC4469F9BD2FFB55F071</key>
 		<dict>
 			<key>fileRef</key>
-			<string>4065B3DB290A9ACE6930184F246E3E15</string>
+			<string>0F8853EA4BE09B2DF46127EB348FC0FC</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>9E1EEA656E59AB9E30DC8D0385F289B4</key>
 		<dict>
 			<key>fileRef</key>
-			<string>BE258562B987521FC8E36AFD15673F72</string>
+			<string>67ABFC91B84A3CCB2A428A241A95636F</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>9E22AD731B4529E816E80CC79365359C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ChartYAxisRendererRadarChart.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Renderers/ChartYAxisRendererRadarChart.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>9E5136186649E65395C2EBD17A64CF79</key>
 		<dict>
@@ -2649,7 +2778,7 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>9F65D6F0B9FB611ACD1B55D17FE42D2A</key>
+		<key>9E5B3D059E4CC0A6A853F77BCDF72CBF</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2658,64 +2787,99 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>ChartAxisRendererBase.swift</string>
+			<string>ChartXAxisRenderer.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Renderers/ChartAxisRendererBase.swift</string>
+			<string>Charts/Classes/Renderers/ChartXAxisRenderer.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E7458FB589BF1AE3F62AF54EB657828</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ILineChartDataSet.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Data/Interfaces/ILineChartDataSet.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9F051D263BAEF5447AB743F4D610277F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>LineRadarChartRenderer.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Renderers/LineRadarChartRenderer.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9F6ABA6763E8BD4AC592418F47EC56A7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ChartXAxisValueFormatter.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Formatters/ChartXAxisValueFormatter.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>9FD26D6C00634178B74170103B48A9CF</key>
 		<dict>
 			<key>fileRef</key>
-			<string>5381DEFFC2440152F5960C80321C58BE</string>
+			<string>4A537460E78B0E9B93D6F68966F5DEDB</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>A00CBCB935830FEE99F6E645C95E834D</key>
 		<dict>
 			<key>fileRef</key>
-			<string>DDDE204BD7DD0A84C06707715E3A5714</string>
+			<string>3A1611B1663BD48AC6A3AF33B3CAC6FA</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>A0535A1B13D923420B8531B488918C29</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>BarLineScatterCandleBubbleChartDataSet.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Data/Implementations/Standard/BarLineScatterCandleBubbleChartDataSet.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A0FC0BB172396EA10B10BB185472E01E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ExtensionDictionary.swift</string>
-			<key>path</key>
-			<string>Sources/ExtensionDictionary.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>A20419267FBC2600623140053A2AA8F7</key>
 		<dict>
 			<key>fileRef</key>
-			<string>8C169B2F65BE81F209ADC69134E74E75</string>
+			<string>620E1788047E14B8FF86404E7953D734</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>A3C1401091DE257EF859526B42C7FAC1</key>
+		<key>A2C006A7593D9AA35BBA6EA6FBBBFB76</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D3554867490C6739D3EEB4D0100E3714</string>
+				<string>E52F9B25DB36B6A65DBBF49005110520</string>
+				<string>361F6176B7E6A2C07026302DBB8FB124</string>
+				<string>AB78BC4174D9A600356C1FB446344753</string>
+				<string>6D03DE38C32ACB11195E8DB530EC676F</string>
+				<string>D341A1FEBFA7B4B62E7AF40E00B19361</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/Charts</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A30EB72D8E1A3D9276FBCB0540D7C6AF</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2724,71 +2888,56 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>LineChartRenderer.swift</string>
+			<string>ChartDataBaseFilter.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Renderers/LineChartRenderer.swift</string>
+			<string>Charts/Classes/Filters/ChartDataBaseFilter.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A3AA82DFC5DA1DC7BB032EBFF07090E7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ChartUtils.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Utils/ChartUtils.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>A48B96C6FBB609A286F182ED83923097</key>
 		<dict>
 			<key>fileRef</key>
-			<string>E4B59FD4E46F07428CAFF51B9FA59EA6</string>
+			<string>99BC0B6D576535A4516CC4062BC7FC6E</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>A525E68A31198AD8B3B5CAC519F1A43E</key>
 		<dict>
 			<key>fileRef</key>
-			<string>B5A2C9D2DFFE47012D3360B322038ECE</string>
+			<string>3411AC6D23D26838084BD00297096D92</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>A56D1B7403CD361EBCD547DEF8D8D843</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ChartTransformer.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Utils/ChartTransformer.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A5E238658EDC438DC0586529565962CC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ChartYAxisRenderer.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Renderers/ChartYAxisRenderer.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>A5F486B6DA397786F31EB6A27CBA10F5</key>
 		<dict>
 			<key>fileRef</key>
-			<string>F99A3B6542F72DD77BF9747B65456138</string>
+			<string>9F6ABA6763E8BD4AC592418F47EC56A7</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>A808AE4EBFE37F90FE49C2715FB330F2</key>
 		<dict>
 			<key>fileRef</key>
-			<string>31FF788E222C1F0105C5C34625FCE9C2</string>
+			<string>C7E2A38AEF092A780E7A9D2529002499</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>AA47FA2EE9C7FA6DAC46C2AFEA30CEF3</key>
+		<key>A968915028C24017C43EEF0388FB485F</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2797,34 +2946,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>ChartBaseDataSet.swift</string>
+			<string>ChartAnimator.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Data/Implementations/ChartBaseDataSet.swift</string>
+			<string>Charts/Classes/Animation/ChartAnimator.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>AA543FFF754AD034960EAFA4594B3062</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F91EFD7EEFE4EB078A4B3A398CBF4E0E</string>
-				<string>0F9E3A93EBB07BE3F1C5C4E4D7F13A9F</string>
-				<string>B235374F94E9B1F180426D92E280ADE7</string>
-				<string>A0FC0BB172396EA10B10BB185472E01E</string>
-				<string>D4E5B3B8B437C159FC16FA3547EAA2D7</string>
-				<string>35982491302F248A1EBCAC8B53C853F5</string>
-				<string>2578581FD71FDA0ACAA8094CF2BBD0E2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Gloss</string>
-			<key>path</key>
-			<string>Gloss</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB2A1EE887C0E4F43F8B44008F67C97B</key>
+		<key>A976DF8F4F154A0AFCCCDD40AEA9C1F8</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2833,66 +2961,36 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>ChartComponentBase.swift</string>
+			<string>ChartAxisBase.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Components/ChartComponentBase.swift</string>
+			<string>Charts/Classes/Components/ChartAxisBase.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>ABA9EECE16961A9E7906E54371F5A015</key>
+		<key>AB78BC4174D9A600356C1FB446344753</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>AnimatedViewPortJob.swift</string>
+			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>Charts/Classes/Jobs/AnimatedViewPortJob.swift</string>
+			<string>Charts-prefix.pch</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>ABEF8242948249F9A5BF7C36F57CD8DB</key>
 		<dict>
 			<key>fileRef</key>
-			<string>45F3985AB82E36AEE37C5D910E7C2D84</string>
+			<string>5410A6E604D7AACA48FCD80B8CCE7388</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>AC2EDC788AD96E90ABEA3E5E96AC0D6B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ACECBE554BEF23E2A8F347BE5BFA07C2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ChartYAxisRendererHorizontalBarChart.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Renderers/ChartYAxisRendererHorizontalBarChart.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>AE1566BD32F907C4B66DEF43A2CEFC05</key>
 		<dict>
 			<key>fileRef</key>
-			<string>ACECBE554BEF23E2A8F347BE5BFA07C2</string>
+			<string>1EFEE4F32A811F969F6619849C7283DD</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -2908,6 +3006,36 @@
 			<string>PBXSourcesBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
+		</dict>
+		<key>AF56C766476EE6DCA22ABFA644AEB6D2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>BubbleChartView.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Charts/BubbleChartView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AFADB4A28E3BF127936BA3734C33D7FC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>10E2662340AE9C359C066C325938B878</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Fabric</string>
+			<key>path</key>
+			<string>Fabric</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>B07B012AE17952EE777271E277F90284</key>
 		<dict>
@@ -2934,14 +3062,7 @@
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
-		<key>B19032CD69D4606E7EEBB7E0BCAA9AD6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3044924FC4A5445069BD35295F507E5D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B235374F94E9B1F180426D92E280ADE7</key>
+		<key>B0EB28E2D94A071CEACA0D66621EB627</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2950,27 +3071,64 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>ExtensionArray.swift</string>
+			<string>ExtensionDictionary.swift</string>
 			<key>path</key>
-			<string>Sources/ExtensionArray.swift</string>
+			<string>Sources/ExtensionDictionary.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B19032CD69D4606E7EEBB7E0BCAA9AD6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5FBB3B7BCB4C5F257041B064B3BA683</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B3D4C864CF2D9377E415158C01BA4FCA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>CandleChartDataEntry.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Data/Implementations/Standard/CandleChartDataEntry.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>B3E49DEC5C3E2B45976F07322793CC64</key>
 		<dict>
 			<key>fileRef</key>
-			<string>55989ED53CC757C661920D85C34B80DF</string>
+			<string>156E52704B250B121BD8E8C03BA723A2</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>B53C76BED0BCF6DBB395A604C1960EB3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>IScatterChartDataSet.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Data/Interfaces/IScatterChartDataSet.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>B5916DB8C1387ACAFA0EBB944E15F3E3</key>
 		<dict>
 			<key>fileRef</key>
-			<string>DC7A5E0B7B82CEA09A6B030DF6A40BAE</string>
+			<string>9E22AD731B4529E816E80CC79365359C</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>B5A2C9D2DFFE47012D3360B322038ECE</key>
+		<key>B600E32AA0AEDF9B8B1C0AF3107EE24C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2979,61 +3137,16 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>ChartDefaultXAxisValueFormatter.swift</string>
+			<string>PieChartData.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Formatters/ChartDefaultXAxisValueFormatter.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B61393DFDC7E319345515C83B524403D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>BubbleChartData.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Data/Implementations/Standard/BubbleChartData.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B6BA8F3626EE3505B0ED1B6F53D20049</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ChartXAxisRendererHorizontalBarChart.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Renderers/ChartXAxisRendererHorizontalBarChart.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B73EE53AE9AF9DF298D96C38F564AE47</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>LineChartView.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Charts/LineChartView.swift</string>
+			<string>Charts/Classes/Data/Implementations/Standard/PieChartData.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>B774655DA50556217BC45010C800332E</key>
 		<dict>
 			<key>fileRef</key>
-			<string>B61393DFDC7E319345515C83B524403D</string>
+			<string>E14BCF08D61BC571B8D7A595379C5C67</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -3053,7 +3166,7 @@
 		<key>B9764BA1C1B4139220BE15EBBCD6CECE</key>
 		<dict>
 			<key>fileRef</key>
-			<string>72080911E4797400B401A26A2EE73713</string>
+			<string>5D6D208B88926BF17FA4963ED62AEDD2</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -3077,11 +3190,11 @@
 		<key>BB3A8D7FC41ED300CAA4DF3D0527DEAE</key>
 		<dict>
 			<key>fileRef</key>
-			<string>996F12FAFDAAFA8329A1D4DCB93A6485</string>
+			<string>1657BB3BEB8DB9F2A4E363684EB0FDFD</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>BBC60C65827058B47FCEFDAA65BA6F2F</key>
+		<key>BC34F76B2DAAD9740EF91AA949B084BD</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3090,9 +3203,9 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>CandleChartDataProvider.swift</string>
+			<string>Operators.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Interfaces/CandleChartDataProvider.swift</string>
+			<string>Sources/Operators.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -3112,7 +3225,7 @@
 		<key>BCD5071CB4E5FAEE7FC51746F4B17B62</key>
 		<dict>
 			<key>fileRef</key>
-			<string>C7E3294E1D1FB7A95CE43229F56C77F8</string>
+			<string>490AA2A6503B84B73A30215FBDF179A2</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -3140,33 +3253,16 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>BD5048371C43D604BF14EF2A0877763D</key>
+		<key>BEED0AE091E3D70181610ABE3337094E</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>CombinedHighlighter.swift</string>
+			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>Charts/Classes/Highlight/CombinedHighlighter.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE258562B987521FC8E36AFD15673F72</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>RadarChartRenderer.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Renderers/RadarChartRenderer.swift</string>
+			<string>Gloss-prefix.pch</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -3186,11 +3282,11 @@
 		<key>BF69C7BFB84A04FFD493D9B9FA9BDD58</key>
 		<dict>
 			<key>fileRef</key>
-			<string>187C657C4D9A96935B8459E004AB451B</string>
+			<string>18D019F82854ADB70EC2B45A02D0C937</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>C002F44E9A4485C0E84F2F96A6DF5182</key>
+		<key>C10A965C6B2484361AAFA3421D86E489</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3199,37 +3295,52 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>ChartFill.swift</string>
+			<string>ChartAnimationEasing.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Utils/ChartFill.swift</string>
+			<string>Charts/Classes/Animation/ChartAnimationEasing.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>C12599A3FB6E4A5ACCBAB8DF11AE7381</key>
 		<dict>
 			<key>fileRef</key>
-			<string>AA47FA2EE9C7FA6DAC46C2AFEA30CEF3</string>
+			<string>D8430EADDCD8F90BC1B5356DAE5AEE19</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>C2A17F16FEDD054EA6CCD34CC92A7594</key>
 		<dict>
 			<key>fileRef</key>
-			<string>9F65D6F0B9FB611ACD1B55D17FE42D2A</string>
+			<string>9BDA736EAC6D0B8DCB363A9195A96241</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>C2B0523A9F580F8F7B88E6C143B97FD4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ChartDataSet.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Data/Implementations/Standard/ChartDataSet.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>C2F12F2C42BADD59AA7540A3C8107D51</key>
 		<dict>
 			<key>fileRef</key>
-			<string>A5E238658EDC438DC0586529565962CC</string>
+			<string>D5D9B1BB621DF60F56F5EFDC94C28ED4</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>C32F09F394641163865197D9A3C0BEF2</key>
 		<dict>
 			<key>fileRef</key>
-			<string>EFC2FC7A2A18682B3F1B70E709532D99</string>
+			<string>DC417BEFA767B5B6C7AC9FE5E7F787CE</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -3240,19 +3351,18 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>C419ADA66DA27AC0D742C95084236AD8</key>
+		<key>C56015FF6F32A2197FCEE458EEB2E22B</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>46C0ED5BCD3E9AF6A99BC06BD7A28358</string>
-				<string>494C4D78699C6C0D990FA47768CD723C</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>Charts</string>
+			<string>LineChartData.swift</string>
 			<key>path</key>
-			<string>Charts</string>
+			<string>Charts/Classes/Data/Implementations/Standard/LineChartData.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -3284,39 +3394,39 @@
 		<key>C68300FA475B7BF7E3419859C05D8AA8</key>
 		<dict>
 			<key>fileRef</key>
-			<string>772DB5526781B1EFEFB3707DC5AAC482</string>
+			<string>B600E32AA0AEDF9B8B1C0AF3107EE24C</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>C6C515B057B0700ADA865B63CA1A0C6B</key>
 		<dict>
 			<key>fileRef</key>
-			<string>7C7028B80AC1979945B23222940D50C7</string>
+			<string>6A2CF589381C6DFF82B293080EE4D58E</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>C6CB3768F4481A3D58397BABD408885A</key>
 		<dict>
 			<key>fileRef</key>
-			<string>3F9D037BA793F872A7AC56E2C68C571C</string>
+			<string>D3B39B245D8AFEC95F996E8799698213</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>C6F18733027EAC1685B8E3E304C5357A</key>
 		<dict>
 			<key>fileRef</key>
-			<string>BD5048371C43D604BF14EF2A0877763D</string>
+			<string>1ACF6056FA0C4611609DEB2AD144EC8E</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>C6F5785A49C245BD02BBD3DCA2FD6C53</key>
 		<dict>
 			<key>fileRef</key>
-			<string>98A9AAFF38522DD6B9B0670DE20479A5</string>
+			<string>03554CD8D3C1097675CFF552944D4416</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>C7E3294E1D1FB7A95CE43229F56C77F8</key>
+		<key>C7E2A38AEF092A780E7A9D2529002499</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3325,46 +3435,20 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>IBarLineScatterCandleBubbleChartDataSet.swift</string>
+			<string>CandleChartData.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Data/Interfaces/IBarLineScatterCandleBubbleChartDataSet.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C85DBCA9D223417988F02EB19C758438</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>LineChartDataProvider.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Interfaces/LineChartDataProvider.swift</string>
+			<string>Charts/Classes/Data/Implementations/Standard/CandleChartData.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>C89A56E617144FEA3136394B712452A5</key>
 		<dict>
 			<key>fileRef</key>
-			<string>E8D8083F91450E92AAC49E03973C07DD</string>
+			<string>0B000FE81D0B71C4DF70559D1D09AAD5</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>C9AEB3F9A980D384D2E035444AC96417</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Gloss.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CA6AD46183B27A5A372423745E419D60</key>
+		<key>C8E1CC6427AB1F2F3639830A373D1BED</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3373,13 +3457,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>PieChartView.swift</string>
+			<string>Decoder.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Charts/PieChartView.swift</string>
+			<string>Sources/Decoder.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>CD2C5AB48AA9376137A74442574D32F9</key>
+		<key>CC51F9AEB82DA1606CB26027015EE5AA</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3388,9 +3472,24 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>ChartSelectionDetail.swift</string>
+			<string>ChartDataApproximatorFilter.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Utils/ChartSelectionDetail.swift</string>
+			<string>Charts/Classes/Filters/ChartDataApproximatorFilter.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CCE2BC2A609B2142D4100B559C01D734</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>LineRadarChartDataSet.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Data/Implementations/Standard/LineRadarChartDataSet.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -3409,10 +3508,40 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
+		<key>CE808E745AD3171CAE94AA092307F1D3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>CLSStackFrame.h</string>
+			<key>path</key>
+			<string>iOS/Crashlytics.framework/Headers/CLSStackFrame.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE9001AFB3B6632FB74F29660C12040D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ChartFill.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Utils/ChartFill.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>CEBB2FD70283D5A17132F1B8566E0D2E</key>
 		<dict>
 			<key>fileRef</key>
-			<string>CA6AD46183B27A5A372423745E419D60</string>
+			<string>F98D57F9100253581FB0FEBF42CF04C0</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -3429,34 +3558,36 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+		<key>CF76746681EB6966297CEB8CA0040D52</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>IBarChartDataSet.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Data/Interfaces/IBarChartDataSet.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>D1F1695E20DD0A70DA19C6226F3E6BEF</key>
 		<dict>
 			<key>fileRef</key>
-			<string>233D739D442898FF6C3A8B0B421542CB</string>
+			<string>93740DFECAF95F279E1D29C90C3828D6</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>D20A7E639C045BD6532B3CA94A1DBBE2</key>
 		<dict>
 			<key>fileRef</key>
-			<string>7E4663BBBAB9BBC8D27AAD2A5E8A9E1F</string>
+			<string>475A04EC26F0DCDE8DC6070C91EEB8E7</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>D214A09E99EBD2C88AFBCC3163C970C9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Gloss.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2B17B39B01F583F63EF78FFC4B66696</key>
+		<key>D31DBA7E1B5760F9C348546A16771115</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3465,20 +3596,44 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>ILineChartDataSet.swift</string>
+			<string>LineScatterCandleRadarChartRenderer.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Data/Interfaces/ILineChartDataSet.swift</string>
+			<string>Charts/Classes/Renderers/LineScatterCandleRadarChartRenderer.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D341A1FEBFA7B4B62E7AF40E00B19361</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D3554867490C6739D3EEB4D0100E3714</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Charts.modulemap</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>D383B7AF516798B5F9C43DB0E5E55AA6</key>
 		<dict>
 			<key>fileRef</key>
-			<string>10278E066BD66EA42A213ED40436D64E</string>
+			<string>6632270C91D2F385E701F530BD0B39C6</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>D3BB6294C70FC1DADFAE6621556DC7D3</key>
+		<key>D3B39B245D8AFEC95F996E8799698213</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3487,9 +3642,9 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>ChartDataEntry.swift</string>
+			<string>RadarChartDataSet.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift</string>
+			<string>Charts/Classes/Data/Implementations/Standard/RadarChartDataSet.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -3533,7 +3688,7 @@
 				<string>E0013B693E69B1DCDFDE16AA147DA731</string>
 			</array>
 		</dict>
-		<key>D4452B8B29E5AF96834E8DE79FACCC53</key>
+		<key>D440DFCD4239DB34A3184BA58C90C4CD</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3542,13 +3697,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>IPieChartDataSet.swift</string>
+			<string>ChartRendererBase.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Data/Interfaces/IPieChartDataSet.swift</string>
+			<string>Charts/Classes/Renderers/ChartRendererBase.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>D4E5B3B8B437C159FC16FA3547EAA2D7</key>
+		<key>D5D9B1BB621DF60F56F5EFDC94C28ED4</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3557,40 +3712,70 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>Gloss.swift</string>
+			<string>ChartYAxisRenderer.swift</string>
 			<key>path</key>
-			<string>Sources/Gloss.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D58A61D7F52BDC8EBD86E9144A5E5812</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>IScatterChartDataSet.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Data/Interfaces/IScatterChartDataSet.swift</string>
+			<string>Charts/Classes/Renderers/ChartYAxisRenderer.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>D5EC2A1F955556DA0724C612A78C674B</key>
 		<dict>
 			<key>fileRef</key>
-			<string>294FB67F20751E7EE034FA68772B0E7D</string>
+			<string>39C69067AC768DF46783453341108D4B</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>D5FBB3B7BCB4C5F257041B064B3BA683</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>BarChartRenderer.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Renderers/BarChartRenderer.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>D73CA5EABA732B046927C93C476FC634</key>
 		<dict>
 			<key>fileRef</key>
-			<string>F296E92711E1B6864BCB98FEE12B8CE9</string>
+			<string>73AA60CE2B8CE2F9363FB34B7BF3CCB8</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>D8430EADDCD8F90BC1B5356DAE5AEE19</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ChartBaseDataSet.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Data/Implementations/ChartBaseDataSet.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D935908718FA5B41FD7E367AE7977A70</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>IChartDataSet.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Data/Interfaces/IChartDataSet.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>DB4D428C23AD783427D44B1957F195F2</key>
 		<dict>
@@ -3721,11 +3906,11 @@
 		<key>DB6913A788B5A0BC32FD6ED875B0EC87</key>
 		<dict>
 			<key>fileRef</key>
-			<string>F91EFD7EEFE4EB078A4B3A398CBF4E0E</string>
+			<string>C8E1CC6427AB1F2F3639830A373D1BED</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>DC7A5E0B7B82CEA09A6B030DF6A40BAE</key>
+		<key>DC04C3DBEBCC945DC17D5C77EE3BD570</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3734,13 +3919,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>ChartYAxisRendererRadarChart.swift</string>
+			<string>CombinedChartData.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Renderers/ChartYAxisRendererRadarChart.swift</string>
+			<string>Charts/Classes/Data/Implementations/Standard/CombinedChartData.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>DD57F0B427BC433F2A174BCACB7D5945</key>
+		<key>DC417BEFA767B5B6C7AC9FE5E7F787CE</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3749,38 +3934,23 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>BarChartDataEntry.swift</string>
+			<string>ChartHighlight.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Data/Implementations/Standard/BarChartDataEntry.swift</string>
+			<string>Charts/Classes/Highlight/ChartHighlight.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>DD580D63E4D76F53372817544FDB8882</key>
 		<dict>
 			<key>fileRef</key>
-			<string>11886B4E5ED5155F85EB25BCA0657572</string>
+			<string>84E0823D6AF3CC9748F98F369C78AEF1</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>DDDE204BD7DD0A84C06707715E3A5714</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ChartLegend.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Components/ChartLegend.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>DE042C08F7F3A2A3B4546F8EADFCDEC5</key>
 		<dict>
 			<key>fileRef</key>
-			<string>1C04791773B1860CC56AE1106F7F8878</string>
+			<string>04A6E9BEF2B53929122650C2970E8099</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -3826,21 +3996,7 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>E1BAD342EFFB5E062959C14B5E07DC68</key>
-		<dict>
-			<key>fileRef</key>
-			<string>50EAD2126708125520ADA68A5D31A14A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1EC4988F56A7D8818978CF0E11235B6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2B17B39B01F583F63EF78FFC4B66696</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E25B5C088C3FD966B1F3CF7CD127E6A6</key>
+		<key>E14BCF08D61BC571B8D7A595379C5C67</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3849,11 +4005,25 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>LineChartDataSet.swift</string>
+			<string>BubbleChartData.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Data/Implementations/Standard/LineChartDataSet.swift</string>
+			<string>Charts/Classes/Data/Implementations/Standard/BubbleChartData.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E1BAD342EFFB5E062959C14B5E07DC68</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F3C6E53EFCC51C991D12D2B6F50AC644</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E1EC4988F56A7D8818978CF0E11235B6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9E7458FB589BF1AE3F62AF54EB657828</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>E30B229B20E1102FDCA5E7FA287BF2DC</key>
 		<dict>
@@ -3868,29 +4038,27 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E4B59FD4E46F07428CAFF51B9FA59EA6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>HorizontalBarChartHighlighter.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Highlight/HorizontalBarChartHighlighter.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>E4B9CC28DF8E651CE5688313CF013436</key>
 		<dict>
 			<key>fileRef</key>
-			<string>B235374F94E9B1F180426D92E280ADE7</string>
+			<string>47651831AA93200D43FAB4209F90BB85</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>E66BB251687FA32C623DCA5F17A010DA</key>
+		<key>E52F9B25DB36B6A65DBBF49005110520</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Charts.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E69B069B731179FD526A06BA2787A86C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3899,9 +4067,9 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>ILineRadarChartDataSet.swift</string>
+			<string>ChartViewPortHandler.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Data/Interfaces/ILineRadarChartDataSet.swift</string>
+			<string>Charts/Classes/Utils/ChartViewPortHandler.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -3919,23 +4087,25 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>E7DC8306A30C1077F4CE0A64D68DAA43</key>
+		<key>E7C42322A9BCF5C96355D63F3A5B19F5</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>LineChartRenderer.swift</string>
 			<key>path</key>
-			<string>Charts-prefix.pch</string>
+			<string>Charts/Classes/Renderers/LineChartRenderer.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>E81898ADE0CC2D0D0D50C9BE169A5D45</key>
 		<dict>
 			<key>fileRef</key>
-			<string>91456A90C43633537F3C3F46D44ACBC6</string>
+			<string>5011C4ECDC3D41F0F24F67106F75E197</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -3946,7 +4116,7 @@
 				</array>
 			</dict>
 		</dict>
-		<key>E8303C84A9A9EFB428A7828CA501B5E6</key>
+		<key>E8BCFE7EDF52170DD0BD2DA190F891B3</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3954,45 +4124,17 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Gloss-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8C3A56A5A7A910449705B22C13F99E3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>ICandleChartDataSet.swift</string>
+			<string>CLSLogging.h</string>
 			<key>path</key>
-			<string>Charts/Classes/Data/Interfaces/ICandleChartDataSet.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8D8083F91450E92AAC49E03973C07DD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ScatterChartRenderer.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Renderers/ScatterChartRenderer.swift</string>
+			<string>iOS/Crashlytics.framework/Headers/CLSLogging.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>E8F786BE031E2AF11CCB0346A24E737B</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>D214A09E99EBD2C88AFBCC3163C970C9</string>
+			<string>7584CE8AC1DCB84420DF3F7B6400D7F8</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -4048,11 +4190,11 @@
 		<key>E90141BF332560ED9C3BA829889E51CD</key>
 		<dict>
 			<key>fileRef</key>
-			<string>8E285AF4005747B44FBFEB9B0A620867</string>
+			<string>4494B366ED621FDDEC039FE6D62E5273</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>EB7E83139620425C23087138C129DDEB</key>
+		<key>E978DC185AAFB759C37F1308143A2F32</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -4061,9 +4203,9 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>ChartDataSet.swift</string>
+			<string>BubbleChartDataEntry.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Data/Implementations/Standard/ChartDataSet.swift</string>
+			<string>Charts/Classes/Data/Implementations/Standard/BubbleChartDataEntry.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -4074,7 +4216,7 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>EEC45B99904A192C45E3B1623318FEAB</key>
+		<key>ED5F38E5E11F4661591C3CD40076C92A</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -4083,13 +4225,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>IRadarChartDataSet.swift</string>
+			<string>PieRadarChartViewBase.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Data/Interfaces/IRadarChartDataSet.swift</string>
+			<string>Charts/Classes/Charts/PieRadarChartViewBase.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>EFC2FC7A2A18682B3F1B70E709532D99</key>
+		<key>EE6A556298F6D538D791451ABA4AF796</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -4098,9 +4240,24 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>ChartHighlight.swift</string>
+			<string>CandleChartDataProvider.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Highlight/ChartHighlight.swift</string>
+			<string>Charts/Classes/Interfaces/CandleChartDataProvider.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EFB14BD32E0F346E3E3B4213FD3EF1EF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ChartComponentBase.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Components/ChartComponentBase.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -4117,7 +4274,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F0E779FFC0EF27E0539FD4E000D1D4C7</key>
+		<key>F0ABA3C72F80D342D05381CAAAEB1F16</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -4126,13 +4283,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>IChartDataSet.swift</string>
+			<string>PieChartRenderer.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Data/Interfaces/IChartDataSet.swift</string>
+			<string>Charts/Classes/Renderers/PieChartRenderer.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F1BB850874B6A34661379A66F7A36304</key>
+		<key>F0D5F8A77FF6AE5FC8FA5B961690F3C4</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -4141,39 +4298,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>ChartLegendRenderer.swift</string>
+			<string>RadarChartData.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Renderers/ChartLegendRenderer.swift</string>
+			<string>Charts/Classes/Data/Implementations/Standard/RadarChartData.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F1D85A9EA6F1878221AD1190E3F12CE4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Charts-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F1FE699583F95648DD5457B652C44E79</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Charts.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F296E92711E1B6864BCB98FEE12B8CE9</key>
+		<key>F196988866495D929B4246E9B90DB67C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -4182,13 +4313,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>HorizontalBarChartView.swift</string>
+			<string>BarLineScatterCandleBubbleChartDataProvider.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Charts/HorizontalBarChartView.swift</string>
+			<string>Charts/Classes/Interfaces/BarLineScatterCandleBubbleChartDataProvider.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F2AAD74CFCE5EF566470EE6F9A45DD20</key>
+		<key>F20A2254C4EFB425ED1AE3E7F0CB6185</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -4197,20 +4328,65 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>ChartHighlighter.swift</string>
+			<string>ScatterChartDataProvider.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Highlight/ChartHighlighter.swift</string>
+			<string>Charts/Classes/Interfaces/ScatterChartDataProvider.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F251D046855213BD1AC86D7C2ADE7E95</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>BarChartData.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Data/Implementations/Standard/BarChartData.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F2A487AA386385F10537C71C48BA9EAD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>BarLineScatterCandleBubbleChartDataSet.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Data/Implementations/Standard/BarLineScatterCandleBubbleChartDataSet.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F3C6E53EFCC51C991D12D2B6F50AC644</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ChartViewPortJob.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Jobs/ChartViewPortJob.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>F5F14B4D173AF2157DF1C3E01DCCE0AC</key>
 		<dict>
 			<key>fileRef</key>
-			<string>D4E5B3B8B437C159FC16FA3547EAA2D7</string>
+			<string>79C2FEA993C72819D817913FEC353218</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>F74959D76DC13BE16824616C5947C42F</key>
+		<key>F5FABE9521AC399A05002F949AC3134F</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -4219,9 +4395,25 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>ChartRange.swift</string>
+			<string>LineChartDataProvider.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Highlight/ChartRange.swift</string>
+			<string>Charts/Classes/Interfaces/LineChartDataProvider.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F719307FA1DE4072414467F83EDD6C73</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4DC75C4AC7D49FD83C3632B41689A7E8</string>
+				<string>641B32BE00F1219FDF7D3ACABB3CFB66</string>
+				<string>AFADB4A28E3BF127936BA3734C33D7FC</string>
+				<string>7F23DE6FD238007C6C37AD7028A3E504</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -4238,7 +4430,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F91EFD7EEFE4EB078A4B3A398CBF4E0E</key>
+		<key>F810B1F6992E0FB5D09D398406393C26</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -4247,13 +4439,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>Decoder.swift</string>
+			<string>BarChartHighlighter.swift</string>
 			<key>path</key>
-			<string>Sources/Decoder.swift</string>
+			<string>Charts/Classes/Highlight/BarChartHighlighter.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F948B6DE65647E7E64F4714D79C1559C</key>
+		<key>F98D57F9100253581FB0FEBF42CF04C0</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -4262,72 +4454,76 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>ChartLimitLine.swift</string>
+			<string>PieChartView.swift</string>
 			<key>path</key>
-			<string>Charts/Classes/Components/ChartLimitLine.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F99A3B6542F72DD77BF9747B65456138</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ChartXAxisValueFormatter.swift</string>
-			<key>path</key>
-			<string>Charts/Classes/Formatters/ChartXAxisValueFormatter.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F9E67584AFC936E7BAC459A63268AECC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Charts.modulemap</string>
+			<string>Charts/Classes/Charts/PieChartView.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>F9E9A2403A8E8D7D3509ABF2A40A5CD7</key>
 		<dict>
 			<key>fileRef</key>
-			<string>37EC1A225EA62276D4EFE82D01D9C5B7</string>
+			<string>F0ABA3C72F80D342D05381CAAAEB1F16</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>FC34E76E2F5CB664B627A6F1192888FA</key>
 		<dict>
 			<key>fileRef</key>
-			<string>6D4BF98D19275FDDB5984A3A701AFD4F</string>
+			<string>B3D4C864CF2D9377E415158C01BA4FCA</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>FC8A29D1F192FF1FDA3BB7D0935A1B3F</key>
 		<dict>
 			<key>fileRef</key>
-			<string>7176F100E03E117FDB8056A0A0151DD5</string>
+			<string>84E70FAABADDA627E37098E41CD45EB0</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>FD8B42D2C29BEC74A8A678A6EBDB9D07</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ChartXAxisRendererBarChart.swift</string>
+			<key>path</key>
+			<string>Charts/Classes/Renderers/ChartXAxisRendererBarChart.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>FEAAEDF7FAFA3134CA836F1AB6E0FDF5</key>
 		<dict>
 			<key>fileRef</key>
-			<string>D58A61D7F52BDC8EBD86E9144A5E5812</string>
+			<string>B53C76BED0BCF6DBB395A604C1960EB3</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>FF383AB25605A99106208E2F7CBC811E</key>
 		<dict>
 			<key>fileRef</key>
-			<string>218C266299D7A303368A09726AF0C47D</string>
+			<string>D31DBA7E1B5760F9C348546A16771115</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF3E1E7B0415A0846108D9CDAD3F83BB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Encoder.swift</string>
+			<key>path</key>
+			<string>Sources/Encoder.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 	</dict>
 	<key>rootObject</key>

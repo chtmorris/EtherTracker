@@ -197,6 +197,7 @@
 				EC97A44E1CE9DC9800FC0495 /* Resources */,
 				8B38D861EAF47DA8354CC2C6 /* Embed Pods Frameworks */,
 				2DBC00B48CA570B3A79E2157 /* Copy Pods Resources */,
+				EC2DC1881D0EC0D400D7549C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -300,6 +301,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ether Tracker/Pods-Ether Tracker-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		EC2DC1881D0EC0D400D7549C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 52717e8b393fddb2acf38eb11c7e408fd1bc373f 19442449326491959701dbde6b5f01f6cdba673f83162024dadf7a98c35bed5d";
 		};
 /* End PBXShellScriptBuildPhase section */
 

@@ -122,9 +122,6 @@
                                     <constraint firstAttribute="height" constant="30" id="pa4-eN-pzw"/>
                                 </constraints>
                                 <state key="normal" image="News icon"/>
-                                <connections>
-                                    <segue destination="Jra-63-ajC" kind="show" id="gZN-fE-GTa"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1SN-7u-8mr">
                                 <rect key="frame" x="20" y="528" width="45" height="26"/>
@@ -133,8 +130,25 @@
                                     <constraint firstAttribute="height" constant="26" id="huj-3L-0me"/>
                                 </constraints>
                                 <state key="normal" image="refresh"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHR-lc-pKS">
+                                <rect key="frame" x="20" y="510" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="8eh-dv-0BX"/>
+                                    <constraint firstAttribute="height" constant="60" id="DfZ-be-SC3"/>
+                                </constraints>
                                 <connections>
-                                    <action selector="refreshButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VJ3-1F-TLu"/>
+                                    <action selector="refreshButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hCQ-mD-Y0f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ha-8Y-CBl">
+                                <rect key="frame" x="520" y="510" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="7es-xC-hRL"/>
+                                    <constraint firstAttribute="height" constant="60" id="Rc3-oM-oat"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="Jra-63-ajC" kind="show" id="ETn-ne-veo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -145,6 +159,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ndy-SC-HWh" secondAttribute="bottom" constant="44" id="24X-PS-2xp"/>
                             <constraint firstItem="cZp-Vw-mGB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-5" id="88C-O3-wfm"/>
                             <constraint firstItem="fRX-vW-g03" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DvM-lJ-NBb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6ha-8Y-CBl" secondAttribute="bottom" constant="30" id="DzH-tk-sX2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OJ7-WW-gwC" secondAttribute="trailing" id="EK6-HS-XZC"/>
                             <constraint firstItem="c1D-fc-0fa" firstAttribute="top" secondItem="cZp-Vw-mGB" secondAttribute="bottom" constant="-140" id="FVR-9p-kmx"/>
                             <constraint firstItem="cZp-Vw-mGB" firstAttribute="top" secondItem="316-eA-57y" secondAttribute="bottom" constant="-81" id="JEZ-U2-Ash"/>
@@ -152,15 +167,18 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Ndy-SC-HWh" secondAttribute="trailing" constant="10" id="Kzn-aW-esj"/>
                             <constraint firstItem="c1D-fc-0fa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MUe-yw-1JZ"/>
                             <constraint firstItem="c1D-fc-0fa" firstAttribute="top" secondItem="OJ7-WW-gwC" secondAttribute="bottom" constant="16" id="NM7-PF-5jo"/>
+                            <constraint firstItem="wHR-lc-pKS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QLX-na-mBM"/>
                             <constraint firstItem="AQF-8T-7ne" firstAttribute="leading" secondItem="aux-xf-40m" secondAttribute="trailing" id="RW7-yl-qpH"/>
                             <constraint firstItem="cZp-Vw-mGB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="TWS-LF-9yo"/>
                             <constraint firstItem="316-eA-57y" firstAttribute="leading" secondItem="AQF-8T-7ne" secondAttribute="trailing" id="fR4-VL-0VT"/>
                             <constraint firstItem="aux-xf-40m" firstAttribute="leading" secondItem="Z66-pr-xWp" secondAttribute="trailing" id="hLW-gv-KFE"/>
                             <constraint firstItem="aux-xf-40m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-35" id="hvw-qW-onK"/>
                             <constraint firstItem="1SN-7u-8mr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="iRm-m8-nOj"/>
+                            <constraint firstItem="6ha-8Y-CBl" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="kwP-JB-7pQ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cZp-Vw-mGB" secondAttribute="bottom" constant="-5" id="lWs-RQ-Ht2"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1SN-7u-8mr" secondAttribute="bottom" constant="46" id="mjH-dm-W7N"/>
                             <constraint firstItem="CTt-GY-ANu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="nM3-vh-7Nn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wHR-lc-pKS" secondAttribute="bottom" constant="30" id="oiJ-zC-dgW"/>
                             <constraint firstItem="cZp-Vw-mGB" firstAttribute="top" secondItem="AQF-8T-7ne" secondAttribute="bottom" constant="-81" id="pfV-TQ-fHr"/>
                             <constraint firstItem="cZp-Vw-mGB" firstAttribute="top" secondItem="aux-xf-40m" secondAttribute="bottom" constant="-81" id="qZ5-s7-ZB8"/>
                             <constraint firstItem="OJ7-WW-gwC" firstAttribute="top" secondItem="aux-xf-40m" secondAttribute="bottom" constant="31" id="rFn-7N-TIr"/>

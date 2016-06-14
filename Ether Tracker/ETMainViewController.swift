@@ -150,14 +150,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     }
     
     @IBAction func refreshButtonTapped(sender: UIButton) {
-        UIView.animateWithDuration(1, animations: { 
-            self.refreshButton.alpha = 0
-            }) { (Bool) in
-                UIView.animateWithDuration(1, animations: { 
-                    self.refreshButton.alpha = 0.5
-                })
-        }
-        
+        pulseEtherLogo()
         getEtherPrice()
         refreshHistoricalEtherPrice(currentChartShowing)
     }
@@ -165,6 +158,30 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     
     func chartValueSelected(chartView: ChartViewBase, entry: ChartDataEntry, dataSetIndex: Int, highlight: ChartHighlight) {
         self.priceDateTimeLabel.text = priceDateTime[entry.xIndex]
+    }
+    
+    
+    // ===============
+    // MARK: - HELPERS
+    // ===============
+    
+    func pulseEtherLogo() {
+        for index in 0...3 {
+            Helper.delay(Double(index) * 1, closure: {
+                UIView.animateWithDuration(0.5, delay: 0, options: .CurveEaseInOut, animations: {
+                    self.etherLogo.alpha = 0.2
+                    }, completion: { (Bool) in
+                        UIView.animateWithDuration(0.5, animations: {
+                            if index != 3 {
+                                self.etherLogo.alpha = 0.5
+                            } else {
+                                self.etherLogo.alpha = 1
+                            }
+                        })
+                })
+            })
+            
+        }
     }
     
 }

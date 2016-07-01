@@ -16,6 +16,10 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     // MARK: - PROPERTIES
     // ==================
     
+    let flipPresentAnimationController = FlipPresentAnimationController()
+    let flipDismissAnimationController = FlipDismissAnimationController()
+    let swipeInteractionController = SwipeInteractionController()
+    
     @IBOutlet weak var etherLogo: UIImageView!
     @IBOutlet weak var etherPriceLabel: UILabel!
     @IBOutlet weak var dailyButton: UIButton!
@@ -113,6 +117,13 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showNews", let destinationViewController = segue.destinationViewController as? ETNewsViewController {
+            destinationViewController.transitioningDelegate = self
+//            swipeInteractionController.wireToViewController(destinationViewController)
+        }
     }
     
     

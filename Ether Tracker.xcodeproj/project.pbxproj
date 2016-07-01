@@ -12,6 +12,7 @@
 		EC23E4A01D26180A00F0A5EA /* FlipDismissAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC23E49F1D26180A00F0A5EA /* FlipDismissAnimationController.swift */; };
 		EC23E4A21D26183500F0A5EA /* SwipeInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC23E4A11D26183500F0A5EA /* SwipeInteractionController.swift */; };
 		EC23E4A41D26187C00F0A5EA /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC23E4A31D26187C00F0A5EA /* AnimationHelper.swift */; };
+		EC23E4A61D261A1800F0A5EA /* ETMainVC+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC23E4A51D261A1800F0A5EA /* ETMainVC+Transitions.swift */; };
 		EC33C19C1D0D4E5F0002A52B /* ETNewsVC+NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC33C19B1D0D4E5F0002A52B /* ETNewsVC+NewsFeed.swift */; };
 		EC3FB14E1D06CE230091BDFC /* Dimmable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3FB14D1D06CE230091BDFC /* Dimmable.swift */; };
 		EC3FB1501D0ABA580091BDFC /* ETMainVC+ChartInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3FB14F1D0ABA580091BDFC /* ETMainVC+ChartInteractions.swift */; };
@@ -42,6 +43,7 @@
 		EC23E49F1D26180A00F0A5EA /* FlipDismissAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipDismissAnimationController.swift; sourceTree = "<group>"; };
 		EC23E4A11D26183500F0A5EA /* SwipeInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeInteractionController.swift; sourceTree = "<group>"; };
 		EC23E4A31D26187C00F0A5EA /* AnimationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
+		EC23E4A51D261A1800F0A5EA /* ETMainVC+Transitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ETMainVC+Transitions.swift"; sourceTree = "<group>"; };
 		EC33C19B1D0D4E5F0002A52B /* ETNewsVC+NewsFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ETNewsVC+NewsFeed.swift"; sourceTree = "<group>"; };
 		EC3FB14D1D06CE230091BDFC /* Dimmable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dimmable.swift; sourceTree = "<group>"; };
 		EC3FB14F1D0ABA580091BDFC /* ETMainVC+ChartInteractions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ETMainVC+ChartInteractions.swift"; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				ECB4027A1CF7002000119326 /* ETMainVC+ChartData.swift */,
 				ECB402781CF6A9F200119326 /* ETMainVC+ChartFormat.swift */,
 				EC3FB14F1D0ABA580091BDFC /* ETMainVC+ChartInteractions.swift */,
+				EC23E4A51D261A1800F0A5EA /* ETMainVC+Transitions.swift */,
 			);
 			name = MainVC;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				ECAF661E1CED964C001D75B3 /* ETEtherHistoricalPrice.swift in Sources */,
 				ECAF661A1CED6AF9001D75B3 /* ETCurrency.swift in Sources */,
 				EC6C30A81D0266E400756F2D /* ETNewsViewController.swift in Sources */,
+				EC23E4A61D261A1800F0A5EA /* ETMainVC+Transitions.swift in Sources */,
 				EC3FB14E1D06CE230091BDFC /* Dimmable.swift in Sources */,
 				EC97A4541CE9DC9800FC0495 /* AppDelegate.swift in Sources */,
 				EC6C30AE1D03CCCD00756F2D /* ETNewsArticleCell.swift in Sources */,

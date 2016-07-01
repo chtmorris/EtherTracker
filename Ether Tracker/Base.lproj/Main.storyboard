@@ -148,7 +148,7 @@
                                     <constraint firstAttribute="height" constant="60" id="Rc3-oM-oat"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="Jra-63-ajC" kind="show" id="ETn-ne-veo"/>
+                                    <segue destination="Jra-63-ajC" kind="presentation" identifier="showNews" id="ETn-ne-veo"/>
                                 </connections>
                             </button>
                         </subviews>

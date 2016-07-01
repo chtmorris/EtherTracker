@@ -50,6 +50,10 @@ class ETNewsViewController: UIViewController, UICollectionViewDelegate, UICollec
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
 
     
     // ======================
@@ -129,7 +133,8 @@ class ETNewsViewController: UIViewController, UICollectionViewDelegate, UICollec
     // ====================
 
     @IBAction func closeXButtonTapped(sender: UIButton) {
-        navigationController?.popViewControllerAnimated(true)
+//        navigationController?.popViewControllerAnimated(true)
+        dismissViewControllerAnimated(true, completion: nil)
     }
     
     

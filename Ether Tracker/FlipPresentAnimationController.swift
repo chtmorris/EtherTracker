@@ -13,7 +13,7 @@ class FlipPresentAnimationController: NSObject, UIViewControllerAnimatedTransiti
     var originFrame = CGRectZero
     
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
-        return 0.6
+        return 0.5
     }
     
     func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
@@ -25,12 +25,9 @@ class FlipPresentAnimationController: NSObject, UIViewControllerAnimatedTransiti
         }
         
         let initialFrame = originFrame
-        let finalFrame = transitionContext.finalFrameForViewController(toVC)
-        
         let snapshot = toVC.view.snapshotViewAfterScreenUpdates(true)
         
         snapshot.frame = initialFrame
-        snapshot.layer.cornerRadius = 25
         snapshot.layer.masksToBounds = true
         
         containerView.addSubview(toVC.view)
@@ -49,16 +46,12 @@ class FlipPresentAnimationController: NSObject, UIViewControllerAnimatedTransiti
             options: .CalculationModeCubic,
             animations: {
                 
-                UIView.addKeyframeWithRelativeStartTime(0.0, relativeDuration: 1/3, animations: {
+                UIView.addKeyframeWithRelativeStartTime(0.0, relativeDuration: 1/2, animations: {
                     fromVC.view.layer.transform = AnimationHelper.yRotation(-M_PI_2)
                 })
                 
-                UIView.addKeyframeWithRelativeStartTime(1/3, relativeDuration: 1/3, animations: {
+                UIView.addKeyframeWithRelativeStartTime(1/2, relativeDuration: 1/2, animations: {
                     snapshot.layer.transform = AnimationHelper.yRotation(0.0)
-                })
-                
-                UIView.addKeyframeWithRelativeStartTime(2/3, relativeDuration: 1/3, animations: {
-                    snapshot.frame = finalFrame
                 })
             },
             completion: { _ in

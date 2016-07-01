@@ -13,7 +13,7 @@ class FlipDismissAnimationController: NSObject, UIViewControllerAnimatedTransiti
     var destinationFrame = CGRectZero
     
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
-        return 0.6
+        return 0.5
     }
     
     func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
@@ -24,11 +24,7 @@ class FlipDismissAnimationController: NSObject, UIViewControllerAnimatedTransiti
                 return
         }
         
-        let finalFrame = destinationFrame
-        
         let snapshot = fromVC.view.snapshotViewAfterScreenUpdates(false)
-        
-        snapshot.layer.cornerRadius = 25
         snapshot.layer.masksToBounds = true
         
         containerView.addSubview(toVC.view)
@@ -47,15 +43,11 @@ class FlipDismissAnimationController: NSObject, UIViewControllerAnimatedTransiti
             options: .CalculationModeCubic,
             animations: {
                 
-                UIView.addKeyframeWithRelativeStartTime(0.0, relativeDuration: 1/3, animations: {
-                    snapshot.frame = finalFrame
-                })
-                
-                UIView.addKeyframeWithRelativeStartTime(1/3, relativeDuration: 1/3, animations: {
+                UIView.addKeyframeWithRelativeStartTime(0.0, relativeDuration: 1/2, animations: {
                     snapshot.layer.transform = AnimationHelper.yRotation(M_PI_2)
                 })
                 
-                UIView.addKeyframeWithRelativeStartTime(2/3, relativeDuration: 1/3, animations: {
+                UIView.addKeyframeWithRelativeStartTime(1/2, relativeDuration: 1/2, animations: {
                     toVC.view.layer.transform = AnimationHelper.yRotation(0.0)
                 })
             },

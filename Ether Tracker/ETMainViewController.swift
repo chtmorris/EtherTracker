@@ -20,6 +20,9 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     let flipDismissAnimationController = FlipDismissAnimationController()
     let slideUpAnimationController = SlideUpAnimationController()
     let slideDownAnimationController = SlideDownAnimationController()
+    let slideLeftAnimationController = SlideLeftAnimationController()
+    let slideRightAnimationController = SlideRightAnimationController()
+    
     let swipeInteractionController = SwipeInteractionController()
     
     @IBOutlet weak var etherLogo: UIImageView!

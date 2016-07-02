@@ -151,6 +151,16 @@
                                     <segue destination="Jra-63-ajC" kind="presentation" identifier="showNews" id="ETn-ne-veo"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biu-tv-CTf">
+                                <rect key="frame" x="285" y="562" width="30" height="25"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="12"/>
+                                <state key="normal" title="info">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3BQ-hc-2CW" kind="presentation" identifier="showAbout" id="pK0-B8-3BK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -167,6 +177,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Ndy-SC-HWh" secondAttribute="trailing" constant="10" id="Kzn-aW-esj"/>
                             <constraint firstItem="c1D-fc-0fa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MUe-yw-1JZ"/>
                             <constraint firstItem="c1D-fc-0fa" firstAttribute="top" secondItem="OJ7-WW-gwC" secondAttribute="bottom" constant="16" id="NM7-PF-5jo"/>
+                            <constraint firstItem="biu-tv-CTf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PTL-Fq-jj3"/>
                             <constraint firstItem="wHR-lc-pKS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QLX-na-mBM"/>
                             <constraint firstItem="AQF-8T-7ne" firstAttribute="leading" secondItem="aux-xf-40m" secondAttribute="trailing" id="RW7-yl-qpH"/>
                             <constraint firstItem="cZp-Vw-mGB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="TWS-LF-9yo"/>
@@ -175,6 +186,7 @@
                             <constraint firstItem="aux-xf-40m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-35" id="hvw-qW-onK"/>
                             <constraint firstItem="1SN-7u-8mr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="iRm-m8-nOj"/>
                             <constraint firstItem="6ha-8Y-CBl" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="kwP-JB-7pQ"/>
+                            <constraint firstItem="biu-tv-CTf" firstAttribute="top" secondItem="1SN-7u-8mr" secondAttribute="top" constant="34" id="lBk-dZ-8Qb"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cZp-Vw-mGB" secondAttribute="bottom" constant="-5" id="lWs-RQ-Ht2"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1SN-7u-8mr" secondAttribute="bottom" constant="46" id="mjH-dm-W7N"/>
                             <constraint firstItem="CTt-GY-ANu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="nM3-vh-7Nn"/>
@@ -206,10 +218,120 @@
             </objects>
             <point key="canvasLocation" x="1229" y="452"/>
         </scene>
+        <!--About View Controller-->
+        <scene sceneID="E3P-X5-opa">
+            <objects>
+                <viewController id="3BQ-hc-2CW" customClass="ETAboutViewController" customModule="Ether_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AEe-Tt-bIZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="fGd-dY-UE6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3iU-ip-Dks">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-blue" translatesAutoresizingMaskIntoConstraints="NO" id="it7-PG-wUW">
+                                <rect key="frame" x="0.0" y="-5" width="600" height="610"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chart price data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXo-lE-Ugk">
+                                <rect key="frame" x="30" y="60" width="540" height="21"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Multi-currency data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rvi-SL-g0a">
+                                <rect key="frame" x="30" y="163" width="540" height="21"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="About the creator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TQ-Cj-Ngu">
+                                <rect key="frame" x="30" y="265" width="540" height="21"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sourced from etherchain.org" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hd2-bY-7NP">
+                                <rect key="frame" x="30" y="88" width="540" height="15"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sourced from Coinmarketcap,com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vP7-yG-nZr">
+                                <rect key="frame" x="30" y="191" width="540" height="15"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4YW-sS-rBd">
+                                <rect key="frame" x="30" y="293" width="540" height="43"/>
+                                <string key="text">I’m an iOS developer based in Hong Kong.
+
+Feel free to contact me on Twitter @chtmorris</string>
+                                <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CloseX" translatesAutoresizingMaskIntoConstraints="NO" id="lHr-Qa-Lqm">
+                                <rect key="frame" x="561" y="20" width="19" height="30"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3H-zc-iTe">
+                                <rect key="frame" x="550" y="20" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ufS-p2-wWg"/>
+                                    <constraint firstAttribute="width" constant="40" id="yC1-0c-1to"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="closeButtonTapped:" destination="3BQ-hc-2CW" eventType="touchUpInside" id="jaK-vj-A6M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jXo-lE-Ugk" firstAttribute="top" secondItem="AEe-Tt-bIZ" secondAttribute="bottom" constant="40" id="1h4-4N-eze"/>
+                            <constraint firstItem="lHr-Qa-Lqm" firstAttribute="trailing" secondItem="3iU-ip-Dks" secondAttribute="trailingMargin" id="2ZU-oQ-VPz"/>
+                            <constraint firstItem="Hd2-bY-7NP" firstAttribute="leading" secondItem="3iU-ip-Dks" secondAttribute="leadingMargin" constant="10" id="5rg-QB-zF7"/>
+                            <constraint firstItem="Hd2-bY-7NP" firstAttribute="top" secondItem="jXo-lE-Ugk" secondAttribute="bottom" constant="7" id="6Bb-3O-lKQ"/>
+                            <constraint firstItem="it7-PG-wUW" firstAttribute="leading" secondItem="3iU-ip-Dks" secondAttribute="leadingMargin" constant="-20" id="7lq-xX-xmj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5TQ-Cj-Ngu" secondAttribute="trailing" constant="10" id="89D-lR-vcn"/>
+                            <constraint firstItem="e3H-zc-iTe" firstAttribute="trailing" secondItem="jXo-lE-Ugk" secondAttribute="trailing" constant="20" id="ESw-Ou-6hO"/>
+                            <constraint firstItem="4YW-sS-rBd" firstAttribute="leading" secondItem="3iU-ip-Dks" secondAttribute="leadingMargin" constant="10" id="FAm-kS-jnt"/>
+                            <constraint firstItem="4YW-sS-rBd" firstAttribute="centerX" secondItem="3iU-ip-Dks" secondAttribute="centerX" id="Gw7-Bh-GNQ"/>
+                            <constraint firstItem="5TQ-Cj-Ngu" firstAttribute="leading" secondItem="3iU-ip-Dks" secondAttribute="leadingMargin" constant="10" id="Heb-1D-rIp"/>
+                            <constraint firstItem="Rvi-SL-g0a" firstAttribute="leading" secondItem="3iU-ip-Dks" secondAttribute="leadingMargin" constant="10" id="Iaa-4H-DnH"/>
+                            <constraint firstItem="5TQ-Cj-Ngu" firstAttribute="centerX" secondItem="3iU-ip-Dks" secondAttribute="centerX" id="JXL-cY-1cj"/>
+                            <constraint firstItem="fGd-dY-UE6" firstAttribute="top" secondItem="it7-PG-wUW" secondAttribute="bottom" constant="-5" id="M5Y-xw-T2D"/>
+                            <constraint firstItem="e3H-zc-iTe" firstAttribute="top" secondItem="AEe-Tt-bIZ" secondAttribute="bottom" id="MY1-Fc-ptt"/>
+                            <constraint firstItem="5TQ-Cj-Ngu" firstAttribute="top" secondItem="vP7-yG-nZr" secondAttribute="bottom" constant="60" id="NdL-jZ-fvI"/>
+                            <constraint firstItem="jXo-lE-Ugk" firstAttribute="centerX" secondItem="3iU-ip-Dks" secondAttribute="centerX" id="Qpi-mo-gva"/>
+                            <constraint firstItem="vP7-yG-nZr" firstAttribute="top" secondItem="Rvi-SL-g0a" secondAttribute="bottom" constant="7" id="WzJ-ji-ebK"/>
+                            <constraint firstItem="jXo-lE-Ugk" firstAttribute="leading" secondItem="3iU-ip-Dks" secondAttribute="leadingMargin" constant="10" id="XzR-bz-IZv"/>
+                            <constraint firstItem="4YW-sS-rBd" firstAttribute="top" secondItem="5TQ-Cj-Ngu" secondAttribute="bottom" constant="7" id="ZB4-FU-Arc"/>
+                            <constraint firstItem="Rvi-SL-g0a" firstAttribute="centerX" secondItem="3iU-ip-Dks" secondAttribute="centerX" id="Zci-KB-nHZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4YW-sS-rBd" secondAttribute="trailing" constant="10" id="at6-RI-AxP"/>
+                            <constraint firstItem="lHr-Qa-Lqm" firstAttribute="top" secondItem="e3H-zc-iTe" secondAttribute="top" id="azI-rh-Agu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rvi-SL-g0a" secondAttribute="trailing" constant="10" id="bdZ-bl-B5m"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="it7-PG-wUW" secondAttribute="trailing" constant="-20" id="cqg-zR-2wq"/>
+                            <constraint firstItem="jXo-lE-Ugk" firstAttribute="top" secondItem="lHr-Qa-Lqm" secondAttribute="bottom" constant="10" id="gT3-q0-G9s"/>
+                            <constraint firstItem="vP7-yG-nZr" firstAttribute="centerX" secondItem="3iU-ip-Dks" secondAttribute="centerX" id="ifH-lY-r8n"/>
+                            <constraint firstItem="vP7-yG-nZr" firstAttribute="leading" secondItem="3iU-ip-Dks" secondAttribute="leadingMargin" constant="10" id="igG-I2-1WP"/>
+                            <constraint firstItem="Rvi-SL-g0a" firstAttribute="top" secondItem="Hd2-bY-7NP" secondAttribute="bottom" constant="60" id="ihH-DC-5hZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jXo-lE-Ugk" secondAttribute="trailing" constant="10" id="rCo-xr-PNc"/>
+                            <constraint firstItem="it7-PG-wUW" firstAttribute="top" secondItem="3iU-ip-Dks" secondAttribute="topMargin" constant="-5" id="t5A-1i-mK2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vP7-yG-nZr" secondAttribute="trailing" constant="10" id="tgk-Dv-Fed"/>
+                            <constraint firstItem="Hd2-bY-7NP" firstAttribute="centerX" secondItem="3iU-ip-Dks" secondAttribute="centerX" id="ucf-xg-7yE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hd2-bY-7NP" secondAttribute="trailing" constant="10" id="wCn-dM-tgN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5RG-GH-DE5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1229" y="1243"/>
+        </scene>
         <!--News View Controller-->
         <scene sceneID="FrD-kI-NpJ">
             <objects>
-                <viewController id="Jra-63-ajC" customClass="ETNewsViewController" customModule="Ether_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="news" id="Jra-63-ajC" customClass="ETNewsViewController" customModule="Ether_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7y0-sV-HCE"/>
                         <viewControllerLayoutGuide type="bottom" id="w0r-Fj-V34"/>
@@ -442,6 +564,7 @@
         <image name="Ether logo" width="139" height="223"/>
         <image name="News icon" width="29" height="24"/>
         <image name="WhiteLine" width="304" height="1"/>
+        <image name="background-blue" width="375" height="667"/>
         <image name="background-dark" width="375" height="667"/>
         <image name="closeArticle" width="20" height="11"/>
         <image name="refresh" width="27" height="26"/>

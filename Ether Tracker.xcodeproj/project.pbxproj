@@ -13,6 +13,9 @@
 		EC23E4A21D26183500F0A5EA /* SwipeInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC23E4A11D26183500F0A5EA /* SwipeInteractionController.swift */; };
 		EC23E4A41D26187C00F0A5EA /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC23E4A31D26187C00F0A5EA /* AnimationHelper.swift */; };
 		EC23E4A61D261A1800F0A5EA /* ETMainVC+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC23E4A51D261A1800F0A5EA /* ETMainVC+Transitions.swift */; };
+		EC23E4AC1D26453C00F0A5EA /* ETAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC23E4AB1D26453C00F0A5EA /* ETAboutViewController.swift */; };
+		EC23E4AF1D2645A800F0A5EA /* SlideUpAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC23E4AE1D2645A800F0A5EA /* SlideUpAnimationController.swift */; };
+		EC23E4B11D26506100F0A5EA /* SlideDownAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC23E4B01D26506100F0A5EA /* SlideDownAnimationController.swift */; };
 		EC33C19C1D0D4E5F0002A52B /* ETNewsVC+NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC33C19B1D0D4E5F0002A52B /* ETNewsVC+NewsFeed.swift */; };
 		EC3FB14E1D06CE230091BDFC /* Dimmable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3FB14D1D06CE230091BDFC /* Dimmable.swift */; };
 		EC3FB1501D0ABA580091BDFC /* ETMainVC+ChartInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3FB14F1D0ABA580091BDFC /* ETMainVC+ChartInteractions.swift */; };
@@ -44,6 +47,9 @@
 		EC23E4A11D26183500F0A5EA /* SwipeInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeInteractionController.swift; sourceTree = "<group>"; };
 		EC23E4A31D26187C00F0A5EA /* AnimationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
 		EC23E4A51D261A1800F0A5EA /* ETMainVC+Transitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ETMainVC+Transitions.swift"; sourceTree = "<group>"; };
+		EC23E4AB1D26453C00F0A5EA /* ETAboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETAboutViewController.swift; sourceTree = "<group>"; };
+		EC23E4AE1D2645A800F0A5EA /* SlideUpAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideUpAnimationController.swift; sourceTree = "<group>"; };
+		EC23E4B01D26506100F0A5EA /* SlideDownAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideDownAnimationController.swift; sourceTree = "<group>"; };
 		EC33C19B1D0D4E5F0002A52B /* ETNewsVC+NewsFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ETNewsVC+NewsFeed.swift"; sourceTree = "<group>"; };
 		EC3FB14D1D06CE230091BDFC /* Dimmable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dimmable.swift; sourceTree = "<group>"; };
 		EC3FB14F1D0ABA580091BDFC /* ETMainVC+ChartInteractions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ETMainVC+ChartInteractions.swift"; sourceTree = "<group>"; };
@@ -104,6 +110,8 @@
 			children = (
 				EC23E49D1D2617E700F0A5EA /* FlipPresentAnimationController.swift */,
 				EC23E49F1D26180A00F0A5EA /* FlipDismissAnimationController.swift */,
+				EC23E4AE1D2645A800F0A5EA /* SlideUpAnimationController.swift */,
+				EC23E4B01D26506100F0A5EA /* SlideDownAnimationController.swift */,
 			);
 			name = AnimationControllers;
 			sourceTree = "<group>";
@@ -114,6 +122,14 @@
 				EC23E4A11D26183500F0A5EA /* SwipeInteractionController.swift */,
 			);
 			name = InteractionControllers;
+			sourceTree = "<group>";
+		};
+		EC23E4AD1D26454300F0A5EA /* AboutVC */ = {
+			isa = PBXGroup;
+			children = (
+				EC23E4AB1D26453C00F0A5EA /* ETAboutViewController.swift */,
+			);
+			name = AboutVC;
 			sourceTree = "<group>";
 		};
 		EC33C19D1D0D4E770002A52B /* WebsiteVC */ = {
@@ -199,6 +215,7 @@
 				EC6C30A91D026AC700756F2D /* MainVC */,
 				EC6C30AA1D026ADC00756F2D /* NewsVC */,
 				EC33C19D1D0D4E770002A52B /* WebsiteVC */,
+				EC23E4AD1D26454300F0A5EA /* AboutVC */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -357,6 +374,7 @@
 				EC97A46C1CEB171C00FC0495 /* ETDataManager.swift in Sources */,
 				ECB4027D1CF700FD00119326 /* ETMainVC+DataRequest.swift in Sources */,
 				EC23E49E1D2617E700F0A5EA /* FlipPresentAnimationController.swift in Sources */,
+				EC23E4B11D26506100F0A5EA /* SlideDownAnimationController.swift in Sources */,
 				EC6C30B01D058B5500756F2D /* ETWebsiteViewController.swift in Sources */,
 				EC3FB1501D0ABA580091BDFC /* ETMainVC+ChartInteractions.swift in Sources */,
 				EC23E4A21D26183500F0A5EA /* SwipeInteractionController.swift in Sources */,
@@ -368,8 +386,10 @@
 				ECAF661E1CED964C001D75B3 /* ETEtherHistoricalPrice.swift in Sources */,
 				ECAF661A1CED6AF9001D75B3 /* ETCurrency.swift in Sources */,
 				EC6C30A81D0266E400756F2D /* ETNewsViewController.swift in Sources */,
+				EC23E4AC1D26453C00F0A5EA /* ETAboutViewController.swift in Sources */,
 				EC23E4A61D261A1800F0A5EA /* ETMainVC+Transitions.swift in Sources */,
 				EC3FB14E1D06CE230091BDFC /* Dimmable.swift in Sources */,
+				EC23E4AF1D2645A800F0A5EA /* SlideUpAnimationController.swift in Sources */,
 				EC97A4541CE9DC9800FC0495 /* AppDelegate.swift in Sources */,
 				EC6C30AE1D03CCCD00756F2D /* ETNewsArticleCell.swift in Sources */,
 				EC23E4A01D26180A00F0A5EA /* FlipDismissAnimationController.swift in Sources */,

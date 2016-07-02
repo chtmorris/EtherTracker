@@ -11,16 +11,32 @@ import UIKit
 extension ETMainViewController: UIViewControllerTransitioningDelegate {
     
     func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        flipPresentAnimationController.originFrame = self.view.frame
-        return flipPresentAnimationController
+        
+        print("presentingVC is")
+        print(presented.restorationIdentifier)
+        
+        if presented.restorationIdentifier == "news" {
+            flipPresentAnimationController.originFrame = self.view.frame
+            return flipPresentAnimationController
+        } else {
+            return slideUpAnimationController
+        }
+        
     }
     
     func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        flipDismissAnimationController.destinationFrame = self.view.frame
-        return flipDismissAnimationController
+        
+        if dismissed.restorationIdentifier == "news" {
+            flipDismissAnimationController.destinationFrame = self.view.frame
+            return flipDismissAnimationController
+        } else {
+            return slideDownAnimationController
+        }
+        
     }
     
     func interactionControllerForDismissal(animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
         return swipeInteractionController.interactionInProgress ? swipeInteractionController : nil
     }
+
 }

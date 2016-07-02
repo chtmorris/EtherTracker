@@ -18,6 +18,8 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     
     let flipPresentAnimationController = FlipPresentAnimationController()
     let flipDismissAnimationController = FlipDismissAnimationController()
+    let slideUpAnimationController = SlideUpAnimationController()
+    let slideDownAnimationController = SlideDownAnimationController()
     let swipeInteractionController = SwipeInteractionController()
     
     @IBOutlet weak var etherLogo: UIImageView!
@@ -80,8 +82,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
         newsButton.alpha = 0
         refreshButton.alpha = 0
         lineChart.backgroundColor = UIColor.clearColor()
-        lineChart.noDataText = "Loading data..."
-        
+        lineChart.noDataText = "Loading data..."        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -123,6 +124,11 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
         if segue.identifier == "showNews", let destinationViewController = segue.destinationViewController as? ETNewsViewController {
             destinationViewController.transitioningDelegate = self
 //            swipeInteractionController.wireToViewController(destinationViewController)
+        }
+        
+        if segue.identifier == "showAbout", let destinationViewController = segue.destinationViewController as? ETAboutViewController {
+            destinationViewController.transitioningDelegate = self
+            swipeInteractionController.wireToViewController(destinationViewController)
         }
     }
     

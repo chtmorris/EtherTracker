@@ -11,7 +11,7 @@ import UIKit
 class SlideDownAnimationController: NSObject, UIViewControllerAnimatedTransitioning {
     
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
-        return 1.0
+        return 0.8
     }
     
     func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
@@ -24,7 +24,7 @@ class SlideDownAnimationController: NSObject, UIViewControllerAnimatedTransition
         toViewController!.view.frame = CGRectOffset(finalFrameForVC, 0, -bounds.size.height)
         containerView?.addSubview((toViewController?.view)!)
         
-        UIView.animateWithDuration(transitionDuration(transitionContext), delay: 0.0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.0, options: .CurveLinear, animations: {
+        UIView.animateWithDuration(transitionDuration(transitionContext), delay: 0.0, usingSpringWithDamping: 0.85, initialSpringVelocity: 0.0, options: .CurveLinear, animations: {
             fromViewController!.view.alpha = 0.5
             toViewController?.view.frame = finalFrameForVC
             fromViewController!.view.frame = CGRectOffset(finalFrameForVC, 0, bounds.size.height)

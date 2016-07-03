@@ -131,7 +131,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
         
         if segue.identifier == "showAbout", let destinationViewController = segue.destinationViewController as? ETAboutViewController {
             destinationViewController.transitioningDelegate = self
-            swipeInteractionController.wireToViewController(destinationViewController)
+//            swipeInteractionController.wireToViewController(destinationViewController)
         }
     }
     
@@ -203,6 +203,22 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
             
         }
     }
+    
+    
+}
+
+
+extension ETMainViewController {
+    
+    private func prepareGestureRecognizerInView(view: UIView) {
+        let gesture = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(handleGesture(_:)))
+        gesture.edges = UIRectEdge.Left
+        view.addGestureRecognizer(gesture)
+    }
+    
+    func handleGesture(gestureRecognizer: UIScreenEdgePanGestureRecognizer) {
+    }
+
     
 }
 

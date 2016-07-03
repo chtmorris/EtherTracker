@@ -37,6 +37,8 @@
 		ECB402791CF6A9F200119326 /* ETMainVC+ChartFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB402781CF6A9F200119326 /* ETMainVC+ChartFormat.swift */; };
 		ECB4027B1CF7002000119326 /* ETMainVC+ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB4027A1CF7002000119326 /* ETMainVC+ChartData.swift */; };
 		ECB4027D1CF700FD00119326 /* ETMainVC+DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB4027C1CF700FD00119326 /* ETMainVC+DataRequest.swift */; };
+		ECC0B2BA1D273C6200DEB938 /* SlideLeftAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC0B2B91D273C6200DEB938 /* SlideLeftAnimationController.swift */; };
+		ECC0B2BC1D273CF900DEB938 /* SlideRightAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC0B2BB1D273CF900DEB938 /* SlideRightAnimationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +75,8 @@
 		ECB402781CF6A9F200119326 /* ETMainVC+ChartFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ETMainVC+ChartFormat.swift"; sourceTree = "<group>"; };
 		ECB4027A1CF7002000119326 /* ETMainVC+ChartData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ETMainVC+ChartData.swift"; sourceTree = "<group>"; };
 		ECB4027C1CF700FD00119326 /* ETMainVC+DataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ETMainVC+DataRequest.swift"; sourceTree = "<group>"; };
+		ECC0B2B91D273C6200DEB938 /* SlideLeftAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideLeftAnimationController.swift; sourceTree = "<group>"; };
+		ECC0B2BB1D273CF900DEB938 /* SlideRightAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideRightAnimationViewController.swift; sourceTree = "<group>"; };
 		EEBD699052BDBAB115FF8FF0 /* Pods-Ether Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ether Tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ether Tracker/Pods-Ether Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +116,8 @@
 				EC23E49F1D26180A00F0A5EA /* FlipDismissAnimationController.swift */,
 				EC23E4AE1D2645A800F0A5EA /* SlideUpAnimationController.swift */,
 				EC23E4B01D26506100F0A5EA /* SlideDownAnimationController.swift */,
+				ECC0B2B91D273C6200DEB938 /* SlideLeftAnimationController.swift */,
+				ECC0B2BB1D273CF900DEB938 /* SlideRightAnimationViewController.swift */,
 			);
 			name = AnimationControllers;
 			sourceTree = "<group>";
@@ -373,6 +379,7 @@
 				EC97A4561CE9DC9800FC0495 /* ETMainViewController.swift in Sources */,
 				EC97A46C1CEB171C00FC0495 /* ETDataManager.swift in Sources */,
 				ECB4027D1CF700FD00119326 /* ETMainVC+DataRequest.swift in Sources */,
+				ECC0B2BA1D273C6200DEB938 /* SlideLeftAnimationController.swift in Sources */,
 				EC23E49E1D2617E700F0A5EA /* FlipPresentAnimationController.swift in Sources */,
 				EC23E4B11D26506100F0A5EA /* SlideDownAnimationController.swift in Sources */,
 				EC6C30B01D058B5500756F2D /* ETWebsiteViewController.swift in Sources */,
@@ -387,6 +394,7 @@
 				ECAF661A1CED6AF9001D75B3 /* ETCurrency.swift in Sources */,
 				EC6C30A81D0266E400756F2D /* ETNewsViewController.swift in Sources */,
 				EC23E4AC1D26453C00F0A5EA /* ETAboutViewController.swift in Sources */,
+				ECC0B2BC1D273CF900DEB938 /* SlideRightAnimationViewController.swift in Sources */,
 				EC23E4A61D261A1800F0A5EA /* ETMainVC+Transitions.swift in Sources */,
 				EC3FB14E1D06CE230091BDFC /* Dimmable.swift in Sources */,
 				EC23E4AF1D2645A800F0A5EA /* SlideUpAnimationController.swift in Sources */,

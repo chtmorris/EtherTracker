@@ -85,7 +85,9 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
         newsButton.alpha = 0
         refreshButton.alpha = 0
         lineChart.backgroundColor = UIColor.clearColor()
-        lineChart.noDataText = "Loading data..."        
+        lineChart.noDataText = "Loading data..."
+        
+//        prepareGestureRecognizerInView(self.view)
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -111,6 +113,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
                         self.newsButton.alpha = 0.5
                         self.refreshButton.alpha = 0.5
                         self.lineChart.alpha = 1
+                        self.ifFirstAppLaunch()
                     })
             })
             
@@ -204,28 +207,22 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
         }
     }
     
-    
-}
+    func ifFirstAppLaunch() {
+        let etherLogoYPosition:CGFloat = (view.bounds.height) - 60
+                
+        UIView.animateWithDuration(0.5, delay: 0, options: .CurveEaseOut, animations: {
+                self.etherLogo.center.y = etherLogoYPosition - 20
+            }, completion: { finished in
+                
+                UIView.animateWithDuration(0.5, delay: 0, options: .CurveEaseIn, animations: {
+                    self.etherLogo.center.y = etherLogoYPosition
+                }, completion: nil)
+        })
 
 
-extension ETMainViewController {
-    
-    private func prepareGestureRecognizerInView(view: UIView) {
-        let gesture = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(handleGesture(_:)))
-        gesture.edges = UIRectEdge.Left
-        view.addGestureRecognizer(gesture)
+        
     }
     
-    func handleGesture(gestureRecognizer: UIScreenEdgePanGestureRecognizer) {
-    }
-
     
 }
-
-
-
-
-
-
-
 

@@ -16,8 +16,6 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     // MARK: - PROPERTIES
     // ==================
     
-    let flipPresentAnimationController = FlipPresentAnimationController()
-    let flipDismissAnimationController = FlipDismissAnimationController()
     let slideUpAnimationController = SlideUpAnimationController()
     let slideDownAnimationController = SlideDownAnimationController()
     let slideLeftAnimationController = SlideLeftAnimationController()

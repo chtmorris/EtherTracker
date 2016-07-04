@@ -20,7 +20,6 @@ extension ETMainViewController: UIViewControllerTransitioningDelegate {
         print(presented.restorationIdentifier)
         
         if presented.restorationIdentifier == "news" {
-//            flipPresentAnimationController.originFrame = self.view.frame
             return slideRightAnimationController
         } else {
             return slideUpAnimationController
@@ -31,7 +30,6 @@ extension ETMainViewController: UIViewControllerTransitioningDelegate {
     func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         
         if dismissed.restorationIdentifier == "news" {
-//            flipDismissAnimationController.destinationFrame = self.view.frame
             return slideLeftAnimationController
         } else {
             return slideDownAnimationController

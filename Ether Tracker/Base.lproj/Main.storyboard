@@ -365,10 +365,10 @@ Feel free to contact me on Twitter @chtmorris</string>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewsCell" id="Zih-wd-pQD" customClass="ETNewsArticleCell" customModule="Ether_Tracker" customModuleProvider="target">
-                                        <rect key="frame" x="13" y="0.0" width="535" height="115"/>
+                                        <rect key="frame" x="13" y="0.0" width="534.5" height="115"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="535" height="115"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="534.5" height="115"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All the cool kids are doing Ethereum now" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VvU-UX-dkT" userLabel="I">
@@ -464,6 +464,7 @@ Feel free to contact me on Twitter @chtmorris</string>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="ayX-fp-VqZ" secondAttribute="trailing" constant="-20" id="4OS-W1-hwV"/>
                             <constraint firstItem="w0r-Fj-V34" firstAttribute="top" secondItem="9GL-tK-7DV" secondAttribute="bottom" constant="28" id="Ano-17-FTF"/>
@@ -483,6 +484,9 @@ Feel free to contact me on Twitter @chtmorris</string>
                             <constraint firstItem="k7N-pA-U79" firstAttribute="centerX" secondItem="euL-I2-ajY" secondAttribute="centerX" id="sua-HA-d8g"/>
                             <constraint firstItem="1JQ-gY-6uK" firstAttribute="leading" secondItem="euL-I2-ajY" secondAttribute="leadingMargin" constant="-20" id="u3o-bA-SLE"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="4pk-vz-GiD" appends="YES" id="1Aj-x3-LhK"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="blackBottomGradientView" destination="ayX-fp-VqZ" id="rQn-Ad-MIk"/>
@@ -492,6 +496,12 @@ Feel free to contact me on Twitter @chtmorris</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwV-0O-fdX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="4pk-vz-GiD">
+                    <rectEdge key="edges" left="YES"/>
+                    <connections>
+                        <action selector="handleLeftEdgeSwipeGesture:" destination="Jra-63-ajC" id="vsn-Um-ohY"/>
+                    </connections>
+                </screenEdgePanGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1993" y="452"/>
         </scene>

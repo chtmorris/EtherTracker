@@ -37,10 +37,6 @@ extension ETMainViewController: UIViewControllerTransitioningDelegate {
         
     }
     
-    func interactionControllerForDismissal(animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
-        return swipeInteractionController.interactionInProgress ? swipeInteractionController : nil
-    }
-    
     
     // ========================
     // MARK: - GESTURE HANDLING

@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7CD99292F7AE1D239D2CD249 /* Pods_Ether_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D83FB37294A500A66D6AB27 /* Pods_Ether_Tracker.framework */; };
-		EC23E49E1D2617E700F0A5EA /* FlipPresentAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC23E49D1D2617E700F0A5EA /* FlipPresentAnimationController.swift */; };
-		EC23E4A01D26180A00F0A5EA /* FlipDismissAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC23E49F1D26180A00F0A5EA /* FlipDismissAnimationController.swift */; };
-		EC23E4A21D26183500F0A5EA /* SwipeInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC23E4A11D26183500F0A5EA /* SwipeInteractionController.swift */; };
 		EC23E4A41D26187C00F0A5EA /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC23E4A31D26187C00F0A5EA /* AnimationHelper.swift */; };
 		EC23E4A61D261A1800F0A5EA /* ETMainVC+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC23E4A51D261A1800F0A5EA /* ETMainVC+Transitions.swift */; };
 		EC23E4AC1D26453C00F0A5EA /* ETAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC23E4AB1D26453C00F0A5EA /* ETAboutViewController.swift */; };
@@ -44,9 +41,6 @@
 /* Begin PBXFileReference section */
 		0D83FB37294A500A66D6AB27 /* Pods_Ether_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ether_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F48EF88F7BC07DBE7CD9B6 /* Pods-Ether Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ether Tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ether Tracker/Pods-Ether Tracker.release.xcconfig"; sourceTree = "<group>"; };
-		EC23E49D1D2617E700F0A5EA /* FlipPresentAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipPresentAnimationController.swift; sourceTree = "<group>"; };
-		EC23E49F1D26180A00F0A5EA /* FlipDismissAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipDismissAnimationController.swift; sourceTree = "<group>"; };
-		EC23E4A11D26183500F0A5EA /* SwipeInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeInteractionController.swift; sourceTree = "<group>"; };
 		EC23E4A31D26187C00F0A5EA /* AnimationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
 		EC23E4A51D261A1800F0A5EA /* ETMainVC+Transitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ETMainVC+Transitions.swift"; sourceTree = "<group>"; };
 		EC23E4AB1D26453C00F0A5EA /* ETAboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETAboutViewController.swift; sourceTree = "<group>"; };
@@ -112,22 +106,12 @@
 		EC23E49B1D26176300F0A5EA /* AnimationControllers */ = {
 			isa = PBXGroup;
 			children = (
-				EC23E49D1D2617E700F0A5EA /* FlipPresentAnimationController.swift */,
-				EC23E49F1D26180A00F0A5EA /* FlipDismissAnimationController.swift */,
 				EC23E4AE1D2645A800F0A5EA /* SlideUpAnimationController.swift */,
 				EC23E4B01D26506100F0A5EA /* SlideDownAnimationController.swift */,
 				ECC0B2B91D273C6200DEB938 /* SlideLeftAnimationController.swift */,
 				ECC0B2BB1D273CF900DEB938 /* SlideRightAnimationViewController.swift */,
 			);
 			name = AnimationControllers;
-			sourceTree = "<group>";
-		};
-		EC23E49C1D26177300F0A5EA /* InteractionControllers */ = {
-			isa = PBXGroup;
-			children = (
-				EC23E4A11D26183500F0A5EA /* SwipeInteractionController.swift */,
-			);
-			name = InteractionControllers;
 			sourceTree = "<group>";
 		};
 		EC23E4AD1D26454300F0A5EA /* AboutVC */ = {
@@ -206,7 +190,6 @@
 				ECAF661C1CED801C001D75B3 /* Models */,
 				ECAF661B1CED7FF8001D75B3 /* ViewControllers */,
 				EC23E49B1D26176300F0A5EA /* AnimationControllers */,
-				EC23E49C1D26177300F0A5EA /* InteractionControllers */,
 				EC97A4571CE9DC9800FC0495 /* Main.storyboard */,
 				EC97A45A1CE9DC9900FC0495 /* Assets.xcassets */,
 				EC97A45C1CE9DC9900FC0495 /* LaunchScreen.storyboard */,
@@ -380,11 +363,9 @@
 				EC97A46C1CEB171C00FC0495 /* ETDataManager.swift in Sources */,
 				ECB4027D1CF700FD00119326 /* ETMainVC+DataRequest.swift in Sources */,
 				ECC0B2BA1D273C6200DEB938 /* SlideLeftAnimationController.swift in Sources */,
-				EC23E49E1D2617E700F0A5EA /* FlipPresentAnimationController.swift in Sources */,
 				EC23E4B11D26506100F0A5EA /* SlideDownAnimationController.swift in Sources */,
 				EC6C30B01D058B5500756F2D /* ETWebsiteViewController.swift in Sources */,
 				EC3FB1501D0ABA580091BDFC /* ETMainVC+ChartInteractions.swift in Sources */,
-				EC23E4A21D26183500F0A5EA /* SwipeInteractionController.swift in Sources */,
 				ECB402791CF6A9F200119326 /* ETMainVC+ChartFormat.swift in Sources */,
 				EC23E4A41D26187C00F0A5EA /* AnimationHelper.swift in Sources */,
 				ECB4027B1CF7002000119326 /* ETMainVC+ChartData.swift in Sources */,
@@ -400,7 +381,6 @@
 				EC23E4AF1D2645A800F0A5EA /* SlideUpAnimationController.swift in Sources */,
 				EC97A4541CE9DC9800FC0495 /* AppDelegate.swift in Sources */,
 				EC6C30AE1D03CCCD00756F2D /* ETNewsArticleCell.swift in Sources */,
-				EC23E4A01D26180A00F0A5EA /* FlipDismissAnimationController.swift in Sources */,
 				EC33C19C1D0D4E5F0002A52B /* ETNewsVC+NewsFeed.swift in Sources */,
 				EC6C30AC1D03B53300756F2D /* ETNewsFeedData.swift in Sources */,
 			);

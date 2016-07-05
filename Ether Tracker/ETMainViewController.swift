@@ -21,8 +21,6 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     let slideLeftAnimationController = SlideLeftAnimationController()
     let slideRightAnimationController = SlideRightAnimationController()
     
-    let swipeInteractionController = SwipeInteractionController()
-    
     @IBOutlet weak var etherLogo: UIImageView!
     @IBOutlet weak var etherPriceLabel: UILabel!
     @IBOutlet weak var dailyButton: UIButton!
@@ -84,8 +82,6 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
         refreshButton.alpha = 0
         lineChart.backgroundColor = UIColor.clearColor()
         lineChart.noDataText = "Loading data..."
-        
-//        prepareGestureRecognizerInView(self.view)
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -111,7 +107,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
                         self.newsButton.alpha = 0.5
                         self.refreshButton.alpha = 0.5
                         self.lineChart.alpha = 1
-                        self.ifFirstAppLaunch()
+                        self.ifAboutVCNeverSeen()
                     })
             })
             
@@ -127,12 +123,10 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showNews", let destinationViewController = segue.destinationViewController as? ETNewsViewController {
             destinationViewController.transitioningDelegate = self
-//            swipeInteractionController.wireToViewController(destinationViewController)
         }
         
         if segue.identifier == "showAbout", let destinationViewController = segue.destinationViewController as? ETAboutViewController {
             destinationViewController.transitioningDelegate = self
-//            swipeInteractionController.wireToViewController(destinationViewController)
         }
     }
     
@@ -205,7 +199,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
         }
     }
     
-    func ifFirstAppLaunch() {
+    func ifAboutVCNeverSeen() {
         let etherLogoYPosition:CGFloat = (view.bounds.height) - 60
                 
         UIView.animateWithDuration(0.3, delay: 1.0, options: .CurveEaseOut, animations: {

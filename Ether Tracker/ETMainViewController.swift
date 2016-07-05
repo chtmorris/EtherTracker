@@ -208,7 +208,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     func ifFirstAppLaunch() {
         let etherLogoYPosition:CGFloat = (view.bounds.height) - 60
                 
-        UIView.animateWithDuration(0.5, delay: 0, options: .CurveEaseOut, animations: {
+        UIView.animateWithDuration(0.3, delay: 1.0, options: .CurveEaseOut, animations: {
                 self.etherLogo.center.y = etherLogoYPosition - 20
             }, completion: { finished in
                 

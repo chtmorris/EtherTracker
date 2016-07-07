@@ -202,7 +202,8 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     }
     
     func ifAboutVCNeverSeen() {
-        
+        aboutVCSeen = NSUserDefaults.standardUserDefaults().boolForKey("aboutVCSeen")
+
         if !aboutVCSeen {
         
             let etherLogoYPosition:CGFloat = (view.bounds.height) - 60

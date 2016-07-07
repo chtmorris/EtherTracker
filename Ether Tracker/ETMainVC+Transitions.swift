@@ -48,9 +48,7 @@ extension ETMainViewController: UIViewControllerTransitioningDelegate {
         }
         
         if translation.y < -30 {
-            aboutVCSeen = NSUserDefaults.standardUserDefaults().boolForKey("aboutVCSeen")
             NSUserDefaults.standardUserDefaults().setBool(true, forKey: "aboutVCSeen")
-            
             performSegueWithIdentifier("showAbout", sender: nil)
         }
         

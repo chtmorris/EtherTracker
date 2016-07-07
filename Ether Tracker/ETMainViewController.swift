@@ -16,6 +16,8 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     // MARK: - PROPERTIES
     // ==================
     
+    var aboutVCSeen = false
+    
     let slideUpAnimationController = SlideUpAnimationController()
     let slideDownAnimationController = SlideDownAnimationController()
     let slideLeftAnimationController = SlideLeftAnimationController()
@@ -200,18 +202,20 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     }
     
     func ifAboutVCNeverSeen() {
-        let etherLogoYPosition:CGFloat = (view.bounds.height) - 60
-                
-        UIView.animateWithDuration(0.3, delay: 1.0, options: .CurveEaseOut, animations: {
-                self.etherLogo.center.y = etherLogoYPosition - 20
-            }, completion: { finished in
-                
-                UIView.animateWithDuration(0.5, delay: 0, options: .CurveEaseIn, animations: {
-                    self.etherLogo.center.y = etherLogoYPosition
-                }, completion: nil)
-        })
-
-
+        
+        if !aboutVCSeen {
+        
+            let etherLogoYPosition:CGFloat = (view.bounds.height) - 60
+                    
+            UIView.animateWithDuration(0.3, delay: 1.0, options: .CurveEaseOut, animations: {
+                    self.etherLogo.center.y = etherLogoYPosition - 20
+                }, completion: { finished in
+                    
+                    UIView.animateWithDuration(0.5, delay: 0, options: .CurveEaseIn, animations: {
+                        self.etherLogo.center.y = etherLogoYPosition
+                    }, completion: nil)
+            })
+        }
         
     }
     

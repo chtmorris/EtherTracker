@@ -16,9 +16,6 @@ extension ETMainViewController: UIViewControllerTransitioningDelegate {
     
     func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         
-        print("presentingVC is")
-        print(presented.restorationIdentifier)
-        
         if presented.restorationIdentifier == "news" {
             return slideRightAnimationController
         } else {
@@ -51,6 +48,9 @@ extension ETMainViewController: UIViewControllerTransitioningDelegate {
         }
         
         if translation.y < -30 {
+            aboutVCSeen = NSUserDefaults.standardUserDefaults().boolForKey("aboutVCSeen")
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "aboutVCSeen")
+            
             performSegueWithIdentifier("showAbout", sender: nil)
         }
         
@@ -73,6 +73,10 @@ extension ETMainViewController: UIViewControllerTransitioningDelegate {
             print("Unsupported")
         }
         
+    }
+    
+    @IBAction func handleRightEdgeSwipeGesture(gestureRecognizer: UIScreenEdgePanGestureRecognizer) {
+        performSegueWithIdentifier("showNews", sender: nil)
     }
 
 }

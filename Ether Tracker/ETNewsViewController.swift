@@ -144,6 +144,10 @@ class ETNewsViewController: UIViewController, UICollectionViewDelegate, UICollec
         }
     }
     
+    @IBAction func handleLeftEdgeSwipeGesture(gestureRecognizer: UIScreenEdgePanGestureRecognizer) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+
     
     // ========================
     // MARK: - HELPER FUNCTIONS

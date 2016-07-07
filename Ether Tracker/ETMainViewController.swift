@@ -16,14 +16,12 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     // MARK: - PROPERTIES
     // ==================
     
-    let flipPresentAnimationController = FlipPresentAnimationController()
-    let flipDismissAnimationController = FlipDismissAnimationController()
+    var aboutVCSeen = false
+    
     let slideUpAnimationController = SlideUpAnimationController()
     let slideDownAnimationController = SlideDownAnimationController()
     let slideLeftAnimationController = SlideLeftAnimationController()
     let slideRightAnimationController = SlideRightAnimationController()
-    
-    let swipeInteractionController = SwipeInteractionController()
     
     @IBOutlet weak var etherLogo: UIImageView!
     @IBOutlet weak var etherPriceLabel: UILabel!
@@ -85,7 +83,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
         newsButton.alpha = 0
         refreshButton.alpha = 0
         lineChart.backgroundColor = UIColor.clearColor()
-        lineChart.noDataText = "Loading data..."        
+        lineChart.noDataText = "Loading data..."
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -111,6 +109,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
                         self.newsButton.alpha = 0.5
                         self.refreshButton.alpha = 0.5
                         self.lineChart.alpha = 1
+                        self.ifAboutVCNeverSeen()
                     })
             })
             
@@ -126,12 +125,10 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showNews", let destinationViewController = segue.destinationViewController as? ETNewsViewController {
             destinationViewController.transitioningDelegate = self
-//            swipeInteractionController.wireToViewController(destinationViewController)
         }
         
         if segue.identifier == "showAbout", let destinationViewController = segue.destinationViewController as? ETAboutViewController {
             destinationViewController.transitioningDelegate = self
-            swipeInteractionController.wireToViewController(destinationViewController)
         }
     }
     
@@ -204,12 +201,24 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
         }
     }
     
+    func ifAboutVCNeverSeen() {
+        
+        if !aboutVCSeen {
+        
+            let etherLogoYPosition:CGFloat = (view.bounds.height) - 60
+                    
+            UIView.animateWithDuration(0.3, delay: 1.0, options: .CurveEaseOut, animations: {
+                    self.etherLogo.center.y = etherLogoYPosition - 20
+                }, completion: { finished in
+                    
+                    UIView.animateWithDuration(0.5, delay: 0, options: .CurveEaseIn, animations: {
+                        self.etherLogo.center.y = etherLogoYPosition
+                    }, completion: nil)
+            })
+        }
+        
+    }
+    
+    
 }
-
-
-
-
-
-
-
 

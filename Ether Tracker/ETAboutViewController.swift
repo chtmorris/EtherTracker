@@ -32,10 +32,6 @@ class ETAboutViewController: UIViewController {
         return true
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
-    }
-    
     
     // ====================
     // MARK: - INTERACTIONS
@@ -78,6 +74,11 @@ class ETAboutViewController: UIViewController {
         
     }
 
+    @IBAction func twitterLinkTapped(sender: UIButton) {
+        if let url = NSURL(string: "http://twitter.com/chtmorris") {
+            UIApplication.sharedApplication().openURL(url)
+        }
+    }
     
 
 }

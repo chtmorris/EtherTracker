@@ -291,15 +291,34 @@
                                         <rect key="frame" x="35" y="255" width="530" height="43"/>
                                         <string key="text">I’m an iOS developer based in Hong Kong.
 
-Feel free to contact me on Twitter @chtmorris</string>
+Feel free to contact me on</string>
                                         <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6v-wN-dMk">
+                                        <rect key="frame" x="235" y="277" width="55" height="27"/>
+                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="14"/>
+                                        <state key="normal" title="Twitter">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="twitterLinkTapped:" destination="3BQ-hc-2CW" eventType="touchUpInside" id="y3Z-9x-zOF"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteLine" translatesAutoresizingMaskIntoConstraints="NO" id="Bah-92-3yK">
+                                        <rect key="frame" x="236" y="298" width="55" height="1"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="EbI-K9-kXO"/>
+                                            <constraint firstAttribute="height" constant="1" id="Rx9-2A-zOI"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                                 <constraints>
+                                    <constraint firstItem="X6v-wN-dMk" firstAttribute="top" secondItem="4YW-sS-rBd" secondAttribute="bottom" constant="-21" id="0Sn-AJ-HE1"/>
+                                    <constraint firstItem="4YW-sS-rBd" firstAttribute="leading" secondItem="X6v-wN-dMk" secondAttribute="trailing" constant="-255" id="0xB-uI-unP"/>
                                     <constraint firstItem="Rvi-SL-g0a" firstAttribute="top" secondItem="Hd2-bY-7NP" secondAttribute="bottom" constant="37" id="39q-pb-CQ3"/>
                                     <constraint firstItem="vP7-yG-nZr" firstAttribute="leading" secondItem="YD7-NJ-Xaw" secondAttribute="leading" constant="35" id="91i-rh-8Nl"/>
                                     <constraint firstAttribute="trailing" secondItem="Rvi-SL-g0a" secondAttribute="trailing" constant="35" id="CBI-el-wlD"/>
@@ -309,7 +328,9 @@ Feel free to contact me on Twitter @chtmorris</string>
                                     <constraint firstItem="Rvi-SL-g0a" firstAttribute="leading" secondItem="YD7-NJ-Xaw" secondAttribute="leading" constant="35" id="Pq3-Ph-aXC"/>
                                     <constraint firstAttribute="trailing" secondItem="4YW-sS-rBd" secondAttribute="trailing" constant="35" id="SCp-tn-rUQ"/>
                                     <constraint firstItem="4YW-sS-rBd" firstAttribute="leading" secondItem="YD7-NJ-Xaw" secondAttribute="leading" constant="35" id="Syv-ba-MzR"/>
+                                    <constraint firstItem="Bah-92-3yK" firstAttribute="leading" secondItem="X6v-wN-dMk" secondAttribute="trailing" constant="-54" id="Vc1-4Q-2zU"/>
                                     <constraint firstItem="vP7-yG-nZr" firstAttribute="top" secondItem="Rvi-SL-g0a" secondAttribute="bottom" constant="8" id="XFk-GQ-BEW"/>
+                                    <constraint firstItem="Bah-92-3yK" firstAttribute="top" secondItem="X6v-wN-dMk" secondAttribute="bottom" constant="-6" id="ZHy-5Q-YwI"/>
                                     <constraint firstAttribute="trailing" secondItem="Hd2-bY-7NP" secondAttribute="trailing" constant="35" id="dcA-mT-h6Q"/>
                                     <constraint firstItem="4YW-sS-rBd" firstAttribute="top" secondItem="5TQ-Cj-Ngu" secondAttribute="bottom" constant="8" id="i29-vv-Aj8"/>
                                     <constraint firstItem="Hd2-bY-7NP" firstAttribute="top" secondItem="jXo-lE-Ugk" secondAttribute="bottom" constant="8" id="jzq-8Y-kJc"/>

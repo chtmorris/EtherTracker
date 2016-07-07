@@ -133,7 +133,6 @@ class ETNewsViewController: UIViewController, UICollectionViewDelegate, UICollec
     // ====================
 
     @IBAction func closeXButtonTapped(sender: UIButton) {
-//        navigationController?.popViewControllerAnimated(true)
         dismissViewControllerAnimated(true, completion: nil)
     }
     

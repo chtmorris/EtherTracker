@@ -60,28 +60,30 @@ extension ETMainViewController {
                 print(error)
             }
             
-            guard let etherHistoricalData = EtherHistoricalData(json: json) else {
+            guard let etherHistoricalPrice = EtherHistoricalPrice(json: json) else {
                 print("Error initializing object")
                 return
             }
             
-            guard let etherHistoricalPrice = etherHistoricalData.historicalData else {
-                print("No such item")
-                return
-            }
+//            guard let etherHistoricalPrice = etherHistoricalData.historicalData else {
+//                print("No such item")
+//                return
+//            }
             
-            self.etherHistorialPrices = etherHistoricalPrice
+            print(etherHistoricalPrice)
             
-            (self.time1month, self.price1month, self.priceDateTime1month) = self.getLastxHoursPrice(30 * 24, dateDisplay: "month")
-            self.setChart(self.time1month, values: self.price1month)
-            self.priceDateTime = self.priceDateTime1month
-            
-            // Load up other data sets
-            (self.time12hours, self.price12hours, self.priceDateTime12hours) = self.getLastxHoursPrice(12, dateDisplay: "hours")
-            (self.time7days, self.price7days, self.priceDateTime7days) = self.getLastxHoursPrice(24 * 7, dateDisplay: "days")
-            (self.time1year, self.price1year, self.priceDateTime1year) = self.getLastxDaysPrice(365)
-            
-            self.dataLoaded = true
+//            self.etherHistorialPrices = etherHistoricalPrice
+//            
+//            (self.time1month, self.price1month, self.priceDateTime1month) = self.getLastxHoursPrice(30 * 24, dateDisplay: "month")
+//            self.setChart(self.time1month, values: self.price1month)
+//            self.priceDateTime = self.priceDateTime1month
+//            
+//            // Load up other data sets
+//            (self.time12hours, self.price12hours, self.priceDateTime12hours) = self.getLastxHoursPrice(12, dateDisplay: "hours")
+//            (self.time7days, self.price7days, self.priceDateTime7days) = self.getLastxHoursPrice(24 * 7, dateDisplay: "days")
+//            (self.time1year, self.price1year, self.priceDateTime1year) = self.getLastxDaysPrice(365)
+//            
+//            self.dataLoaded = true
         }
         
     }
@@ -99,48 +101,48 @@ extension ETMainViewController {
                 print(error)
             }
                         
-            guard let etherHistoricalData = EtherHistoricalData(json: json) else {
+            guard let etherHistoricalPrice = EtherHistoricalPrice(json: json) else {
                 print("Error initializing object")
                 return
             }
             
-            guard let etherHistoricalPrice = etherHistoricalData.historicalData else {
-                print("No such item")
-                return
-            }
+//            guard let etherHistoricalPrice = etherHistoricalData.historicalData else {
+//                print("No such item")
+//                return
+//            }
             
             self.etherHistorialPrices = etherHistoricalPrice
             
             // Set-up shown chart
-            switch chartToShow {
-            case "time12hours":
-                (self.time12hours, self.price12hours, self.priceDateTime12hours) = self.getLastxHoursPrice(12, dateDisplay: "hours")
-                self.dailyButton.sendActionsForControlEvents(.TouchUpInside)
-                
-            case "time7days":
-                (self.time7days, self.price7days, self.priceDateTime7days) = self.getLastxHoursPrice(24 * 7, dateDisplay: "days")
-                self.weeklyButton.sendActionsForControlEvents(.TouchUpInside)
-
-            case "time1month":
-                (self.time1month, self.price1month, self.priceDateTime1month) = self.getLastxHoursPrice(30 * 24, dateDisplay: "month")
-                self.monthlyButton.sendActionsForControlEvents(.TouchUpInside)
-                
-            case "time1year":
-                (self.time1year, self.price1year, self.priceDateTime1year) = self.getLastxDaysPrice(365)
-                self.yearlyButton.sendActionsForControlEvents(.TouchUpInside)
-                
-            default:
-                self.monthlyButton.sendActionsForControlEvents(.TouchUpInside)
-            }
-            
-            // Load up all data sets
-            (self.time12hours, self.price12hours, self.priceDateTime12hours) = self.getLastxHoursPrice(12, dateDisplay: "hours")
-            (self.time7days, self.price7days, self.priceDateTime7days) = self.getLastxHoursPrice(24 * 7, dateDisplay: "days")
-            (self.time1month, self.price1month, self.priceDateTime1month) = self.getLastxHoursPrice(30 * 24, dateDisplay: "month")
-            (self.time1year, self.price1year, self.priceDateTime1year) = self.getLastxDaysPrice(365)
-
-            
-            self.dataLoaded = true
+//            switch chartToShow {
+//            case "time12hours":
+//                (self.time12hours, self.price12hours, self.priceDateTime12hours) = self.getLastxHoursPrice(12, dateDisplay: "hours")
+//                self.dailyButton.sendActionsForControlEvents(.TouchUpInside)
+//                
+//            case "time7days":
+//                (self.time7days, self.price7days, self.priceDateTime7days) = self.getLastxHoursPrice(24 * 7, dateDisplay: "days")
+//                self.weeklyButton.sendActionsForControlEvents(.TouchUpInside)
+//
+//            case "time1month":
+//                (self.time1month, self.price1month, self.priceDateTime1month) = self.getLastxHoursPrice(30 * 24, dateDisplay: "month")
+//                self.monthlyButton.sendActionsForControlEvents(.TouchUpInside)
+//                
+//            case "time1year":
+//                (self.time1year, self.price1year, self.priceDateTime1year) = self.getLastxDaysPrice(365)
+//                self.yearlyButton.sendActionsForControlEvents(.TouchUpInside)
+//                
+//            default:
+//                self.monthlyButton.sendActionsForControlEvents(.TouchUpInside)
+//            }
+//            
+//            // Load up all data sets
+//            (self.time12hours, self.price12hours, self.priceDateTime12hours) = self.getLastxHoursPrice(12, dateDisplay: "hours")
+//            (self.time7days, self.price7days, self.priceDateTime7days) = self.getLastxHoursPrice(24 * 7, dateDisplay: "days")
+//            (self.time1month, self.price1month, self.priceDateTime1month) = self.getLastxHoursPrice(30 * 24, dateDisplay: "month")
+//            (self.time1year, self.price1year, self.priceDateTime1year) = self.getLastxDaysPrice(365)
+//
+//            
+//            self.dataLoaded = true
         }
         
     }

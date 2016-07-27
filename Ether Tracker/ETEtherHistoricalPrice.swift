@@ -9,25 +9,25 @@
 import Foundation
 import Gloss
 
-struct EtherHistoricalData: Decodable {
-    
-    let historicalData: [EtherHistoricalPrice]?
-    
-    // MARK: - Deserialization
-    init?(json: JSON) {
-        self.historicalData = "data" <~~ json
-    }
-    
-}
+//struct EtherHistoricalData: Decodable {
+//    
+//    let historicalData: [EtherHistoricalPrice]?
+//    
+//    // MARK: - Deserialization
+//    init?(json: JSON) {
+//        self.historicalData = "data" <~~ json
+//    }
+//    
+//}
 
 struct EtherHistoricalPrice: Decodable {
     
-    let time: String?
+    let time: Int?
     let usd: Float?
     
     // MARK: - Deserialization
     init?(json: JSON) {
-        self.time = "time" <~~ json
-        self.usd = "usd" <~~ json
+        self.time = "date" <~~ json
+        self.usd = "weightedAverage" <~~ json
     }
 }

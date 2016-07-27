@@ -36,7 +36,7 @@ class ETMainViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var refreshButton: UIButton!
     
     var etherPrices: EtherInfo!
-    var etherHistorialPrices: [EtherHistoricalPrice]!
+    var etherHistorialPrices: EtherHistoricalPrice!
     var setCurrencyTo = Currency.USD
     var priceDateTime  = [String]()
     var dataLoaded = false
